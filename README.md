@@ -1,2 +1,2 @@
 # roblox-games-dump
-A dump of a bunch of fully scripted roblox games
+A huge archive of lots of older roblox games
