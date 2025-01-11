@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-# Number of games in this archive: **`199`**
-Last update: `10/01/2025`.
-=======
 # Number of games in this archive: **`208`**
 Last update: `11/01/2025`.
->>>>>>> Stashed changes
+
 # 📖Uncopylocked Roblox Games Library📖
 A massive and costantly updating archive of games spanning the entire history of roblox, from **`2006`** to **`2025`**.
 
