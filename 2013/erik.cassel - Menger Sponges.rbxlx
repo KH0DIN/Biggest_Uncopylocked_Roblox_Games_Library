@@ -1,0 +1,431 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+		</Properties>
+		<Item class="Terrain" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>-2</X>
+					<Y>126</Y>
+					<Z>-2</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<string name="ClusterGridV2"></string>
+				<float name="Elasticity">0.300000012</float>
+				<float name="Friction">0.5</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Terrain</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="size">
+					<X>2044</X>
+					<Y>252</Y>
+					<Z>2044</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-6.62647104</X>
+					<Y>142.432968</Y>
+					<Z>170.184464</Z>
+					<R00>0.990472138</R00>
+					<R01>-0.0891640708</R01>
+					<R02>0.104951181</R02>
+					<R10>-7.4505806e-009</R10>
+					<R11>0.762098491</R11>
+					<R12>0.647461176</R12>
+					<R20>-0.137713403</R20>
+					<R21>-0.641292274</R21>
+					<R22>0.754837334</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>-6.83637333</X>
+					<Y>141.138046</Y>
+					<Z>168.674789</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Sponges</string>
+				<ProtectedString name="Source">count = 0
+
+-- builds the smallest element
+function newBrick(pos, parent, color)
+&#9;local b = Instance.new(&quot;Part&quot;)
+&#9;b.FormFactor = Enum.FormFactor.Symmetric
+&#9;b.Size = Vector3.new(1, 1, 1)
+&#9;b.Position = pos
+&#9;b.BrickColor = color
+&#9;b.LeftSurface = Enum.SurfaceType.Studs
+&#9;b.RightSurface = Enum.SurfaceType.Inlet
+&#9;b.FrontSurface = Enum.SurfaceType.Studs
+&#9;b.BackSurface = Enum.SurfaceType.Inlet
+&#9;b.Name = &quot;Cube&quot;
+&#9;b.Parent = parent
+&#9;count = count + 1
+&#9;return b
+end
+
+function eachCube(f, size, pos, ...)
+&#9;f(pos + Vector3.new(0, 0, 0) * size, ...)
+&#9;f(pos + Vector3.new(1, 0, 0) * size, ...)
+&#9;f(pos + Vector3.new(2, 0, 0) * size, ...)
+&#9;f(pos + Vector3.new(0, 0, 2) * size, ...)
+&#9;f(pos + Vector3.new(1, 0, 2) * size, ...)
+&#9;f(pos + Vector3.new(2, 0, 2) * size, ...)
+&#9;f(pos + Vector3.new(0, 2, 0) * size, ...)
+&#9;f(pos + Vector3.new(1, 2, 0) * size, ...)
+&#9;f(pos + Vector3.new(2, 2, 0) * size, ...)
+&#9;f(pos + Vector3.new(0, 2, 2) * size, ...)
+&#9;f(pos + Vector3.new(1, 2, 2) * size, ...)
+&#9;f(pos + Vector3.new(2, 2, 2) * size, ...)
+&#9;f(pos + Vector3.new(0, 1, 0) * size, ...)
+&#9;f(pos + Vector3.new(0, 0, 1) * size, ...)
+&#9;f(pos + Vector3.new(0, 2, 1) * size, ...)
+&#9;f(pos + Vector3.new(0, 1, 2) * size, ...)
+&#9;f(pos + Vector3.new(2, 1, 0) * size, ...)
+&#9;f(pos + Vector3.new(2, 0, 1) * size, ...)
+&#9;f(pos + Vector3.new(2, 2, 1) * size, ...)
+&#9;f(pos + Vector3.new(2, 1, 2) * size, ...)
+end
+
+-- builds the smallest Menger Sponge
+function newSmallSponge(pos, parent, color)
+&#9;local m = Instance.new(&quot;Model&quot;)
+&#9;eachCube(newBrick, 1, pos, m, color)
+
+&#9;m.Name = &quot;Sponge&quot;
+&#9;m.Parent = parent
+&#9;m:MakeJoints()
+
+&#9;return m
+end
+
+-- recurisely build any size Menger Sponge
+function newSponge(pos, size, parent, color)
+&#9;if size % 3 ~= 0 then
+&#9;&#9;error(&quot;bad size&quot; .. size)
+&#9;end
+&#9;if size &lt;= 0 then
+&#9;&#9;error(&quot;bad size&quot; .. size)
+&#9;end
+&#9;if size == 3 then
+&#9;&#9;return newSmallSponge(pos, parent, color)
+&#9;else
+&#9;&#9;-- recurse
+&#9;&#9;local m = Instance.new(&quot;Model&quot;)
+&#9;&#9;m.Name = &quot;Sponge &quot; .. size
+&#9;&#9;eachCube(newSponge, size / 3, pos, size / 3, m, color)
+&#9;&#9;m.Parent = parent
+&#9;&#9;m:MakeJoints()
+&#9;&#9;return m
+&#9;end
+end
+
+-- random factor generator
+function r()
+&#9;&#9;return 8 * (math.random() - 0.5)
+end
+
+timeScale = 1
+
+-- now build and destroy sponges in the game
+while true do
+&#9;
+&#9;-- small sponges that can move around
+&#9;for _ = 1, 10 do
+&#9;&#9;local n = 2
+&#9;&#9;local m = newSponge(Vector3.new(3^n*(r()-0.5), 60, 3^n*(r()-0.5)), 3^n, workspace, BrickColor.Random())
+&#9;&#9;game:GetService(&quot;Debris&quot;):AddItem(m, timeScale * 60)
+&#9;&#9;wait(timeScale * 20)
+&#9;end
+&#9;-- wait for last cube to go
+&#9;wait(timeScale * 50)
+
+&#9;-- the biggest sponge we can handle
+&#9;local n = 3
+&#9;local m = newSponge(Vector3.new(3^n/2, 1, 3^n/2), 3^n, workspace, BrickColor.Random())
+&#9;game:GetService(&quot;Debris&quot;):AddItem(m, timeScale * 100)
+&#9;wait(timeScale * 120)
+
+end
+</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX4">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Plate</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">0</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>291</X>
+					<Y>1</Y>
+					<Z>270</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="StarterPack" referent="RBX5">
+		<Properties>
+			<string name="Name">StarterPack</string>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX6">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX7">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+		</Properties>
+	</Item>
+	<Item class="CollectionService" referent="RBX8">
+		<Properties>
+			<string name="Name">CollectionService</string>
+		</Properties>
+	</Item>
+	<Item class="PhysicsService" referent="RBX9">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX10">
+		<Properties>
+			<string name="Name">BadgeService</string>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX11">
+		<Properties>
+			<string name="Name">Geometry</string>
+		</Properties>
+	</Item>
+	<Item class="RenderHooksService" referent="RBX12">
+		<Properties>
+			<string name="Name">RenderHooksService</string>
+		</Properties>
+	</Item>
+	<Item class="SocialService" referent="RBX13">
+		<Properties>
+			<string name="Name">SocialService</string>
+		</Properties>
+	</Item>
+	<Item class="GamePassService" referent="RBX14">
+		<Properties>
+			<string name="Name">GamePassService</string>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX15">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+		</Properties>
+	</Item>
+	<Item class="TimerService" referent="RBX16">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX17">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="CookiesService" referent="RBX18">
+		<Properties>
+			<string name="Name">CookiesService</string>
+		</Properties>
+	</Item>
+	<Item class="TeleportService" referent="RBX19">
+		<Properties>
+			<string name="Name">Teleport Service</string>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX20">
+		<Properties>
+			<bool name="CharacterAutoLoads">true</bool>
+			<string name="Name">Players</string>
+		</Properties>
+	</Item>
+	<Item class="FWService" referent="RBX21">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="UserInputService" referent="RBX22">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBX23">
+		<Properties>
+			<string name="Name">Selection</string>
+		</Properties>
+	</Item>
+	<Item class="Lighting" referent="RBX24">
+		<Properties>
+			<Color3 name="Ambient">4286611584</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<Color3 name="FogColor">4290822336</Color3>
+			<float name="FogEnd">100000</float>
+			<float name="FogStart">0</float>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4289967032</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX25">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+		</Properties>
+	</Item>
+</roblox>
