@@ -1,0 +1,836 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>6.2273941</X>
+					<Y>14.9038229</Y>
+					<Z>-45.2478333</Z>
+					<R00>-0.988240719</R00>
+					<R01>-0.0525477007</R01>
+					<R02>0.143593863</R02>
+					<R10>-0</R10>
+					<R11>0.939094722</R11>
+					<R12>0.343658596</R12>
+					<R20>-0.152906701</R20>
+					<R21>0.339617431</R21>
+					<R22>-0.928051472</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>-5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">28</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">1</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Base</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>500</X>
+					<Y>1.20000005</Y>
+					<Z>500</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script Builder</string>
+				<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+local scriptmatrix = {}
+
+_G.THESB = script
+
+function sm(player, txt)
+	local m = Instance.new(&quot;Message&quot;)
+	m.Text = txt
+	m.Parent = player
+	wait(1.5)
+	m:Remove()
+end
+
+local rs = script.RScript
+rs.Parent = nil
+
+local calls = script.Calls
+calls.Parent = nil
+
+function _G.DoCall(cname)
+	local call = calls:findFirstChild(cname)
+	if call ~= nil then
+		call = call:Clone()
+		call.Disabled = false
+		call.Parent = workspace
+	end
+end
+
+game.Players.PlayerAdded:connect(function(pl)
+	if scriptmatrix[pl.Name] == nil then
+		scriptmatrix[pl.Name] = {}
+	end
+	local editing = nil
+	pl.Chatted:connect(function(msg)
+		if editing ~= nil then
+			if string.find(string.lower(msg), &quot;exit/&quot;) == 1 then
+				local sn = editing
+				editing = nil
+				sm(pl, &quot;Stopped editing &apos;&quot;.. sn.. &quot;&apos;&quot;)
+			else
+				scriptmatrix[pl.Name][editing] = scriptmatrix[pl.Name][editing].. msg.. &quot;\n&quot;
+				sm(pl, &quot;Added text to &apos;&quot;.. editing.. &quot;&apos;&quot;)
+			end
+		end
+		if string.find(string.lower(msg), &quot;create/&quot;) == 1 then
+			local sname = string.sub(msg, 8)
+			if scriptmatrix[pl.Name][sname] ~= nil then
+				sm(pl, &quot;&apos;&quot;.. sname.. &quot;&apos; already exists&quot;)
+			else
+				scriptmatrix[pl.Name][sname] = &quot;&quot;
+				sm(pl, &quot;Created &apos;&quot;.. sname.. &quot;&apos;&quot;)
+			end
+		elseif string.find(string.lower(msg), &quot;edit/&quot;) == 1 then
+			local sn = string.sub(msg, 6)
+			if scriptmatrix[pl.Name][sn] == nil then
+				sm(pl, &quot;&apos;&quot;.. sn.. &quot;&apos; doesn&apos;t exist&quot;)
+			else
+				editing = sn
+				sm(pl, &quot;Editing &apos;&quot;.. sn.. &quot;&apos;&quot;)
+			end
+		elseif string.find(string.lower(msg), &quot;run/&quot;) == 1 then
+			local sn = string.sub(msg, 5)
+			local s = scriptmatrix[pl.Name][sn]
+			if s == nil then
+				sm(pl, &quot;&apos;&quot;.. sn.. &quot;&apos; doesn&apos;t exist&quot;)
+			else
+				local sc = rs:Clone()
+				local source = Instance.new(&quot;StringValue&quot;)
+				source.Name = &quot;DSource&quot;
+				source.Value = s
+				source.Parent = sc
+				sc.Disabled = false
+				sc.Name = sn
+				sc.Parent = workspace
+				sm(pl, &quot;Ran &apos;&quot;.. sn.. &quot;&apos;&quot;)
+			end
+		elseif string.find(string.lower(msg), &quot;script/&quot;) == 1 then
+			local sc = rs:Clone()
+			local source = Instance.new(&quot;StringValue&quot;)
+			source.Name = &quot;DSource&quot;
+			source.Value = string.sub(msg, 8)
+			source.Parent = sc
+			sc.Disabled = false
+			sc.Name = &quot;QuickScript&quot;
+			sc.Parent = workspace
+			sm(pl, &quot;Ran Source&quot;)
+		elseif string.find(string.lower(msg), &quot;do/&quot;) == 1 then
+			local sc = rs:Clone()
+			local source = Instance.new(&quot;StringValue&quot;)
+			source.Name = &quot;DSource&quot;
+			source.Value = string.sub(msg, 4)
+			source.Parent = sc
+			sc.Disabled = false
+			sc.Name = &quot;QuickScript&quot;
+			sc.Parent = workspace
+			sm(pl, &quot;Ran Source&quot;)
+		elseif string.find(string.lower(msg), &quot;c/&quot;) == 1 then
+			local sc = rs:Clone()
+			local source = Instance.new(&quot;StringValue&quot;)
+			source.Name = &quot;DSource&quot;
+			source.Value = string.sub(msg, 3)
+			source.Parent = sc
+			sc.Disabled = false
+			sc.Name = &quot;QuickScript&quot;
+			sc.Parent = workspace
+			sm(pl, &quot;Ran Source&quot;)
+		elseif string.find(string.lower(msg), &quot;get/&quot;) == 1 then
+			local c = string.sub(msg, 5)
+			local clcs = calls:GetChildren()
+			local call = nil
+			for i = 1, #clcs do
+				if string.lower(clcs[i].Name) == string.lower(c) then
+					call = clcs[i]
+				end
+			end
+			--local call = calls:findFirstChild(c)
+			if call ~= nil then
+				call = call:Clone()
+				call.Disabled = false
+				call.Caller.Value = pl
+				call.Parent = workspace
+				sm(pl, &quot;Called &apos;&quot;.. c.. &quot;&apos;&quot;)
+			else
+				sm(pl, &quot;No call named &apos;&quot;.. c.. &quot;&apos;&quot;)
+			end
+		end
+	end)
+end)</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="Script" referent="RBX4">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">RScript</string>
+					<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+local runfunc = loadstring(script.DSource.Value)
+local env = parse(clonetab(_G))
+env[&quot;script&quot;] = parse(script)
+setfenv(runfunc, env)()</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX5">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Security</string>
+					<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+--Daviidi&apos;s Script Security
+
+inaccessible = {script.Parent, script}
+
+unreadable = {
+	Players = {&quot;Remove&quot;, &quot;remove&quot;},
+	Player = {&quot;Remove&quot;, &quot;remove&quot;},
+	NetworkServer = {&quot;Remove&quot;, &quot;remove&quot;},
+	inaccessible = {&quot;Remove&quot;, &quot;remove&quot;, &quot;Clone&quot;, &quot;clone&quot;}
+}
+readonly = {
+	Players = {&quot;Parent&quot;},
+	Player = {&quot;Parent&quot;},
+	NetworkServer = {&quot;Parent&quot;},
+	inaccessible = {&quot;Parent&quot;}
+}
+
+unreadable[&quot;&quot;] = {&quot;Remove&quot;, &quot;remove&quot;} -- Non-classed objects used by The game
+readonly[&quot;&quot;] = {&quot;Parent&quot;}
+
+function _G.clonetab(tab, t, gtab)
+	if type(tab) ~= &quot;table&quot; then return tab end
+	if tab == t then return gtab end
+	local ntab = {}
+	for i, v in pairs(tab) do
+		ntab[i] = clonetab(v, tab, ntab)
+	end
+	return ntab
+end
+
+function argparse(...)
+	local args = {...}
+	for i, v in pairs(args) do
+		args[i] = parse(v)
+	end
+	return unpack(args)
+end
+
+function _G.parse(value, object, index)
+	for i = 1, #inaccessible do
+		if inaccessible[i] == object then
+			for j = 1, #unreadable.inaccessible do
+				if unreadable.inaccessible[j] == index then
+					return error(&quot;No poking around in the Script Builder &gt;_&lt;&quot;)
+				end
+			end
+		end
+	end
+	if object ~= nil then
+		if unreadable[object.className] ~= nil then
+			for i = 1, #unreadable[object.className] do
+				if unreadable[object.className][i] == index then
+					return error(index.. &quot; is a hidden property of &quot;.. object.className)
+				end
+			end
+		end
+	end
+	if type(value) == &quot;function&quot; and object ~= nil then
+		return (function(...)
+			local args = {...}
+			table.remove(args, 1)
+			return argparse(value(object, unpack(args))) -- nobody will notice this little hack? good.
+		end)
+	elseif type(value) == &quot;function&quot; then
+		return (function(...)
+			return argparse(value(...))
+		end)
+	elseif type(value) == &quot;table&quot; then
+		for i, v in pairs(value) do
+			pcall(function()
+				if v ~= value then
+					rawset(value, i, parse(v))
+				end
+			end)
+		end
+	elseif type(value) == &quot;userdata&quot; then
+		local success = pcall(function()
+			local olol = value:IsA(&quot;Instance&quot;)
+		end)
+		if success then
+			return get(value)
+		end
+	end
+	return value
+end
+
+function get(object)
+	local t = {}
+	setmetatable(t, {__index = (function(_, index)
+		if index == &quot;__actualobject123&quot; then
+			return object
+		end
+		local val = object[index]
+		return parse(val, object, index)
+	end), __newindex = (function(_, index, val)
+		for i = 1, #inaccessible do
+			if inaccessible[i] == object then
+				for j = 1, #readonly.inaccessible do
+					if readonly.inaccessible[j] == index then
+						return error(&quot;No poking around in the Script Builder &gt;_&lt;&quot;)
+					end
+				end
+			end
+		end
+		for i = 1, #inaccessible do
+			if inaccessible[i] == object then
+				for j = 1, #unreadable.inaccessible do
+					if unreadable.inaccessible[j] == index then
+						return error(&quot;No poking around in the Script Builder &gt;_&lt;&quot;)
+					end
+				end
+			end
+		end
+		if readonly[object.className] ~= nil then
+			for i = 1, #readonly[object.className] do
+				if readonly[object.className][i] == index then
+					return error(index.. &quot; is a locked property of &quot;.. object.className)
+				end
+			end
+		end
+		if unreadable[object.className] ~= nil then
+			for i = 1, #unreadable[object.className] do
+				if unreadable[object.className][i] == index then
+					return error(index.. &quot; is a hidden property of &quot;.. object.className)
+				end
+			end
+		end
+		if type(val) == &quot;table&quot; then
+			local ao = val[&quot;__actualobject123&quot;]
+			if ao ~= nil then
+				object[index] = ao
+				return
+			end
+		end
+		object[index] = val
+	end), __metatable = getmetatable(object)[&quot;__metatable&quot;], __tostring = (function()
+		return object[&quot;Name&quot;]
+	end) })
+	return t
+end
+</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX6">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Globals</string>
+					<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+Globals = {
+	Remove = function(x)
+		x:Remove()
+	end,
+	remove = function(x)
+		x:Remove()
+	end,
+	Clone = function(x)
+		return x:Clone()
+	end,
+	clone = function(x)
+		return x:Clone()
+	end
+}
+
+for i, v in pairs(Globals) do
+	_G[i] = v
+end
+
+script:Remove()</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX7">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Calls</string>
+					<ProtectedString name="Source"></ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Script" referent="RBX8">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Debug</string>
+						<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+function Dedo(object)
+	if object.className == &quot;Hint&quot; or object.className == &quot;Message&quot; then
+		object:Remove()
+	else
+		local c = object:GetChildren()
+		for i = 1, #c do
+			Dedo(c[i])
+		end
+	end
+end
+
+
+Dedo(workspace)
+Dedo(script.Caller.Value)
+
+script:Remove()</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ObjectValue" referent="RBX9">
+						<Properties>
+							<string name="Name">Caller</string>
+							<Ref name="Value">null</Ref>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX10">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Reset</string>
+						<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+local c = script.Caller.Value
+
+local nc = Instance.new(&quot;Model&quot;)
+nc.Name = c.Name
+local h = Instance.new(&quot;Humanoid&quot;)
+h.Parent = nc
+
+c.Character = nc
+
+nc.Parent = workspace
+
+h.Health = 0
+
+script:Remove()</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ObjectValue" referent="RBX11">
+						<Properties>
+							<string name="Name">Caller</string>
+							<Ref name="Value">null</Ref>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX12">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Clean</string>
+						<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+function Dedo(object)
+	if game.Players:GetPlayerFromCharacter(object) == nil and object.className ~= &quot;Script&quot; then
+		object:Remove()
+	end
+end
+
+local x = workspace:GetChildren()
+for i = 1, #x do
+	Dedo(x[i])
+end
+
+DoCall(&quot;Base&quot;)
+
+script:Remove()</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ObjectValue" referent="RBX13">
+						<Properties>
+							<string name="Name">Caller</string>
+							<Ref name="Value">null</Ref>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX14">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">Base</string>
+						<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+local bases = workspace:GetChildren()
+for i = 1, #bases do
+	if bases[i].Name == &quot;Base&quot; then bases[i]:Remove() end
+end
+
+local b = Instance.new(&quot;Part&quot;)
+b.Name = &quot;Base&quot;
+b.BrickColor = BrickColor.new(28)
+b.Anchored = true
+b.Locked = true
+b.Size = Vector3.new(500, 1.2, 500)
+b.Parent = workspace
+b.CFrame = CFrame.new()
+
+script:Remove()</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ObjectValue" referent="RBX15">
+						<Properties>
+							<string name="Name">Caller</string>
+							<Ref name="Value">null</Ref>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Script" referent="RBX16">
+					<Properties>
+						<bool name="Disabled">true</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">BuildTools</string>
+						<ProtectedString name="Source">repeat wait() until Vector3.GSETUP
+Vector3.MSC = script
+setfenv(1, Vector3)
+local script = MSC
+
+local caller = script.Caller.Value
+local p = caller:findFirstChild(&quot;Backpack&quot;)
+if p == nil then
+	p = Instance.new(&quot;Backpack&quot;)
+	p.Parent = caller
+end
+
+for i = 1, 4 do
+	local h = Instance.new(&quot;HopperBin&quot;)
+	h.Name = &quot;BuildTool&quot;.. tostring(i)
+	h.BinType = i
+	h.Parent = p
+end
+
+script:Remove()</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ObjectValue" referent="RBX17">
+						<Properties>
+							<string name="Name">Caller</string>
+							<Ref name="Value">null</Ref>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="Script" referent="RBX18">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Global Environment Initialiser</string>
+					<ProtectedString name="Source">local g = Vector3
+local x = getmetatable(getfenv()).__index
+local ve = {}
+for i, v in pairs(g) do
+	ve[i] = v
+	g[i] = nil
+end
+
+for i, v in pairs(x) do
+	g[i] = v
+end
+
+g[&quot;Vector3&quot;] = ve
+
+g[&quot;_G&quot;] = g
+
+g[&quot;GSETUP&quot;] = true
+
+wait()
+
+script:Remove()</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX19">
+		<Properties>
+			<string name="Name">Run Service</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX20</External>
+	<External>RBX21</External>
+	<Item class="ContentProvider" referent="RBX22">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ContentFilter" referent="RBX23">
+		<Properties>
+			<string name="Name">ContentFilter</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="KeyframeSequenceProvider" referent="RBX24">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="GuiService" referent="RBX25">
+		<Properties>
+			<string name="Name">GuiService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX26">
+		<Properties>
+			<int name="MaxPlayers">12</int>
+			<string name="Name">Players</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX27">
+		<Properties>
+			<string name="Name">StarterPack</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX28">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX29">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<External>RBX30</External>
+		<External>RBX31</External>
+		<External>RBX32</External>
+		<External>RBX33</External>
+		<External>RBX34</External>
+		<External>RBX35</External>
+		<External>RBX36</External>
+		<External>RBX37</External>
+		<External>RBX38</External>
+		<External>RBX39</External>
+		<External>RBX40</External>
+		<External>RBX41</External>
+		<External>RBX42</External>
+		<External>RBX43</External>
+	</Item>
+	<Item class="PhysicsService" referent="RBX44">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX45">
+		<Properties>
+			<string name="Name">BadgeService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX46">
+		<Properties>
+			<string name="Name">Geometry</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="InsertService" referent="RBX47">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX48">
+		<Properties>
+			<int name="MaxItems">300</int>
+			<string name="Name">Debris</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Timer" referent="RBX49">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX50">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX51</External>
+	<Item class="Selection" referent="RBX52">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX53</External>
+	<Item class="Lighting" referent="RBX54">
+		<Properties>
+			<Color3 name="Ambient">4287730065</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4291085513</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX55">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>

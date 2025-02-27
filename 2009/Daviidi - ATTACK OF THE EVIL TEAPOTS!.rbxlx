@@ -1,0 +1,366 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>0</X>
+					<Y>142.108536</Y>
+					<Z>279.217072</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>0.89442724</R11>
+					<R12>0.44721362</R12>
+					<R20>0</R20>
+					<R21>-0.44721362</R21>
+					<R22>0.89442724</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>-5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source">local won = Instance.new(&quot;BoolValue&quot;)
+
+local win = Instance.new(&quot;Part&quot;)
+win.formFactor = &quot;Symmetric&quot;
+win.Size = Vector3.new(15, 2, 15)
+win.BrickColor = BrickColor.new(23)
+win.Transparency = 0.5
+win.Anchored = true
+win.Position = Vector3.new(12, 50, 12)
+win.Parent = workspace
+
+local s = Instance.new(&quot;SpawnLocation&quot;)
+s.formFactor = &quot;Symmetric&quot;
+s.BrickColor = BrickColor.new(24)
+s.Size = Vector3.new(5,20,5)
+s.Duration = 0
+s.Position = Vector3.new(6, 9.5, 6)
+s.Anchored = true
+s.Parent = workspace
+
+local mesh = script.Mesh
+
+local clevel = 1
+
+local winnername = &quot;&quot;
+
+function windaman(hit)
+	if hit.Parent then
+		if hit.Parent:findFirstChild(&quot;Humanoid&quot;) then
+			if hit.Parent.Humanoid.Health &gt; 0 then
+				winnername = hit.Parent.Name
+				won.Value = true
+				if hit.Parent:findFirstChild(&quot;Torso&quot;) then
+					hit.Parent.Torso.CFrame = win.CFrame + Vector3.new(math.random()-0.5, 1, math.random()-0.5) * 5
+				end
+			end
+		end
+	end
+end
+
+function killdaman(p)
+	p:BreakJoints()
+end
+
+function generategame(size)
+	local mparts = {}
+	won.Value = false
+	for x = 1, size+1 do
+		for z = 1, size+1 do
+			if x ~= 1 or z ~= 1 then
+				local p = Instance.new(&quot;Part&quot;)
+				p.BrickColor = BrickColor.new(1)
+				if x==size and z==size then
+					p.BrickColor = BrickColor.new(26)
+					Instance.new(&quot;TouchTransmitter&quot;).Parent = p
+					p.Touched:connect(windaman)
+				end
+				if math.abs(x-z) &gt; 8 then
+					p.BrickColor = BrickColor.new(21)
+					Instance.new(&quot;TouchTransmitter&quot;).Parent = p
+					p.Touched:connect(killdaman)
+				end
+				p.formFactor = &quot;Symmetric&quot;
+				p.Size = Vector3.new(5,5,5)
+				p.Position = Vector3.new(x*5+z, x+z, z*5+x)
+				if x &gt; size or z &gt; size then
+					p.Size = Vector3.new(5,25,5)
+					p.Position = Vector3.new(x*5+z, x+z+10, z*5+x)
+					p.Transparency = 1
+				end
+				p.Anchored = true
+				table.insert(mparts, p)
+				p.Parent = workspace
+			end
+		end
+	end
+	local timeleft = 150
+	while not won.Value do
+		timeleft = timeleft - wait(math.random() / (0.2+clevel/10))
+		if timeleft &lt; 0 and clevel &gt; 2 then
+			break
+		end
+		local b = Instance.new(&quot;Part&quot;)
+		Instance.new(&quot;TouchTransmitter&quot;).Parent = b
+		mesh:Clone().Parent = b
+		b.Mesh.VertexColor = Vector3.new(math.random(),math.random(),math.random())
+		b.Shape = &quot;Ball&quot;
+		b.TopSurface = &quot;Smooth&quot;
+		b.BottomSurface = &quot;Smooth&quot;
+		b.BrickColor = BrickColor.new(21)
+		b.RotVelocity = Vector3.new(math.random()-0.5,math.random()-0.5,math.random()-0.5) * 6
+		b.Size = Vector3.new(5,5,5)
+		b.Position = Vector3.new(size*5 + size - 8, size*2 + 20, size*5 + size - 8) + Vector3.new(-math.random(), 0, -math.random()) * 2
+		b.Touched:connect(killdaman)
+		b.Parent = workspace
+	end
+	
+	for i = 1, #mparts do
+		mparts[i]:Remove()
+	end
+	return won.Value
+end
+
+local h = Instance.new(&quot;Hint&quot;)
+h.Text = &quot;Level: 0&quot;
+h.Parent = workspace
+
+local i = 17
+
+while true do
+	h.Text = &quot;Level: &quot;.. i-16
+	clevel = i-16
+	local won = generategame(i)
+	local m = Instance.new(&quot;Message&quot;)
+	if won then
+		m.Text = winnername.. &quot; has won! Raising to level &quot;.. i-15
+	else
+		m.Text = &quot;Lowering level to level &quot;.. i-18
+		i = i - 3
+	end
+	m.Parent = workspace
+	wait(3.5)
+	m:Remove()
+	i = i + 1
+end
+</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX3">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><url>http://www.roblox.com/asset/?id=1045320</url></Content>
+					<token name="MeshType">5</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>7.5</X>
+						<Y>7.5</Y>
+						<Z>7.5</Z>
+					</Vector3>
+					<Content name="TextureId"><url>http://www.roblox.com/asset/?id=32758312</url></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX4">
+		<Properties>
+			<string name="Name">Run Service</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX5</External>
+	<External>RBX6</External>
+	<Item class="ContentProvider" referent="RBX7">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ContentFilter" referent="RBX8">
+		<Properties>
+			<string name="Name">ContentFilter</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="KeyframeSequenceProvider" referent="RBX9">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="GuiService" referent="RBX10">
+		<Properties>
+			<string name="Name">GuiService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX11">
+		<Properties>
+			<int name="MaxPlayers">12</int>
+			<string name="Name">Players</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX12">
+		<Properties>
+			<string name="Name">StarterPack</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX13">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX14">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<External>RBX15</External>
+		<External>RBX16</External>
+		<External>RBX17</External>
+		<External>RBX18</External>
+		<External>RBX19</External>
+		<External>RBX20</External>
+		<External>RBX21</External>
+		<External>RBX22</External>
+		<External>RBX23</External>
+		<External>RBX24</External>
+		<External>RBX25</External>
+		<External>RBX26</External>
+		<External>RBX27</External>
+		<External>RBX28</External>
+	</Item>
+	<Item class="PhysicsService" referent="RBX29">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX30">
+		<Properties>
+			<string name="Name">BadgeService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX31">
+		<Properties>
+			<string name="Name">Geometry</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX32</External>
+	<Item class="Debris" referent="RBX33">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Timer" referent="RBX34">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX35">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX36</External>
+	<Item class="Selection" referent="RBX37">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX38</External>
+	<Item class="Lighting" referent="RBX39">
+		<Properties>
+			<Color3 name="Ambient">4289506476</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4292861924</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX40">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX41</External>
+	<External>RBX42</External>
+</roblox>

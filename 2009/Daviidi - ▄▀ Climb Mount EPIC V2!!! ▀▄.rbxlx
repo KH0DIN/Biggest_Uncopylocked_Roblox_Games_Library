@@ -1,0 +1,592 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Script" referent="RBX2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">MountainMaker</string>
+				<ProtectedString name="Source">mod = Instance.new(&quot;Model&quot;)
+mod.Name = &quot;Mountain&quot;
+mod.Parent = workspace
+
+testing = false
+length = 50
+size = 10
+
+total = ((length+(length*(length/2))-5)/1.5)
+
+function makepart(pos)
+	local p = Instance.new(&quot;Part&quot;)
+	p.formFactor = &quot;Symmetric&quot;
+	p.Anchored = true
+	p.Name = &quot;MountainPart&quot;
+	p.Position = pos + Vector3.new(0,math.random(0,5),0)
+	p.Size = Vector3.new(size,p.Position.y*2,size)
+	p.Color = Color3.new(p.Position.y/total, p.Position.y/total, p.Position.y/total)
+	p.Parent = mod
+	return p
+end
+
+function build()
+	local y = 0
+	local typer = false
+	for x = 0, length do
+		if typer == false then typer = true else typer = false end
+		for z = 0, length do
+			if z/10 == math.floor(z/10) and testing == true then wait() end
+			if typer == false then
+				y = (z + (x*(z/2))/1.5)
+			else
+				y = (x + (z*(x/2))/1.5)
+			end
+			last = makepart(Vector3.new(x*size, y, z*size))
+		end
+	end
+end
+
+function updatepoints(points, maxh, time)
+	points.Value = math.floor(maxh.Value / (total / 25) + time.Value / 250)
+end
+
+
+game.Players.PlayerAdded:connect(function(pl)
+	local stat = Instance.new(&quot;Model&quot;)
+	stat.Name = &quot;leaderstats&quot;
+	local time = Instance.new(&quot;IntValue&quot;)
+	time.Name = &quot;Time&quot;
+	time.Parent = stat
+	local maxh = Instance.new(&quot;IntValue&quot;)
+	maxh.Name = &quot;Max&quot;
+	maxh.Parent = stat
+	local point = Instance.new(&quot;IntValue&quot;)
+	point.Name = &quot;Points&quot;
+	point.Parent = stat
+	stat.Parent = pl
+	maxh.Changed:connect(function()
+		updatepoints(point, maxh, time)
+	end)
+	while true do
+		wait(1)
+		time.Value = time.Value + 1
+		updatepoints(point, maxh, time)
+	end
+end)
+
+build()
+</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX3">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">HiScore</string>
+				<ProtectedString name="Source">h = Instance.new(&quot;Hint&quot;)
+h.Parent = workspace
+h.Text = &quot;No Hi-Score yet&quot;
+highest = 0
+
+function round(no)
+	local new = no - math.floor(no)
+	if new &gt;= 0.5 then return math.ceil(no) end
+	return math.floor(no)
+end
+
+while true do
+	wait()
+	local pls = game.Players:GetPlayers()
+	local pos = 0
+	for i = 1, #pls do
+		if pls[i].Character ~= nil then
+			if pls[i].Character:findFirstChild(&quot;Torso&quot;) ~= nil then
+				if pls[i].Character:findFirstChild(&quot;Humanoid&quot;) ~= nil then
+					if pls[i].Character.Humanoid.Health &gt; 0 then
+						pos = round(pls[i].Character.Torso.Position.y / 2.5)
+						if pos &gt; highest then
+							h.Text = &quot;The highest climb for this server was made by &quot;.. pls[i].Name.. &quot; at a height of &quot;.. pos.. &quot; Metres!&quot;
+							highest = pos
+						end
+						if pos &gt; pls[i].leaderstats.Max.Value then
+							pls[i].leaderstats.Max.Value = pos
+						end
+						if pls[i]:findFirstChild(&quot;Message&quot;) == nil then
+							Instance.new(&quot;Message&quot;).Parent = pls[i]
+						end
+						pls[i].Message.Text = &quot;Height: &quot;.. pos.. &quot;M, Max: &quot;.. pls[i].leaderstats.Max.Value.. &quot;M&quot;
+					end
+				end
+			end
+		end
+	end
+end
+</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="SpawnLocation" referent="RBX4">
+			<Properties>
+				<bool name="AllowTeamChangeOnTouch">false</bool>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">2</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">2</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>1.39999998</Y>
+					<Z>0</Z>
+					<R00>-1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>1</R11>
+					<R12>-0</R12>
+					<R20>-0</R20>
+					<R21>0</R21>
+					<R22>-1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<bool name="DraggingV1">false</bool>
+				<int name="Duration">10</int>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">1</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">2</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">2</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">SpawnLocation</string>
+				<bool name="Neutral">true</bool>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">2</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<int name="TeamColor">194</int>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>6</X>
+					<Y>1.20000005</Y>
+					<Z>6</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX5">
+			<Properties>
+				<bool name="Anchored">false</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">1003</int>
+				<CoordinateFrame name="CFrame">
+					<X>-4</X>
+					<Y>25</Y>
+					<Z>83.5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">0</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Part</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>50</X>
+					<Y>50</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Decal" referent="RBX6">
+				<Properties>
+					<token name="Face">2</token>
+					<string name="Name">Decal</string>
+					<float name="Shiny">20</float>
+					<float name="Specular">0</float>
+					<Content name="Texture"><url>http://www.roblox.com/asset/?id=11792870</url></Content>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX7">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<ProtectedString name="Source">script.Parent:Remove()</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-3.06657362</X>
+					<Y>25.4024162</Y>
+					<Z>119.954323</Z>
+					<R00>0.999814212</R00>
+					<R01>0.000133656024</R01>
+					<R02>0.0192771684</R02>
+					<R10>-0</R10>
+					<R11>0.999976039</R11>
+					<R12>-0.00693321694</R12>
+					<R20>-0.0192776341</R20>
+					<R21>0.00693192892</R21>
+					<R22>0.999790132</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>-3.45211673</X>
+					<Y>25.5410805</Y>
+					<Z>99.9585342</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">INS</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX8">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">HiJumper</string>
+				<ProtectedString name="Source">function newplayer(pl)
+	while pl:findFirstChild(&quot;leaderstats&quot;) == nil do pl.ChildAdded:wait() end
+	local points = pl.leaderstats.Points
+	local extra = 0
+	local flying = false
+	points.Changed:connect(function()
+		extra = points.Value / 30
+	end)
+	pl.Changed:connect(function(stat)
+		if stat == &quot;Character&quot; then
+			if pl.Character ~= nil then
+				local human = pl.Character:findFirstChild(&quot;Humanoid&quot;)
+				local torso = pl.Character:findFirstChild(&quot;Torso&quot;)
+				if torso ~= nil and human ~= nil then
+					--[[ human.Jumping:connect(function()
+						if flying == false then
+							flying = true
+							local force = Instance.new(&quot;BodyVelocity&quot;)
+							force.velocity = Vector3.new(0, 100, 0)
+							force.Parent = torso
+							wait(extra)
+							force:Remove()
+							flying = false
+						end
+					end) --]]
+					human.Changed:connect(function(st)
+						if st == &quot;Jump&quot; and human.Jump == true then
+							if flying == false then
+								flying = true
+								local force = Instance.new(&quot;BodyVelocity&quot;)
+								force.velocity = Vector3.new(0, 100, 0)
+								force.Parent = torso
+								wait(extra)
+								force:Remove()
+								flying = false
+							end
+						end
+					end)
+				end
+			end
+		end
+	end)
+end
+
+game.Players.PlayerAdded:connect(newplayer)</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source">game.Players.PlayerAdded:connect(function(p)
+	p.Chatted:connect(function(msg)
+		if string.find(string.lower(msg), &quot;who&quot;) == 1 then
+			local m = Instance.new(&quot;Message&quot;)
+			m.Text = &quot;Daviidi originally made this game!&quot;
+			m.Parent = workspace
+			wait(6)
+			m:Remove()
+		end
+	end)
+end)</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX10">
+		<Properties>
+			<string name="Name">Run Service</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX11</External>
+	<External>RBX12</External>
+	<Item class="ContentProvider" referent="RBX13">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ContentFilter" referent="RBX14">
+		<Properties>
+			<string name="Name">ContentFilter</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="KeyframeSequenceProvider" referent="RBX15">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="GuiService" referent="RBX16">
+		<Properties>
+			<string name="Name">GuiService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX17">
+		<Properties>
+			<int name="MaxPlayers">12</int>
+			<string name="Name">Players</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX18">
+		<Properties>
+			<string name="Name">StarterPack</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="HopperBin" referent="RBX19">
+			<Properties>
+				<bool name="Active">false</bool>
+				<token name="BinType">0</token>
+				<string name="Name">Reset</string>
+				<Content name="TextureId"><null></null></Content>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="Script" referent="RBX20">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<ProtectedString name="Source">pl = game.Players.LocalPlayer
+
+function select(m)
+	m.Button1Down:connect(function()
+		if pl ~= nil then pl.Character:BreakJoints() end
+	end)
+end
+
+script.Parent.Selected:connect(select)</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="StarterGui" referent="RBX21">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX22">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<External>RBX23</External>
+		<External>RBX24</External>
+		<External>RBX25</External>
+		<External>RBX26</External>
+		<External>RBX27</External>
+		<External>RBX28</External>
+		<External>RBX29</External>
+		<External>RBX30</External>
+		<External>RBX31</External>
+		<External>RBX32</External>
+		<External>RBX33</External>
+		<External>RBX34</External>
+		<External>RBX35</External>
+		<External>RBX36</External>
+	</Item>
+	<Item class="PhysicsService" referent="RBX37">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX38">
+		<Properties>
+			<string name="Name">BadgeService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX39">
+		<Properties>
+			<string name="Name">Geometry</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX40</External>
+	<Item class="Debris" referent="RBX41">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Timer" referent="RBX42">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX43">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX44</External>
+	<Item class="Selection" referent="RBX45">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX46</External>
+	<Item class="Lighting" referent="RBX47">
+		<Properties>
+			<Color3 name="Ambient">4291677645</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4294967295</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX48</External>
+	<Item class="ChangeHistoryService" referent="RBX49">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>
