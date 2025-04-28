@@ -1,0 +1,2 @@
+Devforum post: https://devforum.roblox.com/t/miners-haven-open-sourced-everything-you-need-to-make-your-own-factory-game/350767
+Github repo: https://github.com/berezaa/minershaven
