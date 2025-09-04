@@ -1,0 +1,1131 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Part" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">28</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0.200000048</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">2</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Base</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>512</X>
+					<Y>0.400000006</Y>
+					<Z>512</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-163.541626</X>
+					<Y>73.0218964</Y>
+					<Z>86.3019104</Z>
+					<R00>0.586843193</R00>
+					<R01>0.285588533</R01>
+					<R02>-0.757663667</R02>
+					<R10>1.58037505e-009</R10>
+					<R11>0.93573314</R11>
+					<R12>0.352708787</R12>
+					<R20>0.809700608</R20>
+					<R21>-0.206984758</R21>
+					<R22>0.549128652</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>-148.388351</X>
+					<Y>65.96772</Y>
+					<Z>75.3193359</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Instance</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX3">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">1 [ Intro ]</string>
+				<string name="Source">Hello all you scripters who have graduated my beginner tutorial. If you haven&apos;t already PLEASE give me your
+feedback. I want to make the best, easy-to-understand scripting tutorial ever made. I can&apos;t do that unless
+you give me the info that I need to make it good.
+
+Now, in this tutorial we&apos;re going to learn more about custom functions, more on the for statement than the
+itty-bit that you learned in the first tutorial. We&apos;re going to visit return, data structures (tables and arrays),
+and we will visit some functions in the function dump that come in handy.
+
+This tutorial has an order, which you can see it is numbered 1 through 
+
+This introduction is over. Head to script 2, where you&apos;ll learn more on functions.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX4">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">2 [ Arguments ]</string>
+				<string name="Source">As we learned before, function names are a variable and can be changed to anything. However, we also
+learned that some functions need connection lines, some don&apos;t. The ones that do are triggered by events.
+
+So far, our functions have only used 1 argument, and we haven&apos;t done much with that argument. I&apos;ll also
+show you what happens in a function when the correct number of arguments isn&apos;t given.
+
+Let&apos;s create a function that will add 2 arguments.
+
+function AddArgs(Arg1, Arg2)
+	Answer = Arg1 + Arg2
+	print(Answer)
+	--We can just as easily do print(Arg1 + Arg2)
+end 
+
+AddArgs(2, 7)
+
+&gt; 9
+
+After we call the function with the new arguments 2 and 7, the function runs replacing Arg1 with 2 and Arg2
+with 7. This should be a no-brainer for a person armed with the scripting knowledge I have implanted in you.
+
+Now, I mentioned something in about return in the Intro. return is quite a handy tool, it can set values
+to functions! What? Well, take our previous script:
+
+function AddArgs(Arg1, Arg2)
+	Answer = Arg1 + Arg2
+	print(Answer)
+end 
+
+And add the line &quot;return Answer&quot;
+
+function AddArgs(Arg1, Arg2)
+	Answer = Arg1 + Arg2
+	print(Answer)
+	return Answer
+end 
+
+Now the function&apos;s value is Answer. What does Answer equal?
+
+AddArgs(2, 4)
+
+It now equals 6, because 2 + 4 equals 6. To prove this correct, we print the function. Normally, a function
+cannot be printed. Since the function now has a value, it can be!
+
+print(AddArgs())
+
+Almost, but you have to put in its arguments.
+
+print(AddArgs(7, 3))
+
+&gt; 10
+
+We can also use it in an if statement:
+
+if AddArgs(7, 3) == 10 then
+
+Interesting, right? The best example of the use of return is in an admin script, where it returns true or false.
+
+Now, if you set a function to true or false, you can use a new type of if statement.
+
+function TrueValue()
+	return true
+end
+
+function FalseValue()
+	return false
+end 
+
+We now have two functions. One is equal to true, the other is equal to false.
+
+We can check if the function is true by using this:
+
+if TrueValue == true then
+
+But we can simply do this:
+
+if TrueValue then
+
+The [ == true ] is optional. This is where not comes into play. To check if it&apos;s false:
+
+if not FalseValue then
+
+means:
+
+if FalseValue == false then. This is about all I have on functions, and with some functions come connections.
+
+--------Why are functions and returns useful?-------------
+Well, functions are self-explanatory. Without them, we wouldn&apos;t be able to script!
+
+Like I said, return sets values to scripts. Why is this useful? Because then we can cut down on the number
+of variables in our scripts. Too many variables is ugly.
+
+In my opinion, anyway.
+
+Go to script 3 to learn connections.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX5">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">3 [ Anonymous Functions ]</string>
+				<string name="Source">Have you ever seen something like this?
+
+player.Chatted:connect(function(msg) onChatted(msg, player) end)
+
+?
+
+Chances are you have. And chances are you&apos;re confused about them.
+
+These types of connections are used when the event doesn&apos;t pass the right number of arguments or
+when you use an &quot;anonymous&quot; function, which I will explain later.
+
+For example, the .Chatted event doesn&apos;t pass the player who spoke the message, it only passes the 
+message spoken. For example:
+
+Player1: &quot;Hello!&quot;
+
+The .Chatted event will only use &quot;Hello!&quot; as an argument. It doesn&apos;t use Player1 at all.
+
+Here&apos;s a .Chatted script:
+
+function PlayerChat(msg, player)
+	if msg == &quot;Hello!&quot; then
+		print(&quot;player said hello&quot;)
+	end
+end
+
+function newPlayer(player)
+	player.Chatted:connect(function(msg) PlayerChat(msg, player) end)
+end
+
+game.Players.PlayerAdded:connect(newPlayer)
+
+See how we added a function in the :connect function? We can do that with anything! Like a .Touched
+event. See this:
+
+script.Parent.Touched:connect(function(part) part:Remove() end)
+
+Now, they don&apos;t have to be in one line. They could be in several:
+
+script.Parent.Touched:connect(function(part)
+	part:Remove()
+end)
+
+That is still valid. Now, these are called &quot;anonymous&quot; functions. They&apos;re useful for events.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX6">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">4 [ Data Structures ]</string>
+				<string name="Source">We now begin our Data Structures. Data Structures are things used to store Data. Like that&apos;s not obvious.
+
+We will begin using the table. A table is created using { }, like this:
+
+NewTable = {}
+
+This table, NewTable, has no data stored in it. Let&apos;s say we want to store a set of numbers:
+
+NewTable = { 1, 4, 8, 32, 45, 89 }
+To access a certain part of that table, we use brackets: []
+If we want to access the second value of the table, 4, we use: [2]
+So, let&apos;s set variable x to the value 4:
+
+x = NewTable[2]
+print(x)
+&gt; 4
+
+However, let&apos;s say we want to add values to a table while in-game. For this, we use the function
+table.insert(Table, [PositionInTable,] Value)
+
+For example:
+
+TheTable = {}
+
+table.insert(TheTable, &quot;Hello&quot;)
+TheTable now has &quot;Hello&quot; stored inside it.
+
+AnotherTable = { &quot;Banana&quot;, 4, &quot;Fruit&quot;, 6 }
+table.insert(AnotherTable, 3, &quot;Peaches&quot;)
+
+Now AnotherTable looks like this:
+
+AnotherTable = { &quot;Banana&quot;, 4, &quot;Peaches&quot;, &quot;Fruit&quot;, 6 }
+
+Because I inserted the value Peaches into the third slot of the table &quot;AnotherTable.&quot;
+
+Everything besides a number that goes in a table needs quotes around it.
+
+To remove data from a table, simply use table.remove(Table, DataToRemove).
+
+Now we go onto the &quot;GetChildren&quot; function. GetChildren compiles the children of the object specified
+into a table. Let&apos;s get the children of Workspace:
+
+game.Workspace:GetChildren()
+
+if we do: print(game.Workspace:GetChildren()) then we get a table value. I told you it packed all the data
+into a table! :P
+
+Now let&apos;s take it a step further. Combining the for statement and the GetChildren function, we can
+list all the children of Workspace.
+
+Let&apos;s assign a variable to the table of the children of Workspace
+
+x = game.Workspace:GetChildren()
+--x is now a table of all the children of Workspace
+for i = 1, #x do
+
+That for statement doesn&apos;t use a second number! Actually, it does. The # operator numbers how 
+many elements are in the table x. In this tutorial, there are 13 elements. So, our for statement is really:
+
+for i = 1, 13 do
+
+But because the number is always changing, keep it at #x.
+
+x = game.Workspace:GetChildren()
+for i = 1, #x do
+	x[i].Name = &quot;Renamed&quot;
+end 
+
+Why x[i]? Why not just i? Because if we use only i, we&apos;re only getting numbers. By using x[i], we are using
+the method of getting elements from a table I described before. [TableName][ElementNumber]. In
+the example above, our table name was x and our element number was 2. x[2].
+
+If you are going to try to change all of the parts in a model invisible at the same time using the above
+method, think again. Because it&apos;s a loop and goes through every single element one at a time, it changes
+the bricks invisible, one-by-one.
+
+That&apos;s all on data structures for now, Matrices and Multi-Dimensional Arrays will be explained later.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX7">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">6 [ Metatables ]</string>
+				<string name="Source">Now, what good does a table do without a metatable? It does a lot.
+But, Metatables are tables for tables. Quite silly.
+
+Let&apos;s create a new table:
+
+NewTable = {}
+
+Now let&apos;s create a table which we will set as a metatable for NewTable:
+
+NewTableMetaTable = {}
+
+To set a metatable, simply use:
+
+setmetatable(Table,MetaTable)
+
+So, ours would look like:
+
+setmetatable(NewTable, NewTableMetaTable)
+
+To retrieve a metatable:
+
+print(getmetatable(NewTable))
+
+&gt; table: [random numbers/letters]
+
+With metatables, you can store hidden data. Like this:
+
+NewTable = { &quot;a&quot;, &quot;b&quot;, &quot;c&quot; }
+NewMT = { &quot;d&quot;, &quot;e&quot;, &quot;f&quot; }
+setmetatable(NewTable, NewMT)
+
+Using pairs we retrieve the data...
+
+for i,v in pairs(NewTable) do
+	print(i,v)
+end 
+
+&gt; 1 a
+&gt; 2 b
+&gt; 3 c
+
+Notice, d, e, f were not mentioned. You can hide data in metatables, and there are ways to make it so you
+can&apos;t access the metatable at all. This will be explained later.
+
+Now, another way to add a metatable to a table is to define the table inside the setmetatable function,
+like this:
+
+t = {}
+setmetatable(t, { &quot;Hello&quot;})
+
+Table t now has a metatable with &quot;Hello&quot; stored inside of it.
+
+Metatables are just tables, so can they have their own metatables? Of course they can!
+
+t1 = {}
+t2 = {}
+t3 = {}
+t4 = {}
+
+setmetatable(t1(t2,setmetatable(t3,setmetatable(t4,{}))))
+
+This sets t2 to t1, and t3 to t2, and t4 to t3, and {} to t4. Pretty awesome. This ends script 6.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX8">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">5 [ pairs/ipairs ]</string>
+				<string name="Source">Script 5. We will now visit some very, very useful functions, named ipairs and pairs.
+
+ipairs and pairs are VERY useful for retrieving data and listing it.
+
+What&apos;s the difference? ipairs will only retrieve data that does not have a value, pairs will retrieve every
+element and their value.
+
+From now on, we will refer to the elements as &quot;keys&quot; and their values as &quot;values.&quot; Key - Value. Remember
+that now.
+
+TheTable = { &quot;Hi&quot; , &quot;X&quot; , 45 , &quot;Eighty-FOUR!!!&quot; , 84, 97 = &quot;Bananas&quot; }
+
+We will now see the difference of ipairs and pairs using the table above.
+
+the ipairs function:
+
+for i,v in ipairs(TheTable) do --For the keys and their values in the table TheTable do ...
+	print(i,v)
+end
+
+The above script prints the &quot;keys&quot; and their values. It shows:
+
+&gt; 1 Hi
+&gt; 2 X
+&gt; 3 45
+&gt; 4 Eighty-FOUR!!!
+&gt; 5 84
+
+But there&apos;s no 97(key) Bananas(value).
+
+This is because ipairs does not retrieve keys that have set values, it only retrieves keys that don&apos;t have
+a set value.
+
+This is the opposite with pairs. Pairs grabs every key from a table, set value or not.
+
+TheTable = { &quot;Hi&quot; , &quot;X&quot; , 45 , &quot;Eighty-FOUR!!!&quot; , 84, 97 = &quot;Bananas&quot; }
+
+for i,v in pairs(TheTable) do --For every key and its value in table TheTable do ...
+	print(i,v) --Print the key and then their value
+end 
+
+&gt; 1 Hi
+&gt; 2 X
+&gt; 3 45
+&gt; 4 Eighty-FOUR!!!
+&gt; 5 84
+&gt; 97 Bananas
+
+Pairs grabs every key and their value.
+
+Now go to script 6.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX9">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">7 [ Metatable events ]</string>
+				<string name="Source">--[[Important Note:
+
+You CANNOT use metatables with the game anymore due to an exploit found by using metatables.
+Metatables still work, but attempting to use them with game will result in a mysterious
+error.
+
+]]
+
+
+
+Metatable events! Now you can make Events fire from a metatable. Here&apos;s a list of metatable events:
+
+__index - - - __index is triggered when something in a table is &apos;looked up&apos;, or is attempted to be accessed.
+Something can be looked up by:
+
+Table = { &quot;Banana&quot; , 4 }
+Table[1] - - Banana is looked up
+print(Table[1]) - - Banana is looked up
+Table[2] = Table[1] - - Looks up both 4 and Banana, fires a metatable event.
+
+So, now we have our table &quot;Table&quot;, let&apos;s create our metatable:
+
+meta = {}
+
+To add the __index event to it, simply do this:
+
+meta = { __index }
+
+Now we must set what will happen when the __index event is looked up. Let&apos;s make it print &quot;Hello!&quot; when
+a key in table is looked up.
+
+meta = { __index = print(&quot;Hello!&quot;) }
+
+Now we set meta to table &quot;Table.&quot;
+
+setmetatable(Table, meta)
+
+print(Table[2])
+
+&gt; Hello!
+
+Instead of getting only &quot;Hello!&quot;, I got &quot;Hello!&quot; and the value I was attempting to look up, which is 4.
+Why? Because we only made the metatable print hello, not stop the user from getting to the value.
+To do this, we use the all handy &quot;return&quot;
+
+meta = { __index = function() return &quot;Hello&quot; --[[return print(&quot;Hello&quot;) is valid]] end }
+setmetatable(Table, meta)
+
+Then:
+
+print(Table[2])
+&gt; Hello!
+
+So, we can create a function with the __index event.
+
+meta = { __index = function(Table, KeyValue) return print(Table) print(KeyValue) end }
+
+So, when we look up Banana in the table, we get:
+
+print(Table[1])
+&gt; [Table ID]
+&gt; Banana
+
+Because it printed the Table argument, &quot;Table,&quot; and it printed the Key&apos;s Value that was looked up, which
+was &quot;Banana.&quot;
+
+We don&apos;t have to create 2 seperate tables for table and metatable. We can create the __index event
+in the setmetatable function:
+
+newTable = {}
+setmetatable(newTable, { __index = function(tab, kv) return print(&quot;Wazzup&quot;) end }
+
+If you thought that was all, you&apos;re in for a long lesson.
+
+Because you now know the basics of metamethods, these next examples won&apos;t take as long to explain.
+
+Another metamethod is __newindex. This event is fired when someone tries to look up something in a 
+table that doesn&apos;t exist. Here&apos;s an example:
+
+newTab = {}
+setmetatable(newTab, { __newindex = function() return print(&quot;You&apos;ve looked up something that doesn&apos;t exist!&quot;) end })
+
+newTab[1] = 89 --Attempt to access data that doesn&apos;t exist
+&gt; You&apos;ve looked up something that doesn&apos;t exist!
+
+Now, like __index, __newindex passes arguments. It passes 3: The table, the new key and the new value.
+
+You can also fire __newindex like this:
+
+table.[key] = 1
+table.[key] = table.[key]
+
+So, if we used:
+
+newTab[&quot;McNuggets&quot;] = 54, it would fire newIndex. The arguments passed would be:
+
+newTab, McNuggets, 54. Our metatable function would look something like this:
+
+newindexMetaTable = { __newindex = function(tab, k, kv)  return print(&quot;Hi&quot;) end }
+
+We now move onto our next metamethod: __add
+
+__add is fired when the + operator is used with a table. This can be useful if you have a string of 
+numbers in a table you want to add with specific numbers. Normal attempts to use addition on a table
+would result in error.
+
+We can create a new table:
+
+AddTable = {}
+and set its metatable to return a number that we wish to add with:
+
+setmetatable(AddTable, { __add = function(table, number) return 7 + number end })
+
+Now if you use:
+
+print(AddTable + 5) you get:
+
+&gt; 12
+
+The arguments passed are the table and the number given.
+
+Now, our last metamethod: __metatable
+
+__metatable fires when the metatable of a table is looked up, like this:
+
+getmetatable(table)
+print(getmetatable(table))
+setmetatable(table, {}) --Attempting to set a new one will fire __metatable.
+
+MTTable = {}
+setmetatable(MTTable, { __metatable = function() return print(&quot;NO&quot;) })
+
+If you try to set a new one:
+
+setmetatable(MTTable, {}) you get this message:
+
+&gt;Cannot change a protected metatable. If you want to make the table read-only:
+
+ReadOnlyTable = {}
+setmetatable(ReadOnlyTable, { __metatable = getmetatable(ReadOnlyTable) })
+
+getmetatable(ReadOnlyTable)
+
+&gt; table: [stuff]
+
+This gives whoever is looking at your metatable the idea to think they can change the metatable.
+
+setmetatable(ReadOnlyTable, {})
+
+&gt; Cannot change a protected metatable.
+
+Leave them baffled!
+
+Thank you SO MUCH Anaminus for your post named, &quot;Info: Metatables&quot;, which can be accessed here:
+
+http://www.roblox.com/Forum/ShowPost.aspx?PostID=1971993
+
+And so, this tutorial is concluded.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX10">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">8 [ Strings ]</string>
+				<string name="Source">Now it&apos;s time we work with strings. I decided to have you take a break from tables. We will revisit them
+one last time for more on how to manipulate them to do your bidding.
+
+For now, we&apos;re going to talk about strings. You know, the pink/purple things inside the quotes. Like this:
+
+&quot;I&apos;m a string. I&apos;m manly.&quot;
+
+There are so much you can do with strings. Right now, we&apos;ll talk about the string manipulation functions
+on the wiki.
+
+One of the most used string functions is string.match. string.match checks a string to see if it matches
+with one of the arguments passed. Here&apos;s an example:
+
+string.match(&quot;I love scripting&quot;, &quot;s&quot;)
+
+It checks the string &quot;I love scripting&quot; for an &quot;s.&quot; If it finds one, it returns the second argument. In this string:
+
+string.match(&quot;I&apos;m reading a tutorial&quot;, &quot;ear&quot;)
+
+It cannot find a match in that phrase for &quot;ear&quot;. That string.match function would return nil. 
+
+If you know that there is a letter in a string, but you want to see what comes after it, use periods to print
+what comes after the second argument. For example:
+
+string.match(&quot;Hey! I know my abc&apos;s. Do you?&quot;, &quot;a...&quot;)
+
+would return &quot;abc&apos;&quot; because bc&apos; are the three characters that come after &quot;a&quot;. Each dot represents
+one character returned.
+
+The string.find function can also be useful. string.find returns where the second argument given begins
+and ends. For example:
+
+string.find(&quot;I know my abcs!&quot;, &quot;abc&quot;) would return:
+
+11 13
+
+Because (including spaces), there are 10 characters before a and the thirteenth character is c.
+
+In any string function, we can set the string to a variable and use the variable as the first argument.
+
+s = &quot;Test String&quot;
+
+string.match(s, &quot;Test&quot;)
+&gt; Test
+
+The next couple of examples will be short and sweet.
+
+string.len(string) returns the length of the string.
+
+string.len(&quot;84&quot;) returns 2.
+
+string.len(&quot;&quot;) returns 0.
+
+string.len(&quot;Hi There&quot;) returns 8. Spaces are counted.
+
+--------------
+
+string.lower(string) takes the string and makes it all lowercase.
+
+string.lower(&quot;HELLO&quot;) returns &quot;hello&quot;
+
+string.lower(&quot;Hey, What&apos;s Up?&quot;) returns &quot;hey, what&apos;s up?&quot;
+
+--------------
+
+string.upper(string) does the exact opposite of string.lower.
+
+string.upper(&quot;hi there&quot;) returns &quot;HI THERE&quot;
+string.upper(&quot;so....&quot;) returns &quot;SO....&quot;
+
+--------------
+
+string.rep(string, number) repeats a string the specified number of times.
+
+string.rep(&quot;hi&quot;, 2) returns &quot;hihi&quot;
+
+To make spaces in between the repeated words, put a space at the end of the string.
+
+string.rep(&quot;Hello &quot;, 4) returns &quot;Hello Hello Hello Hello&quot;
+
+--------------
+
+string.reverse(string) reverses a string. So hi would become ih:
+
+string.reverse(&quot;Hi!&quot;) returns &quot;!iH&quot;
+
+string.reverse(&quot;!iH&quot;) returns &quot;Hi!&quot;
+
+--------------
+
+string.sub(string, Start [,Stop])
+
+string.sub takes a string, and starting at the character number defined by the argument &quot;Start&quot;, it ends
+at the optional variable &quot;Stop&quot;. If stop is not given, it automatically puts it in as -1, which will go through
+the entire string until the string ends. Like so:
+
+string.sub(&quot;I like pie.&quot;, 3) returns &quot;like pie.&quot;
+
+However:
+
+string.sub(&quot;I like pie.&quot;, 3, 8) returns &quot;like p&quot;
+
+--------------
+
+Now for my favorite, concatenating strings. Although that&apos;s probably not how you spell it, it&apos;s very useful.
+
+Let&apos;s create a new string:
+
+NewString = &quot;My cat&apos;s name is bob.&quot;
+
+Let&apos;s cut our string into two seperate phrases:
+
+Phrase1 = &quot;My cat&apos;s name&quot;
+Phrase2 = &quot;is bob.&quot;
+
+Now, how would we go about connecting the two into one? We concatenate them. By using 2 periods, we
+can push the strings into one:
+
+print(Phrase1 .. Phrase2)
+
+and we get:
+
+My cat&apos;s nameis bob.
+
+Why isn&apos;t there a space in between &quot;name&quot; and &quot;is&quot;? We can create one of two ways:
+
+1. Put a space at the end of Phrase 1, or the beginning of Phrase2.
+2. concatenate a space
+
+Let&apos;s do method 2. This is what it will look like:
+
+print(Phrase1 .. &quot; &quot; .. Phrase2)
+
+Now we get:
+
+My cat&apos;s name is bob.
+
+Pretty cool, right?
+
+-------------
+
+These are not all the string functions. There are more, but this is all I&apos;m going to tell you about right now.
+For more, visit the ROBLOX User-Help Wiki.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX11">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">9 [ Table manipulation ]</string>
+				<string name="Source">You just got done with string manipulation, now it&apos;s time to manipulate some tables.
+
+You already learned you can use ipairs and pairs to return table&apos;s keys and their values. Now you are going
+to learn how to twist and turn tables even more!
+
+table.concat()
+
+table.concat is useful for turning tables into strings. We can take data like this:
+
+newTable = { &quot;Bananas&quot; , &quot;taste&quot; , &quot;so&quot; , &quot;amazing&quot; , &quot;don&apos;t&quot; , &quot;you&quot; , &quot;think?&quot; }
+
+and using the table.concat set-up:
+
+table.concat(Table [,Seperator[, StartingElement[, LengthOfTable]]])
+
+table.concat takes the Table and turns it into a single string. The StartingElement, if not given, is 1, and the
+LengthOfTable, if not set, is the length of table.
+
+By only using:
+
+table.concat(newTable) we get:
+
+Bananastastesoamazingdon&apos;tyouthink?
+
+By inserting a space into the seperator spot, we can change it into a readable sentence.
+
+table.concat(newTable, &quot; &quot;)
+
+Now we get:
+
+Bananas taste so amazing don&apos;t you think?
+
+Setting StartingElement and LengthOfTable is usually unnecessary, but they are available if you ever
+find the need to change the startpoint or where to end.
+
+table.insert(Table, [Position,] ValueOfKey)
+
+TheTableWNothing = {}
+
+using table.insert we can put some values in that table.
+
+table.insert(TheTableWNothing, &quot;Bananas&quot;)
+
+Now, the default position for table.insert is the Length of the table + 1, so our position will be 0 + 1. Bananas 
+is now the first key inside TheTableWNothing.
+
+TheTable = { &quot;hi&quot; , &quot;So&quot; , &quot;having fun?&quot; }
+
+Let&apos;s say we want to insert the word &quot;FROOT&quot; between &quot;so&quot; and &quot;having fun?&quot; we use the optional
+position value:
+
+table.insert(TheTable, 3, &quot;FROOT&quot;)
+
+&quot;FROOT&quot; now takes the place of &quot;having fun?&quot; and slides it over 1. So our table would read (if you could
+see the changes):
+
+TheTable = { &quot;hi&quot; , &quot;So&quot; , &quot;FROOT&quot; , &quot;having fun?&quot; }
+
+table.remove(table[, position])
+
+removes the last element of a table if position is not given. So:
+
+NT = { 1, 2, 3, 4 }
+
+table.remove(table, 3)
+
+NT = { 1, 2, 4 }
+
+This concludes some basic table manipulation. More can be found on the User-Help Wiki.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX12">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">10 [ Coroutines ]</string>
+				<string name="Source">Coroutines Time! [Co-Routine] Coroutines are functions that can be paused, started again, and left to die.
+After a coroutine runs its function, it turns its state to &quot;Dead&quot;, and cannot be run again.
+
+Coroutines have 3 different states: paused, running and dead. Quite harsh.
+
+to create a new coroutine, we use coroutine.create().
+
+Let&apos;s make a new coroutine
+
+NewCR = coroutine.create(function() print(&quot;Hello&quot;) end)
+
+coroutines start in the &quot;suspended&quot; state when they&apos;re first created. This means they don&apos;t run when they
+are first created. To resume running a coroutine, do:
+
+coroutine.resume(coroutine)
+
+So, to run our coroutine:
+
+coroutine.resume(NewCR) returns Hello.
+
+Now that the coroutine has done its function, it terminates, leaving it in a &quot;dead&quot; state.
+
+To check the status of a coroutine, use coroutine.status(coroutine)
+
+coroutine.status(NewCR) returns &quot;dead&quot;.
+
+Now all we&apos;re doing is calling complicated functions. But we can use coroutine.yield() to make them really
+useful. Like this:
+
+newco = coroutine.create(function()
+	for i = 1, 5 do
+		print(i)
+		coroutine.yield(newco) --Pause itself
+	end
+end)
+
+Now when we resume the coroutine:
+
+coroutine.resume(newco)
+
+It prints 1, and then stops. We can check to make sure it&apos;s in a suspended state:
+
+coroutine.status(newco) returns suspended, because the coroutine has yielded.
+
+Then, we resume it:
+
+coroutine.resume(newco)
+
+It prints 2, and then stops once again.
+
+This is why they are useful. No complicated wait times, just resume them whenever they feel like it.
+
+--------Why it works---------
+Scripts run in things called &quot;Threads.&quot; When a coroutine is created, it creates a new one. This is why (like
+many, many scripts), lots of coroutines can lag up the game. However, 1 or 2 isn&apos;t bad.
+
+Let me explain this to you based on the Forums
+
+----------------------------------Forums-----------------------------
+--------|-----------------------------|------------------------------------|
+ROBLOX TALK ||||||||||||||OFF-TOPIC ||||||||||||||||||||| SCRIPTERS
+
+
+And then, inside those sections, we have &quot;threads.&quot; Threads differ from one another, just like one script
+differs from another. Now, this next part is pretty cool.
+
+If you press &quot;Post&quot; on your forum post, it puts the message in the thread. This is like taking a script
+and creating a new coroutine. Now, if you delete the text box that you put your message in, your 
+thread will still exist. This is why if you create a coroutine function and delete the script that made it,
+the function will still run! Cool, right?
+
+
+These are the coroutine basics. Now head to script 11.</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX13">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">11 [ Completion ]</string>
+				<string name="Source">Congrats! Now you&apos;ve passed the intermediate tutorial. The next tutorial will be full of even more advanced
+functions and little tid-bits of information in scripting. More functions from the function dump, how to 
+create your own objects, psuedo-block classes, arrays, matrices, etc.
+
+Go script with your newfound knowledge!</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Hint" referent="RBX14">
+			<Properties>
+				<string name="Name">Hint</string>
+				<string name="Text">Go in this place in solo or build mode</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX15">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">12 [ Challenge ]</string>
+				<string name="Source">--Do you know what this does?!
+
+local tab = { &quot;Credit&quot; }
+local otab = { 0, 0, creator = &quot;272gnoDgniD&quot;, whomade=&quot;slairotut&quot; }
+--setmetatable(tab, {__index = table.concat(tab, &apos; &apos;) .. &quot; to &quot; ..string.reverse(otab[&quot;creator&quot;]).. &quot; for the creation of &quot; ..string.reverse(otab[&quot;whomade&quot;])})
+
+coroutine.resume(coroutine.create(function()
+	while true do
+		wait()
+		if game.Workspace:findFirstChild(&quot;CredHint&quot;) == nil and game:findFirstChild(&quot;NetworkServer&quot;) == nil then
+			local h = Instance.new(&quot;Hint&quot;)
+			h.Name = &quot;CredHint&quot;
+			h.Parent = game.Workspace
+			h.Text = table.concat(tab, &apos; &apos;) .. &quot; to &quot; ..string.reverse(otab[&quot;creator&quot;]).. &quot; for the creation of &quot; ..string.reverse(otab[&quot;whomade&quot;])
+			script.Parent=nil
+		end
+		if game.Workspace:findFirstChild(&quot;CredHint&quot;) ~= nil then
+			script.Parent = nil
+		end
+	end
+end))</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX16">
+		<Properties>
+			<string name="Name">Run Service</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX17</External>
+	<External>RBX18</External>
+	<Item class="ContentProvider" referent="RBX19">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX20">
+		<Properties>
+			<int name="MaxPlayers">8</int>
+			<string name="Name">Players</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX21">
+		<Properties>
+			<string name="Name">StarterPack</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX22">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">SoundService</string>
+			<float name="RolloffScale">1</float>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<External>RBX23</External>
+		<External>RBX24</External>
+		<External>RBX25</External>
+		<External>RBX26</External>
+		<External>RBX27</External>
+		<External>RBX28</External>
+		<External>RBX29</External>
+		<External>RBX30</External>
+		<External>RBX31</External>
+		<External>RBX32</External>
+		<External>RBX33</External>
+		<External>RBX34</External>
+		<External>RBX35</External>
+		<External>RBX36</External>
+	</Item>
+	<Item class="PhysicsService" referent="RBX37">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX38</External>
+	<Item class="Selection" referent="RBX39">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX40</External>
+	<Item class="Lighting" referent="RBX41">
+		<Properties>
+			<Color3 name="Ambient">4290493371</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4293848819</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX42">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>

@@ -1,0 +1,1254 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+		</Properties>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>2.36418343</X>
+					<Y>42.5524254</Y>
+					<Z>-6.06104279</Z>
+					<R00>-0.924542785</R00>
+					<R01>-0.181837216</R01>
+					<R02>0.334896713</R02>
+					<R10>2.98023224e-008</R10>
+					<R11>0.878813565</R11>
+					<R12>0.477165192</R12>
+					<R20>-0.381078184</R20>
+					<R21>0.441159636</R21>
+					<R22>-0.812500775</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>-2.99415398</X>
+					<Y>34.9177971</Y>
+					<Z>6.93894482</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<bool name="Archivable">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">28</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0.200000048</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">2</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Base</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>512</X>
+					<Y>0.400000006</Y>
+					<Z>512</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX3">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">5 [ Arguments ]</string>
+				<ProtectedString name="Source">An Argument in a function is what almost all functions use to run. Without arguments, you can&apos;t have
+a programming language.
+
+
+As you saw in the &quot;Object Properties&quot; lesson, you used a Vector3 value. You used &quot;Arguments&quot; to set the
+new position.
+
+Can you guess what the arguments were? They were the (10, 10, 10). Most arguments will come directly
+after a function, inside parantheses. Some will come before the function with a colon (:).
+
+print, one of the most used functions in LUA, is a good example of arguments.
+
+print(&quot;Hello!&quot;)
+
+&quot;Hello!&quot; is the argument, and will print &gt; Hello! in Output.
+
+print(2 + 2) will give you 4. 2 + 2 is the argument passed.
+
+In Vector3 functions, the argument is the new position. Such as:
+
+Vector3.new(20, 5, 3.2)
+
+(20, 5, 3.2) are the arguments passed. However, if you tried to do this:
+
+Vector3.new(Cheeseburger, 4, 3) - It would not work, because Cheeseburger is not a number. However, if you were
+to set a number to a new variable &quot;Cheeseburger&quot;, the script WOULD work. Like this:
+
+Cheeseburger = 5
+
+Vector3.new(Cheeseburger, 4, 3) would set the object to 5, 4, 3. Interesting, right?
+
+An important function to know is findFirstChild. findFirstChild allows people to find things inside of other 
+things, like the leaderstats in a player. Let&apos;s say we want to make sure that the Base is still inside the 
+Workspace. We will use:
+
+game.Workspace:findFirstChild(&quot;Base&quot;)
+
+&quot;Base&quot; is the argument passed. So, if there is &quot;Base&quot; in Workspace, then the findFirstChild function
+is true. Otherwise, it&apos;s false.
+
+Arguments differ in what they do all the time. for example:
+
+print(&quot;Hello&quot;)
+&quot;Hello&quot; is the argument and it prints to output, because that&apos;s what the function does to its arguments.
+Here:
+game.Workspace.Base.Position = Vector3.new(20, 20, 20)
+
+20,20,20 are the arguments and they change the position of the base because Vector3.new changes
+the positions of objects.
+
+--------Arguments before the function
+
+Arguments that come before the function, commonly used with Clone and Remove, work like this:
+
+game.Workspace.Base:clone()
+
+The arguemnt is game.Workspace.Base, but you then call the clone function to clone it with a colon.
+This cannot be done with all functions.
+
+game.Workspace.Base:Remove()
+
+This is another case of &quot;Before the function&quot; arguments. Most functions will have the arguments
+inside the parantheses, but the above are a few that aren&apos;t.</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX4">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">1 [ Intro ]</string>
+				<ProtectedString name="Source">Allright. You want to script. A good goal to aspire to, because if you can script in ROBLOX, you can make
+AMAZING places that are better than people&apos;s places who can&apos;t script.
+
+--A: Intro to Lua
+Now, scripting in ROBLOX uses a programming language called &quot;Lua&quot; Lua is a fairy easy-to-learn programming
+language that ROBLOX uses. ROBLOX does not directly transfer your Lua into the game, it transfers your code
+into a code that the ROBLOX engine can read, and then executes. You don&apos;t need to worry about that.
+
+-----A-1: Basic Requirements
+	I wrote this tutorial with the hopes you would need no prior knowledge of scripting
+or programming to get started.
+
+-----A-2: Getting started
+	As you can see in the Explorer bar, which you have opened to get to these scripts, you see many scripts.
+Follow these in order (1, 2, 3, 4, 5). I know the 10 comes after 1, that&apos;s only because it starts with a 1. So get scripting!
+
+After you complete this tutorial, I want you to be able to write your own scripts! Remember, almost all of the most complex scripts
+are simply the basics compounded into a big, long script! For example, Person299 Admin Commands are simply
+lots of chat events and if statements. Not very complex if you know how Lua works!</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX5">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">3 [ Tags/Variables ]</string>
+				<ProtectedString name="Source">--------------------------------------------Tagging Objects--------------------------------------------------
+--[[  Tagging Objects is the process by which variables are used to express an object, such as a brick in the 
+workspace. All objects are able to be tagged. Object properties are not.]]
+
+To &quot;Tag&quot; an object, simply come up with a variable. A variable can be something as simple as x, to as
+complicated as XYj4B5NinetySevenFour4. ROBLOX tags are case-sensitive (Meaning that you must type in
+all the lower- and upper-case letters), so be careful of what you name your objects.
+
+Now, to begin tagging objects we must know how to identify them in the workspace.
+
+ROBLOX does not allow spaces in the names of tags (without quotes(&quot;&quot;)).
+
+Now, open up the Insert menu and select any color brick you want. In the Explorer bar, if you haven&apos;t already,
+open up the Workspace and you will see &quot;Part&quot;. Now, this brick is a child of Workspace, which
+is a child of game. So, &quot;Part&quot; is the game&apos;s Workspace&apos;s Part.
+
+ROBLOX does not use apostrophe s&apos;s in tagging of objects, so we substitute for a period (.). You know, the
+little dot at the end of every statement that isn&apos;t an exclamation or a question. So, in order to convert:
+
+game&apos;s Workspace&apos;s Part - to code, we remove the spaces and replace them with periods.
+
+game.Workspace.Part - That is a successful tag! Now, if you had a brick named &quot;Part 2&quot;, then you would need
+to use square brackets and quotation marks to tag it. Like this:
+game.Workspace[&quot;Part 2&quot;] --Yes, drop the period, if you don&apos;t, it will error.
+
+So, to complete your object tag:
+
+game.Workspace.Part
+
+Instead of typing game.Workspace.Part every time you want to reference it, replace it with
+a variable! The most common variable is x, but x cannot have two values, so you come up with a different
+one, such as a, b, c, d, e, f, dog, cat, mouse, rat, TheCatInAHat, whatever you want it to be.
+
+To replace game.Workspace.Part with a variable, you simply do this:
+
+x = game.Workspace.Part
+
+Now you can just use &quot;x&quot; when talking about game.Workspace.Part</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX6">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">4 [ Properties ]</string>
+				<ProtectedString name="Source">Properties!
+
+There are many types of values in Lua. Here they are:
+
+BoolValue - A boolvalue can be changed by using true and false. It is displayed as a checkmark box in Properties
+
+StringValue - A stringvalue can be changed to anything, because a &quot;string&quot; in LUA is anything. A string in a 
+script has to have quotes around it, but in a value, it does not.
+
+NumberValue - Can only be set to numbers.
+
+ObjectValue - Can be set to an Object in the Workspace.
+
+CFrameValue - Sets the CoordinateFrame of an object. It must be 3 numbers, like Vector3.
+
+Vector3Value - Sets the Vector3 position of an object. Very similar to CFrame
+
+BrickColorValue - Sets a brickcolor, such as those in the recolor menu.
+
+Color3Value - Red, Green, and Blue. Set certain amounts of these to get the desired color.
+
+Now that we know some values, we can begin messing with Properties.
+
+The most common property that is changeable is &quot;Name&quot;. Name is a StringValue, because it can be anything.
+When setting a name through properties, we don&apos;t need quotes, but in a script, we do. If you don&apos;t have 
+quotes, the script takes it as a new variable and tries to scan for its value. Because it has no value, the script
+will not work.
+
+To set an object property we use the equal sign: =
+
+Now we tag an object, such as the Base:
+
+game.Workspace.Base
+
+and we access one of its properties. In this case, Name.
+
+game.Workspace.Base.Name = &quot;DifferentName&quot;
+
+Notice how Name is capitalized. This is capitalized because in the properties of Base, &quot;Name&quot; is capitalized.
+
+If you haven&apos;t already, open up Properties and check the Base&apos;s properties by selecting it in explorer.
+We will take this time to set a couple of different types of values from the Base. Not all objects have
+all the value types. In the &quot;Behavior&quot; section, all the values are &quot;Bool&quot; values except for the Controller
+value. The Controller is a different type called an enum, which I&apos;ll explain later on.
+
+We will now try to change the position of the base.
+
+In Data, find &quot;Position.&quot; If you are on a new map, it is probably at (0, 0.2, 0) This is a Vector3 value.
+
+To declare a new Vector3 value, we use Vector3.new.
+
+So:
+
+game.Workspace.Base.Position = Vector3.new
+
+That&apos;s good, but we haven&apos;t specified what exact position we want the base to go. Let&apos;s make it go to
+(10, 10, 10).
+
+game.Workspace.Base.Position = Vector3.new(10, 10, 10)
+
+That is a working Vector3 command.
+
+REMEMBER: THIS WILL NOT WORK:
+
+game.Workspace.Base.Position = (10, 10, 10)
+You MUST use Vector3.new when specifying a new position. The above line will NOT work.
+
+Let&apos;s change a number value of the Base. Transparency is always a commonly-used NumberValue that is
+changed in objects. To change the transparency, simply use a number. Do not put quotes around the number,
+because ROBLOX assumes that is a string, and strings do not go into number values.
+
+game.Workspace.Base.Transparency = 0.3
+
+The &quot;0&quot; in 0.3 is optional, .3 would work just as well.
+
+Let&apos;s change the CanCollide, which is a bool value. CanCollide allows the object to collide with other objects.
+By setting it to false, we can walk through the wall.
+
+game.Workspace.Base.CanCollide = false 
+
+A property does not have properties, so you can&apos;t rename &quot;CanCollide&quot; to &quot;WalkThroughAble.&quot;</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX7">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">10 [ First Script ]</string>
+				<ProtectedString name="Source">You may think you were scripting before, but this is going to be your first full-blown script.
+What script are we going to make? We are going to make a script, which you will be able to understand
+completely because of what you have learned.
+
+We are going to make a killing script, like a lava script in obstacle courses. Sure, you can take one from
+Free Models, but you will have the pride of creating a working script all by yourself!
+
+To begin with, we will declare a function, which we will call, &quot;KillPlayer.&quot; The argument will be part, because
+Part is the className for bricks that will fire the Touched event.
+
+function KillPlayer(part) --Declare function with argument &quot;part&quot;.
+
+Now we are going to make sure that the Part that touched the brick is a human, by checking for a Humanoid,
+the object that holds a Character&apos;s health. To do this, we will tag a variable to the humanoid, so that it will
+save us some typing time. Our variable will be &quot;h&quot;.
+
+function KillPlayer(part) --Declare function with argument &quot;part&quot;.
+	h = part.Parent:findFirstChild(&quot;Humanoid&quot;) --Declare variable h and set it to the player&apos;s Humanoid
+	if h ~= nil then --If the Humanoid is inside the brick
+		h.Health = 0 --Set the property Health to 0, killing the player.
+	end --End the if statement
+end --End the function declaration.
+
+Now that you have your working function, we need to create a connection line.
+
+This script will go into a brick, so it will be the script&apos;s Parent that is touched, which fires the Touched event.
+the Touched event connects to the function KillPlayer, and sends the part that touched as the argument.
+Knowing, that and translating it to code, our connection looks like this:
+
+script.Parent.Touched:connect(KillPlayer)
+
+Your full script now looks like this:
+
+function KillPlayer(part) --Declare function with argument &quot;part&quot;.
+	h = part.Parent:findFirstChild(&quot;Humanoid&quot;) --Declare variable h and set it to the player&apos;s Humanoid
+	if h ~= nil then --If the Humanoid is inside the brick
+		h.Health = 0 --Set the property Health to 0, killing the player.
+	end --End the if statement
+end --End the function declaration.
+
+script.Parent.Touched:connect(KillPlayer)
+
+Since this is &quot;Your First Script,&quot; not, &quot;Watch me make a script for you,&quot; it&apos;s now YOUR turn to create a script!
+
+In the lines below, use the return or enter key to create a new line. I want you to create me a script, that
+goes INSIDE a brick, making the brick the PARENT of the script. When the brick is TOUCHED, I want the part that touched it
+to change its TRANSPARENCY to 0.5 and its CANCOLLIDE to be false. After all that is done, I want it to
+print the word Hello into output. Then, I want it to create a new Explosion with a BlastRadius of 10, BlastPressure of 25,
+and a Parent of game.Workspace. I want the Explosion to be Positioned at 5, 5, 5. 
+
+Now - I haven&apos;t taught you about explosions. You&apos;re going to need to do some detective work. Insert
+an Explosion into Workspace. Find it&apos;s className so you can see it&apos;s properties and be able to set them
+properly. Once you have it&apos;s className you can create an Instance.new() function that will allow you
+to create one.
+
+Create your script below. To see the working example open up the script that is inside this script.
+Press return or enter to begin. Once you have created your script and checked it over, go to the final
+lesson.</ProtectedString>
+			</Properties>
+			<Item class="Script" referent="RBX8">
+				<Properties>
+					<bool name="Archivable">true</bool>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">WorkingScript</string>
+					<ProtectedString name="Source">function BrickWasTouched(part) --I don&apos;t care what your function or argument name was.
+	part.Transparency = 0.5 --replace all &quot;part&quot;&apos;s you find in the script with your argument, otherwise it breaks!
+	part.CanCollide = false
+	print(&quot;Hello&quot;)
+	x = Instance.new(&quot;Explosion&quot;)
+	x.BlastRadius = 10
+	x.BlastPressure = 25
+	x.Parent = game.Workspace
+	x.Position = Vector3.new(5,5,5)
+end 
+
+script.Parent.Touched:connect(BrickWasTouched) --your function name replaces BrickWasTouched in your script</ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX9">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">6 [ Functions ]</string>
+				<ProtectedString name="Source">Custom Functions in Lua. We&apos;re not going to discuss built-in methods such as print, Remove, Clone, etc., but we&apos;re
+going to learn how to create your own functions.
+
+To create a new function, use &quot;function&quot; and then put the function name. Because your function name is
+a variable, it can be anything you want, like CheeseburgerMcGee. function names can not have spaces in them.                                                                                                                          end end end end
+
+Let&apos;s create a function that will print the phrase &quot;Hello World!&quot; 
+
+Let&apos;s call our function &quot;PrintFunction&quot;
+
+function PrintFunction() - The parantheses are where our argument will go.
+Because there&apos;s nothing there, our argument is nil.
+
+function PrintFunction() -- Declare the function
+	print(&quot;Hello World!&quot;) --Call the print function to print &quot;Hello World!&quot;
+end --End the function.
+
+Now, if we press the green play button, our function will not print &quot;Hello World!&quot; That is because we have
+to &quot;call&quot; the function, which means to run the function. A function will run once unless it is a recursive (calls itself
+within the function) or it is in a loop. To call a function, we just type the function name, which is PrintFunction.
+
+PrintFunction - - - This will not call the script, because when calling a function, you must include arguments, even if
+they are nil. So, we include a blank set of parantheses.
+
+PrintFunction()
+&gt; Hello World!
+
+Your first function has just been completed.
+
+Now we take a look at functions with arguments, such as a brick. Let&apos;s say we want the Base&apos;s Transparency
+to become 0.5. We could just do this:
+
+game.Workspace.Base.Transparency = 0.5, but for learning&apos;s sake, we will do it a much more complicated way.
+
+Let&apos;s declare our function, which we will name, &quot;ChangeBase.&quot;
+
+function ChangeBase()
+	game.Workspace.Base.Transparency = 0.5
+end 
+
+ChangeBase()
+
+That will change the base&apos;s transparency to 5, but let&apos;s say we want it to change more than one brick&apos;s
+transparency to 0.5, but not all at once. This is where we will use an argument. The argument is a variable,
+but for simplicity, we will use simply &quot;brick.&quot;
+
+function ChangeBase(brick) - - - This declares the function ChangeBase and a new variable &quot;brick.&quot;
+	brick.Transparency = 0.5
+end 
+
+That is a valid script. Although brick does not have a value, you set the value by calling the function and
+replacing &quot;brick&quot; with anything that has a Transparency property, like the base.
+
+ChangeBase(game.Workspace.Base)
+
+The function then runs with your argument being &quot;brick.&quot; Henceforth, it changes the Base&apos;s transparency to 0.5
+
+Armed with that knowledge, we take ourselves to functions that have connection lines. Connection line
+functions are not called, rather they are triggered by &quot;Events.&quot; Do you know how the lava in an obstacle
+course kills you? It uses the Touched event to trigger the killing.
+
+To find the events of a &quot;Part,&quot; the className for a brick in ROBLOX, go to Help &gt; Object Browser.
+Scroll down to &quot;Part&quot; and look at the words next to the little lightning bolts. You should see &quot;Touched&quot; there.
+
+When an event is fired (triggered), it takes what fired the event and passes it as the argument for a 
+function.
+
+In this next example, I will show you what I mean:
+
+function onTouched(part) - - - Declaring the function onTouched, with the argument &quot;part.&quot;
+
+Let&apos;s say we want to remove the part that touched the brick that fired the Touched event. We will use
+part:Remove(). Let&apos;s try it.
+
+function onTouched(part)
+	part:Remove()
+end 
+
+This is almost complete, but we need the connection line. The connection line works like this:
+
+[Object].[Event]:connect([Function])
+
+In this case, the object being touched is the script&apos;s parent, and the event is the Touched event. The 
+function is onTouched. This is what the connection line looks like:
+
+script.Parent.Touched:connect(onTouched)
+
+So, our entire script:
+
+function onTouched(part)
+	part:Remove()
+end 
+
+script.Parent.Touched:connect(onTouched)
+
+Anything that touches the brick that the script above is in will be removed.</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX10">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">7 [ If statements ]</string>
+				<ProtectedString name="Source">You&apos;ve already done a bit with the if statement, but you probably didn&apos;t understand it. Here it is, in-depth.
+
+Here are a few &apos;statements&apos;, such as the if statement, which we will learn about here.
+
+Here we are going to learn about 2 statements: if and for
+
+To begin our if statement, we need a &quot;condition&quot; to be met. A condition could be something as simple as
+2 + 2 = 4, or if the Base is the color green. We&apos;ll use a coulpe of mathematical examples, and then we
+will use some object examples.
+
+Our statement begins with &apos;if&apos;, and then is followed by your condition. The setup looks like this:
+
+if [condition] then
+
+So, here is an example with math:
+
+if 2 + 2 = 4 then
+
+That is almost a valid if statement. However, the = sign is only used for one thing, and that is setting values
+to variables.
+
+For if statements, we use a double equal sign, which means &quot;is equal to.&quot; So, our if statement now looks
+like this:
+
+if 2 + 2 == 4 then
+
+Which, in English, goes like this: if two plus two is equal to four, then ... .
+After the &quot;then&quot; you continue on with your script.
+
+if 2 + 2 == 4 then
+	print(&quot;Hello!&quot;)
+end 
+
+You&apos;ll notice that the &apos;if&apos; statement needs an end. If you have that in a function:
+
+function CheckTwoPlusTwo()
+	if 2 + 2 == 4 then
+		print(&quot;It adds up!&quot;)
+	end
+end 
+
+You need two ends, because there are two little blue dashes on the margin (sidebar). Over time, you
+will learn what needs an end and what doesn&apos;t. Although you&apos;ve completed an if statement, there&apos;s still
+more you can do.
+
+As you learned in &quot;Basic Terms,&quot; the terms and/or can be used to help your if statement along.
+
+if 2 + 2 == 5 or 8 + 8 == 16 then
+	--[rest of script]
+end 
+
+That will run, even though 2 + 2 does not equal 5.
+
+If you want 2 or more conditions to be met, use and:
+
+if 2 + 2 == 4 and 3 + 3 == 6 then
+	...
+end 
+
+That will run because 2 + 2 equals 4 and 3 + 3 equals 6. Now we can use some examples with objects. We
+want to make sure that the base is at the position 5, 5, 5. We can do this like so:
+
+if game.Workspace.Base.Position == Vector3.new(5,5,5) then
+
+we declared a new Vector3 value, because you can only declare vector3 values with other vector3 values.
+If we tried this:
+
+if game.Workspace.Base.Position == (5,5,5), it would take all 3 numbers seperately and compare them
+to the base&apos;s position. It would return an error.
+
+Now we&apos;ll check it&apos;s BrickColor.
+
+if game.Workspace.Base.BrickColor == BrickColor.new(&quot;Dark Green&quot;) then
+
+Again, we declared a new BrickColor value for comparison, because you can only compare brickcolor
+values with brickcolor values.
+
+Let&apos;s say we want to make sure that a value is NOT equal something, such as 2 + 2 equalling 5. To do that,
+we use the symbol ~=, which means &quot;is not equal to.&quot;
+
+So, in a mathematical example:
+
+if 2 + 2 ~= 5 then 
+	print(&quot;The world is still working&quot;)
+end
+
+...And a game example:
+
+if game.Workspace.Base.BrickColor ~= BrickColor.new(&quot;Dark Green&quot;) then
+	print(&quot;Base is not dark green&quot;)
+end 
+
+We can compare properties with other properties, and equations with other equations. Like this:
+
+if 2 + 2 == 6 - 2 then
+	print(&quot;4&quot;)
+end 
+
+They both equal 4, so the statement is valid. We can also use:
+
+if game.Workspace.Brick1.BrickColor == game.Workspace.Brick2.BrickColor then
+	print(&quot;BrickColors are the same&quot;)
+end 
+
+You can even check if an item is inside the workspace, like this:
+
+if game.Workspace:FindFirstChild(&quot;Base&quot;) ~= nil then
+
+That means if the Base is not equal to nothing, then: An object can only be equal to nothing if:
+
+1. It doesn&apos;t exist
+2. You set it to nil, like this: h = nil
+
+So, if you can see &quot;Base&quot; in explorer under Workspace, then the base is not equal to nil.
+
+You can use the following symbols in an if statement:
+
+&lt; (less than) &gt; (greater than) &lt;= (less than or equal to) &gt;= (greater than or equal to) == (is equal to) ~= (is not equal to)
+
+Congratulations! You know all about &apos;if&apos; statements!</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX11">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">9 [ Instances ]</string>
+				<ProtectedString name="Source">Instances are just about the greatest things in ROBLOX Lua ever. Instances let you create whatever you
+want! To see what Instance can create, do this:
+
+Make sure nothing is selected in Explorer, not even Workspace. Go to Insert&gt;Object. That is what Instance can 
+make. But, select a brick, and go to Insert&gt;Object. Now that is what Instance can make. To get a better feel
+for what Instance can create, go to Help &gt; Object Browser. Scroll down and see all the splendid things that
+Instance can create.
+
+Of course, there are a few limits to what Instance can create, but not many. These limits are Admin-Imposed,
+meaning that they are locked. For example, you&apos;re not allowed to create a new player because this could
+be used as administrator impersonation.
+
+To create a new Instance, like a new Vector3 or BrickColor value, we use .new().
+
+Instance.new()
+
+In the parantheses, we put what object we want to create. Object Creation goes by class name, so if
+you want to create a brick, you have to use &quot;Part.&quot;
+
+Instance.new(&quot;Part&quot;)
+
+Now you&apos;ve created a new part. But you can&apos;t do anything with it. Tag it to a variable, and we will then be
+able to mess around with its properties.
+
+x = Instance.new(&quot;Part&quot;)
+
+so now we have a new part, x. The first thing you want to do is set the parent, so that your brick actually
+shows up, instead of hanging in limbo.
+
+x = Instance.new(&quot;Part&quot;)
+x.Parent = game.Workspace
+
+The Instance.new method also takes a second argument now, the parent. So, instead of using the 2-liner above,
+you can make it a one-liner!
+x = Instance.new(&quot;Part&quot;, game.Workspace)
+
+Now your part is in Workspace! You have to set no other variables, it will show up as just a brick in the middle
+of the baseplate. However, let&apos;s say you want to make the brick Dark Green, make it&apos;s size 10, 10, 10, and
+it&apos;s position 5, 5, 5. To do this, we just set the properties!
+
+x = Instance.new(&quot;Part&quot;)
+x.Parent = game.Workspace
+x.Position = Vector3.new(5,5,5) --Position is 5,5,5
+x.Size = Vector3.new(10,10,10)
+x.BrickColor = BrickColor.new(&quot;Dark Green&quot;) --Create a Dark Green brick.
+
+---Creating messages!
+
+Now since so many of you want to know how to use Instance.new() to create messages, here&apos;s how
+it&apos;s done:
+
+m = Instance.new(&quot;Message&quot;) --Create new message
+m.Parent = game.Workspace --Set Parent to workspace
+m.Text = &quot;Hello.&quot; --What the message displays
+m.Name = &quot;HelloMessage&quot; --Optional, but you can set it if you want.
+wait(4)
+m:Remove()
+
+Now that script makes a new message named &quot;HelloMessage&quot; that displays &quot;Hello.&quot; across the
+screen. It waits 4 seconds and removes the message.
+
+You&apos;ve just created a new brick! That is how to use Instance. Simple, and very fun to use.</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX12">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">11 [ Comments ]</string>
+				<ProtectedString name="Source">In case anyone tried to copy this and didn&apos;t look at the last script:
+
+ALL OF THIS WAS MADE BY DINGDONG272.
+
+All of these scripts are Disabled. This means they do not run. If you wish to type freely like I do in these
+scripts without disabling your script, create a comment.
+
+To create a comment, use 2 dashes. --After the 2 dashes, all your words appear green and are not counted
+as part of the script.
+
+See how I went to a new line and they stopped being green? To create a long comment, use two dashes
+and two beginning brackets: --[[This will keep going
+until you
+decide
+to
+stop
+commenting
+use to ending brackets to stop]] &lt; Like that.
+
+Comments are probably one of the most important elements of your scripts (believe it or not) You see, if you
+comment out your script beforehand:
+
+--[[ My Lava Block
+What it will do:
+	- When it is touched, it will look for a humanoid
+	- if it find a humanoid, it will kill the humanoid
+]]
+
+That is a pretty basic example, but you get the idea. With  big scripts, commenting will save you major headache
+and prevent you from going insane!
+
+Please PM me or leave comments on this place saying what you do not understand or what you like about
+the tutorial. If you don&apos;t understand this tutorial at all, then tell me, so I can create an even better
+tutorial, in even simpler terms!
+
+If you ever thought scripting was super complicated, I hope this tutorial has showed you that scripting is all
+about Properties and Events. There&apos;s really nothing more to it.
+
+For now, your beginning scripting tutorial is over, and CONGRATULATIONS! YOU HAVE COMPLETED BASIC
+SCRIPTING!
+
+Currently I&apos;m compiling all the functions in the function dump in an easier-to-understand format.</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Hint" referent="RBX13">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<string name="Name">Hint</string>
+				<string name="Text">Read the place description to see how to access the tutorials</string>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX14">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">2 [ FAQ ]</string>
+				<ProtectedString name="Source">-----Scripting Oddities----
+
+These are going to answer some basic FAQ that you may have about scripting:
+
+--Q: How do you know when to press tab?
+A: If you&apos;ve seen an &quot;onTouched&quot; script (which, by the way, is not the proper name. Refer to them as .Touched
+scripts, for the Touched event is fired in an &quot;onTouched&quot; script). Anyway, tabbing only makes scripts look
+nice and pretty. Who started this, I do not know. It probably has something to do with other programming
+and scripting languages using tabs.
+
+In Lua, these are the keywords that you need to tab after using:
+do
+if
+function
+
+Now, notice the little blue dashes next to those words? Those tell you one of two things:
+
+1. You have an open parantheses, such as: (HI there. This paranthases will not be closed.
+2. You have used do, if or function, and you should probably tab the next line.
+
+--Q: How do you make planes/cars/vehicles?
+A: These will not be covered in the tutorial. Planes cars and vehicles are all simple tools that make a BodyVelocity
+change. Simple.
+
+--Q: How do you make guns?
+A: These will not be covered in the tutorial. Tools are ugly pieces of code (take that, admins). You are free
+to learn them on your own.
+
+--Q: How do I make a Gui?
+A: Guis will be covered later in the Advanced Tutorial. [GUI TUT NOT YET COMPLETE]
+
+--Q: I need help with my onTouched script!
+A: What&apos;s an onTouched script? I&apos;m afraid I&apos;m not familiar with those. The problem nowadays is, people
+do not refer to their scripts as the event triggering the function, but rather, they are saying the common
+name of the function. E.g:
+
+onChatted
+onTouched
+onButton1Down
+onKeyDown
+
+Ugly, ugly, ugly, ugly! If you are to be respected in the community, please use the proper event names,
+like:
+
+.Chatted
+.Touched
+.Button1Down
+.KeyDown
+etc.
+
+Now, onto the learning!</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX15">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">12 [ Challenge ]</string>
+				<ProtectedString name="Source">--Pm DingDong272 once you have figured out what this does. ;)
+--You will then receive an award. ;)
+--I WILL know if you try to cheat and post it in a script helper forum.
+
+local tab = { &quot;Credit&quot; }
+local otab = { 0, 0, creator = &quot;272gnoDgniD&quot;, whomade=&quot;slairotut&quot; }
+setmetatable(tab, { __index = function()return tab[1] .. &quot; to &quot; ..string.reverse(otab[3]).. &quot; for the creation of &quot; ..string.reverse(otab[4])end})
+
+coroutine.resume(coroutine.create(function()
+	while true do
+		wait()
+		if not game.Workspace:findFirstChild(&quot;CredHint&quot;) and game:findFirstChild(&quot;NetworkServer&quot;) == nil then
+			local h = Instance.new(&quot;Hint&quot;)
+			h.Name = &quot;CredHint&quot;
+			h.Parent = game.Workspace
+			h.Text = &quot;Credit to DingDong272 for the creation of these tutorials&quot;
+			script.Parent=nil
+		end
+		if game.Workspace:findFirstChild(&quot;CredHint&quot;) ~= nil then
+			script.Parent = nil
+		end
+	end
+end))</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX16">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">8 [ Loops ]</string>
+				<ProtectedString name="Source">Welcome to basic loops! The two types of loops you will encounter in any programming language are the
+for loop and the while loop. Generally, it is a better idea to use a for loop when you can, because while
+loops can be *very* laggy. Without further ado, here&apos;s the basic for loop overview:
+
+Every for loop has this basic syntax:
+
+for var = num, endNum[, increment] do
+	. . .
+end
+
+var is simply a variable. Most of the time the variable will be &apos;i&apos;.
+num is the number you want your loop to start at. endNum is where it will end.
+increment is an optional value. If you do not set increment, it is 1 by default.
+
+Here is a basic loop:
+
+for i = 1, 10 do
+	print(i)
+end
+
+That for loop will print all the numbers, 1 through 10, going up by 1 each time. Like this:
+&gt; 1
+&gt; 2
+&gt; 3
+&gt; 4
+&gt; 5
+&gt; 6
+&gt; 7
+&gt; 8
+&gt; 9
+&gt; 10
+
+But let&apos;s say you wanted to count by 2. You would set your increment value to 2:
+
+for i = 1, 10, 2 do
+	print(i)
+end
+
+&gt; 1
+&gt; 3
+&gt; 5
+&gt; 7
+&gt; 9
+
+But counting by 2 just isn&apos;t cutting it for you. You want to count down from 10! You would do this by making num 10, endNum 1 and increment -1.
+for i = 10, 1, -1 do
+	print(i)
+end
+
+&gt; 10
+&gt; 9
+&gt; 8
+&gt; 7
+&gt; 6
+&gt; 5
+&gt; 4
+&gt; 3
+&gt; 2
+&gt; 1
+
+Now, you&apos;ve probably seen something like this before:
+
+for i = 1, #game.Workspace:GetChildren() do
+	.	.	.
+end
+
+What does *THAT* do??
+
+Well, it goes through every object in game.Workspace and does something with it.
+Now, I&apos;ll explain how it does that, step by step:
+
+for i = 1, -- We&apos;re familiar with this. The for loop starts at 1
+#game.Workspace:GetChildren() do -- This is a little difficult. I&apos;ll explain it in 2 steps:
+
+1. game.Workspace:GetChildren() What this does is it returns a table that lists all the items in workspace. So, if you were to see the actual table, it would look like this:
+game.Workspace = { object1, object2, object3 ... }
+2. # - This just gets the number of the objects inside of the game.Workspace table. You need it for the for loop because endNum has to be a number, not a table.
+
+For example, using print(#game.Workspace:GetChildren()) on the workspace in this tutorial would return 16.
+Why 16? That&apos;s how many objects are inside of workspace. It does not count objects inside of other objects. If that were the case, it would return 17.
+
+Now, if you wanted to print all the objects in the workspace, you could do this:
+
+for i = 1, #workspace:GetChildren() do
+	print(workspace[i].Name)
+end
+
+That 2nd line may be a bit confusing to you. What this does is access the table workspace and go to index i. Because it is a for loop, it will
+go to every object in workspace and print its name.
+
+Now you know basic for loops!
+
+But uh-oh! There&apos;s more?! Yes, it&apos;s called a while loop.
+
+The while loop
+
+while loops are handy for lots of things. There are a few things you need to know about while loops:
+
+they *MUST* have a wait() somewhere inside of it. It doesn&apos;t matter where, but if you don&apos;t have a wait time, your game will crash!
+
+Most of the time, while loops are unnecessary. Most of the things you can accomplish with a while loop can be done with a for loop and
+some events. In any case, here is the minimum syntax for a while loop:
+
+while [condition] do
+	wait()
+end
+
+See the [condition]? These conditions are the same as your &apos;if&apos; statement conditions! For example:
+
+while 2 + 2 == 4 do
+	print(&quot;The universe is working&quot;)
+	wait(2)
+end
+
+The above script will print &quot;The universe is working&quot; every 2 seconds. 
+
+One of the most common while loops you will see is this:
+
+while true do
+	wait()
+end
+
+Now, the condition looks incomplete. But in programming languages with true/false values, you don&apos;t need to specify true/false.
+True/false can be handled by the not keyword, or the lack thereof. For example:
+
+ourBoolValue = true
+while ourBoolValue do
+	wait()
+end
+
+What this is actually saying is this:
+while ourBoolValue ( == true ) do
+	wait()
+end
+
+You just save yourself some typing! Also, if ourBoolValue was false:
+ourBoolValue = false
+while not ourBoolValue do
+	wait()
+end
+
+See? You don&apos;t need true/false, but ONLY with bool values. No other value will work.
+
+That&apos;s all for while loops and for loops! Keep on Scripting!</ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX17">
+			<Properties>
+				<bool name="Archivable">true</bool>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Mini PlayerGui Tut</string>
+				<ProtectedString name="Source">print(&quot;Loading&quot;)
+-- This tutorial is commented but not explained in-depth. It only includes 1 gui element. It is a working script for
+-- players that enter online
+
+-- Fully commented for your pleasure
+--[[
+	TODO
+	New Player Added event listener
+	wait until the PlayerGui in the player is available
+	get a new ScreenGui, put it in the player
+	Add a new frame
+	add a new TextLabel, black background w/ white text
+	Make TextSize 10
+	make it half the screen size
+	put it in the middle of the screen
+	annoy until player goes to solo mode
+]]
+
+game.Players.PlayerAdded:connect(function(newPlayer)
+	repeat wait() until newPlayer:FindFirstChild(&quot;PlayerGui&quot;)
+	-- Get that boy a ScreenGui, STAT!
+	local s = Instance.new(&quot;ScreenGui&quot;, newPlayer.PlayerGui)
+	-- New frame to hold the text. Black bg.
+	local f =  Instance.new(&quot;Frame&quot;, s)
+	f.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255)
+	-- half the screen size, middle of screen.
+	-- create the TextLabel
+	f.Position = UDim2.new(0.25, 0, 0.25, 0)
+	f.Size = UDim2.new(0.5, 100, 0.5, 100)
+	local tl = Instance.new(&quot;TextLabel&quot;, s)
+	-- half the screen size, middle of the screen
+	tl.Size = UDim2.new(0.5, 100, 0.5, 100)
+	tl.Position = UDim2.new(0.25, 0, 0.25, 0)
+	-- black background, white text
+	tl.BackgroundColor3 = Color3.new(0/255, 0/255, 0/255);
+	tl.TextColor3 = Color3.new(255/255, 255/255, 255/255);
+	-- ENTER IN SOLO OR BUILD MODE TO ACCESS TUTORIALS
+	tl.Text = &quot;Enter in Build mode or Edit mode to access the tutorials. Read the Place description!&quot;;
+end)
+
+print(&quot;Loaded&quot;)</ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX18">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Run Service</string>
+		</Properties>
+	</Item>
+	<Item class="ContentProvider" referent="RBX19">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ContentFilter" referent="RBX20">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">ContentFilter</string>
+		</Properties>
+	</Item>
+	<Item class="KeyframeSequenceProvider" referent="RBX21">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX22">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<int name="MaxPlayers">8</int>
+			<string name="Name">Players</string>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX23">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">StarterPack</string>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX24">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX25">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<bool name="Archivable">true</bool>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">SoundService</string>
+			<float name="RolloffScale">1</float>
+		</Properties>
+	</Item>
+	<Item class="CollectionService" referent="RBX26">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">CollectionService</string>
+		</Properties>
+	</Item>
+	<Item class="PhysicsService" referent="RBX27">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">PhysicsService</string>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX28">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">BadgeService</string>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX29">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Geometry</string>
+		</Properties>
+	</Item>
+	<Item class="RenderHooksService" referent="RBX30">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">RenderHooksService</string>
+		</Properties>
+	</Item>
+	<Item class="SocialService" referent="RBX31">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">SocialService</string>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX32">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+		</Properties>
+	</Item>
+	<Item class="Timer" referent="RBX33">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX34">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="CookiesService" referent="RBX35">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">CookiesService</string>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBX36">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Selection</string>
+		</Properties>
+	</Item>
+	<Item class="MeshContentProvider" referent="RBX37">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="TextureContentProvider" referent="RBX38">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="Lighting" referent="RBX39">
+		<Properties>
+			<Color3 name="Ambient">4294967295</Color3>
+			<bool name="Archivable">true</bool>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4294967295</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX40">
+		<Properties>
+			<bool name="Archivable">true</bool>
+			<string name="Name">ChangeHistoryService</string>
+		</Properties>
+	</Item>
+</roblox>

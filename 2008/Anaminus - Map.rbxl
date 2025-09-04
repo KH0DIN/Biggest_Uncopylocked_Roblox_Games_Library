@@ -1,0 +1,1176 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>0</X>
+					<Y>5</Y>
+					<Z>5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>-0</R02>
+					<R10>-0</R10>
+					<R11>0.89442724</R11>
+					<R12>0.44721362</R12>
+					<R20>0</R20>
+					<R21>-0.44721362</R21>
+					<R22>0.89442724</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>-5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Server</string>
+				<ProtectedString name="Source">repeat wait() until shared.pass;local pass=shared.pass
+
+config = {
+	ENCODER=				&quot;0BCD1FGH2JKLMN3PQRST4VWXYZ56789=&quot;,
+	DUNGEON_SIZE_X=			100,	-- X size of dungeon area
+	DUNGEON_SIZE_Y=			100,	-- Y size of dungeon area
+	CORRIDOR_ROOM_RATE=	50,	-- % frequency of corridors to rooms
+	DOOR_RATE=				0,	-- % chance of room-to-feature being a door
+	SPAWN_RATE=			2,	-- % chance that an available area will be a spawn location
+	TIMEOUT=				10,	-- how many times to retry if feature placement fails
+
+	CELL_SIZE=				Vector3.new(10,10,10),	-- Size of each cell
+	OFFSET=					Vector3.new(-5,0,-5),	-- Offset of map
+	SHEET = {
+		wall = &quot;#&quot;,
+		floor = &quot;&#183;&quot;,
+		door = &quot;D&quot;,
+		cwall = &quot;W&quot;,
+		check = &quot;?&quot;,
+		spawn = &quot;S&quot;,
+	},
+}
+
+pass.receive()
+
+Tiles = {
+	[&quot;Global&quot;] = function (item_00)
+		item_00.Anchored = true
+		item_00.Locked = true
+		item_00.formFactor = 0
+		item_00.TopSurface = 0
+		item_00.BottomSurface = 0
+	end,
+	[2] = function(size,size_mult,pos_mult)
+		local item_00 = Instance.new(&quot;Part&quot;)
+		Tiles[&quot;Global&quot;](item_00)
+		item_00.Name = &quot;Wall&quot;
+		item_00.Material = &quot;Slate&quot;
+		item_00.Size = size * size_mult
+		item_00.CFrame = CFrame.new(pos_mult.x*(size.x/2 - item_00.Size.x/2),size.y/2-1,pos_mult.z*(size.z/2 - item_00.Size.z/2))
+		item_00.BrickColor = BrickColor.new(199)
+		return item_00
+	end,
+	[1] = function(size)
+		local item_00 = Instance.new(&quot;Part&quot;)
+		Tiles[&quot;Global&quot;](item_00)
+		item_00.Name = &quot;Floor&quot;
+		item_00.Material = &quot;Slate&quot;
+		item_00.Size = Vector3.new(size.x,1,size.z)
+		item_00.CFrame = CFrame.new(0,item_00.Size.y/2-1,0)
+		item_00.BrickColor = BrickColor.new(194)
+		return item_00
+	end,
+	[3] = function(size)
+		local item_00 = Instance.new(&quot;SpawnLocation&quot;)
+		Tiles[&quot;Global&quot;](item_00)
+		item_00.Name = &quot;Spawn&quot;
+		item_00.Material = &quot;Slate&quot;
+		item_00.Duration = 0
+		item_00.Size = Vector3.new(size.x,1,size.z)
+		item_00.CFrame = CFrame.new(0,item_00.Size.y/2-1,0)
+		item_00.BrickColor = BrickColor.new(194)
+		return item_00
+	end
+}
+
+local Map
+
+local function DecodeN(n,e)
+	local s,se,o = #n,#e,0
+	for i = 1,s do
+		o = o + (e:find(n:sub(i,i))-1)*se^(s-i)
+	end
+	return o
+end
+
+function UnbuildHeader(input,enc)
+	return {
+		size_x = DecodeN(input:sub(1,2),enc),
+		size_y = DecodeN(input:sub(3,4),enc),
+		cell_size = Vector3.new(
+			DecodeN(input:sub(5,6),enc),
+			DecodeN(input:sub(7,8),enc),
+			DecodeN(input:sub(9,10),enc)
+		),
+		offset = Vector3.new(
+			DecodeN(input:sub(12,13),enc) * (tonumber(input:sub(11,11))*-2+1),
+			DecodeN(input:sub(14,15),enc),
+			DecodeN(input:sub(17,18),enc) * (tonumber(input:sub(16,16))*-2+1)
+		),
+	}
+end
+
+function add(Character)
+	script.Client:Clone().Parent = Character
+	local bp = Instance.new(&quot;BodyPosition&quot;)
+	bp.position = Vector3.new(0,3,0)
+	bp.maxForce = Vector3.new(0,9e9,0)
+	bp.Parent = Character.Torso
+	Instance.new(&quot;BodyGyro&quot;).Parent = Character.Torso
+	repeat wait() until Map
+	local replicator = Instance.new(&quot;StringValue&quot;)
+	replicator.Name = &quot;Replicator&quot;
+	replicator.Parent = Character
+	wait(1)
+	replicator.Value = Map
+end
+
+game.Players.PlayerAdded:connect(function(player)
+	if player.Character then add(player.Character) end
+	player.CharacterAdded:connect(add)
+end)
+
+
+
+wait(math.random(5,100)/100)
+local _,g=math.modf(tick())
+Map = dungeon.new(g*100000000000000)
+print(&quot;SEND:&quot;,#Map,Map)
+local Meta = UnbuildHeader(Map,config.ENCODER)
+local Items = Map:sub(18+Meta.size_x*Meta.size_y+1)
+
+for item in Items:gmatch(&quot;......&quot;) do
+	local id = DecodeN(item:sub(1,2),config.ENCODER)
+	if id == 3 then
+		local x = DecodeN(item:sub(3,4),config.ENCODER)
+		local y = DecodeN(item:sub(5,6),config.ENCODER)
+		local s = Meta.cell_size
+		local spawn = Tiles[id](s)
+		spawn.Transparency = 1
+		spawn.CFrame = CFrame.new(Vector3.new((x - 1) * s.x + s.x/2, 0, (y - 1) * s.z + s.z/2)+spawn.CFrame.p+Meta.offset) 
+		spawn.Parent = workspace
+	end
+end
+</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="LocalScript" referent="RBX3">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Client</string>
+					<ProtectedString name="Source">local game = game
+local Player = game.Players.LocalPlayer
+local Camera = game.Workspace.CurrentCamera
+local Character = script.Parent
+local Head = Character.Head
+repeat wait(1) until Character:FindFirstChild(&quot;Replicator&quot;)
+local Replicator = Character.Replicator
+repeat wait(1) until #Replicator.Value&gt;0
+local Stream = Character.Replicator.Value
+local Space = Instance.new(&quot;Model&quot;)
+local encoder = &quot;0BCD1FGH2JKLMN3PQRST4VWXYZ56789=&quot;
+local range = 5
+local event = {}
+local q = false
+local e = true
+
+local colors = {
+	BrickColor.new(194),
+	BrickColor.new(1002),
+}
+
+Tiles = {
+	[&quot;Global&quot;] = function (item_00)
+		item_00.Anchored = true
+		item_00.Locked = true
+		item_00.formFactor = 0
+		item_00.TopSurface = 0
+		item_00.BottomSurface = 0
+	end,
+	[2] = function(size,size_mult,pos_mult)
+		local item_00 = Instance.new(&quot;Part&quot;)
+		Tiles[&quot;Global&quot;](item_00)
+		item_00.Name = &quot;Wall&quot;
+		item_00.Material = &quot;Slate&quot;
+		item_00.Size = size * size_mult
+		item_00.CFrame = CFrame.new(pos_mult.x*(size.x/2 - item_00.Size.x/2),size.y/2-1,pos_mult.z*(size.z/2 - item_00.Size.z/2))
+		item_00.BrickColor = BrickColor.new(199)
+		return item_00
+	end,
+	[1] = function(size,x,y)
+		local item_00 = Instance.new(&quot;Part&quot;)
+		Tiles[&quot;Global&quot;](item_00)
+		item_00.Name = &quot;Floor&quot;
+		item_00.Material = &quot;Slate&quot;
+		item_00.Size = Vector3.new(size.x,1,size.z)
+		item_00.CFrame = CFrame.new(0,item_00.Size.y/2-1,0)
+		item_00.BrickColor = colors[(((x%#colors)+y)%#colors)+1]
+		return item_00
+	end,
+	[3] = function(size)
+		local item_00 = Instance.new(&quot;SpawnLocation&quot;)
+		Map.Tiles[&quot;Global&quot;](item_00)
+		item_00.Name = &quot;Spawn&quot;
+		item_00.Material = &quot;Slate&quot;
+		item_00.Duration = 0
+		item_00.Size = Vector3.new(size.x,1,size.z)
+		item_00.CFrame = CFrame.new(0,item_00.Size.y/2-1,0)
+		item_00.BrickColor = BrickColor.new(194)
+		return item_00
+	end
+}
+
+for i,v in pairs(Camera:GetChildren()) do
+	v:Remove()
+end
+
+function round(number,by)
+	return math.floor((number/by)+0.5) * by
+end
+
+function disconnect(name)
+	if event[name] then
+		event[name]:disconnect()
+		event[name] = nil
+	end
+end
+
+local function EncodeN(n,e,l)
+	local s,o,l,d = #e,&quot;&quot;,l or 0
+	repeat
+		n,d = math.floor(n/s),(n%s)+1
+		o = e:sub(d,d) .. o
+	until n &lt;= 0
+	o = e:sub(1,1):rep(l-#o) .. o
+	return o
+end
+
+local function DecodeN(n,e)
+	local s,se,o = #n,#e,0
+	for i = 1,s do
+		o = o + (e:find(n:sub(i,i))-1)*se^(s-i)
+	end
+	return o
+end
+
+local function EncodeB(n,e)
+	n = tonumber((n):sub(#n-4&gt;0 and #n-4 or 1),2)+1
+	return e:sub(n,n)
+end
+
+local function DecodeB(n,e)
+	local o,n = &quot;&quot;,e:find(n)-1
+	for i=5,1,-1 do
+		o = o .. (n%2^i-n%2^(i-1)&gt;0 and &apos;1&apos; or &apos;0&apos;)
+	end
+	return o
+end
+
+function UnbuildHeader(input,enc)
+	return {
+		size_x = DecodeN(input:sub(1,2),enc),
+		size_y = DecodeN(input:sub(3,4),enc),
+		cell_size = Vector3.new(
+			DecodeN(input:sub(5,6),enc),
+			DecodeN(input:sub(7,8),enc),
+			DecodeN(input:sub(9,10),enc)
+		),
+		offset = Vector3.new(
+			DecodeN(input:sub(12,13),enc) * (tonumber(input:sub(11,11))*-2+1),
+			DecodeN(input:sub(14,15),enc),
+			DecodeN(input:sub(17,18),enc) * (tonumber(input:sub(16,16))*-2+1)
+		),
+	}
+end
+
+function ConvertMap(map,sx,sy)
+	local array,cx,cy = {},1,0
+	array[cx] = {}
+	for c in map:gmatch(&quot;.&quot;) do
+		cy = cy + 1
+		if cy &gt; sy then
+			cx = cx + 1
+			array[cx] = {}
+			cy = 1
+		end
+		array[cx][cy] = c
+	end
+	return array
+end
+
+function ConvertByte(map,x,y,meta)
+	local byte = map[x][y]
+	byte = DecodeB(byte,encoder)
+	local container = Instance.new(&quot;Model&quot;)
+	container.Name = x..&quot; | &quot;..y
+	map[x][y] = container
+	if byte:sub(1,1) == &quot;1&quot; then Tiles[2](meta.cell_size,Vector3.new(0,1,1),Vector3.new(-1,0,0)).Parent = container end
+	if byte:sub(2,2) == &quot;1&quot; then Tiles[2](meta.cell_size,Vector3.new(1,1,0),Vector3.new(0,0,-1)).Parent = container end
+	if byte:sub(3,3) == &quot;1&quot; then Tiles[2](meta.cell_size,Vector3.new(1,1,0),Vector3.new(0,0,1)).Parent = container end
+	if byte:sub(4,4) == &quot;1&quot; then Tiles[2](meta.cell_size,Vector3.new(0,1,1),Vector3.new(1,0,0)).Parent = container end
+	if byte:sub(5,5) == &quot;1&quot; then Tiles[1](meta.cell_size,x,y).Parent = container end
+
+	for _,part in pairs(container:GetChildren()) do
+		local s = meta.cell_size
+		part.CFrame = CFrame.new(	Vector3.new((x - 1) * s.x + s.x/2, 0, (y - 1) * s.z + s.z/2)+part.CFrame.p+meta.offset	)
+		part.CFrame = part.CFrame * CFrame.new(math.random(-1000,1000)/100000,math.random(-1000,1000)/100000,math.random(-1000,1000)/100000)
+	end
+end
+
+function display(map,meta,space,head,range)
+	local X,Z = round(head.Position.x,meta.cell_size.x)/meta.cell_size.x,round(head.Position.z,meta.cell_size.z)/meta.cell_size.z
+	for x = X-range,X+range do
+		if map[x] then
+			for z = Z-range,Z+range do
+				if map[x][z] then
+					if type(map[x][z]) == &quot;string&quot; then
+						ConvertByte(map,x,z,meta)
+					end
+					if math.sqrt((x-X)^2+(z-Z)^2) &lt; range then
+						map[x][z].Parent = space
+					else
+						map[x][z].Parent = nil
+					end
+				end
+			end
+		end
+	end
+end
+
+print(&quot;RECEIVE:&quot;,#Stream)
+local Meta = UnbuildHeader(Stream,encoder)
+local Map = ConvertMap(Stream:sub(19,18+Meta.size_x*Meta.size_y),Meta.size_x,Meta.size_y)
+
+local died = false
+
+event.Step = game:GetService(&quot;RunService&quot;).Stepped:connect(function()
+	if not q then return end
+	if not e then return end
+	e = false
+	display(Map,Meta,Space,Head,range)
+	e= true
+end)
+
+event.Run = Character.Humanoid.Running:connect(function(s)
+	q = s&gt;0
+end)
+event.Died = Character.Humanoid.Died:connect(function()
+	died = true
+--	for _,child in pairs(Character:GetChildren()) do
+--		child.Anchored = true
+--	end
+	disconnect(&quot;Step&quot;)
+	disconnect(&quot;Run&quot;)
+	disconnect(&quot;Died&quot;)
+	e=false
+	q=false
+end)
+
+Camera.CameraType = &quot;Track&quot;
+
+Space.Parent = Camera
+
+display(Map,Meta,Space,Head,range)</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX4">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">dungeon</string>
+					<ProtectedString name="Source">repeat wait() until shared.pass;local pass=shared.pass
+
+pass.receive()
+
+local random = random
+
+local function getArea(X,Xo,Y,Yo,f) -- only handles random values
+	local area = {}
+	setmetatable(area,{X=X{},Xo=Xo{},Y=Y{},Yo=Yo{},})
+	for x = 1,X{} do
+		area[x+Xo{}] = {}
+		for y = 1,Y{} do
+			area[x+Xo{}][y+Yo{}] = tostring(f) or &quot;&quot;
+		end
+	end
+	return area
+end
+
+local function getWalls(area,mode)
+	local CWall,mt = {},getmetatable(area)
+	if mode == &quot;x&quot; then
+		for x = 1,mt.X do
+			for y = 0,mt.Y+1 do
+				if not area[x+mt.Xo][y+mt.Yo] then
+					table.insert(CWall,{x+mt.Xo,y+mt.Yo})
+				end
+			end
+		end
+
+	elseif mode == &quot;y&quot; then
+		for x = 0,mt.X+1 do
+			for y = 1,mt.Y do
+				if not area[x+mt.Xo] then
+					if y &gt; 0 and y &lt; mt.Y+1 then
+						table.insert(CWall,{x+mt.Xo,y+mt.Yo})
+					end
+				end
+			end
+		end
+	elseif mode == &quot;full&quot; then
+		for x = 0,mt.X+1 do
+			for y = 0,mt.Y+1 do
+				table.insert(CWall,{x+mt.Xo,y+mt.Yo})
+			end
+		end
+	else
+		for x = 0,mt.X+1 do
+			for y = 0,mt.Y+1 do
+				if not area[x+mt.Xo] then
+					if y &gt; 0 and y &lt; mt.Y+1 then
+						table.insert(CWall,{x+mt.Xo,y+mt.Yo})
+					end
+				else
+					if not area[x+mt.Xo][y+mt.Yo] then
+						table.insert(CWall,{x+mt.Xo,y+mt.Yo})
+					end
+				end
+			end
+		end
+	end
+	return CWall
+end
+
+local objects = {		-- holds features
+	[&quot;corridor&quot;]={
+		x={random.new(3,8),random.new(1),},
+		y={random.new(1),	random.new(3,8),},
+	},
+	[&quot;room&quot;]={
+		{random.new(3,6),random.new(3,6),},	-- small
+		{random.new(5,10),random.new(5,10),},	-- medium
+		{random.new(6,12),random.new(6,12),},	-- large
+	}
+}
+
+local rep = {
+	wall = &quot;#&quot;,
+	floor = &quot;&#183;&quot;,
+	door = &quot;D&quot;,
+	cwall = &quot;W&quot;,
+	check = &quot;?&quot;,
+	spawn = &quot;S&quot;,
+}
+
+local function GetOctal(array,X,Y,wall)
+--	[1][2][3]
+--	[4][5][6]
+--	[7][8][9]
+	local s = &quot;&quot;
+	for x = -1,1 do
+		for y = -1,1 do
+			s = s .. (array[X+x] and array[X+x][Y+y] and array[X+x][Y+y] ~= wall and &quot;0&quot; or &quot;1&quot;)
+		end
+	end
+	return s
+end
+
+local function GetQuad(array,x,y,type)
+	local s = &quot;&quot;
+	s = s .. (array[x-1] and array[x-1][y] and array[x-1][y] == type and &quot;1&quot; or &quot;0&quot;)
+	s = s .. (array[x] and array[x][y-1] and array[x][y-1] == type and &quot;1&quot; or &quot;0&quot;)
+	s = s .. (array[x] and array[x][y+1] and array[x][y+1] == type and &quot;1&quot; or &quot;0&quot;)
+	s = s .. (array[x+1] and array[x+1][y] and array[x+1][y] == type and &quot;1&quot; or &quot;0&quot;)
+	return s
+end
+
+local function IsType(map,x,y,type)
+	return map[x] and map[x][y] and map[x][y] == type
+end
+
+local function decide(feature,r,CRR)
+	if math.random(1,100) &lt; CRR then
+		return objects.corridor[r],&quot;corridor&quot;	-- direction is base from wall selection
+	else
+		return objects.room[math.random(1,3)],&quot;room&quot;	-- random size
+	end
+end
+
+local function subgen(dungeon,start,feature,TO,CRR,DR,rep)
+	while TO &gt; 0 do
+		local wall,m = getWalls(start),getmetatable(start)
+		local selection = wall[math.random(1,#wall)]
+
+		local Lx,Ly=selection[1]-m.Xo,selection[2]-m.Yo
+		local Mx,My = Lx&gt;m.X and 0 or -1,Ly&gt;m.Y and 0 or -1
+		local Mx2,My2 = Lx==0 and -1 or 0,Ly==0 and -1 or 0
+		local r,Mx3,My3; if Lx&gt;0 and Lx&lt;=m.X then r=&quot;y&quot;;Mx3=1;My3=0 else r=&quot;x&quot;;Mx3=0;My3=1 end
+		local n,Nfeature = decide(feature,r,CRR)
+
+		n[1]();n[2]()
+		local RRx,RRy = (Mx3*random.new(0,(n[1]{})-1)()),(My3*random.new(0,(n[2]{})-1)())
+		local Ox,Oy = selection[1]+Mx*n[1]{}+Mx2+RRx,selection[2]+My*n[2]{}+My2+RRy
+
+		local Nstart = getArea(n[1],random.new(Ox),n[2],random.new(Oy))
+
+		local check = getWalls(Nstart,&quot;full&quot;)
+		local goon = true
+		for _,space in pairs(check) do
+			if not dungeon[space[1]] then goon = false break end
+			if not dungeon[space[1]][space[2]] then goon = false break end
+			if dungeon[space[1]][space[2]] ~= rep.wall then goon = false break end
+		end
+
+		if goon then
+			for X,_ in pairs(Nstart) do
+				for Y in pairs(_) do
+					dungeon[X][Y] = rep.floor
+				end
+			end
+			
+			dungeon[selection[1]][selection[2]] = rep.floor
+			if Nfeature ~= &quot;corridor&quot; or feature ~= &quot;corridor&quot; then		-- if both aren&apos;t corridors
+				if math.random(1,100) &lt; DR then -- % chance of door
+					dungeon[selection[1]][selection[2]] = rep.door
+				end
+			end
+			subgen(dungeon,Nstart,Nfeature,TO,CRR,DR,rep)
+		else
+			TO = TO - 1
+		end
+	end
+end
+
+local function EncodeN(n,e,l)
+	local s,o,l,d = #e,&quot;&quot;,l or 0
+	repeat
+		n,d = math.floor(n/s),(n%s)+1
+		o = e:sub(d,d) .. o
+	until n &lt;= 0
+	o = e:sub(1,1):rep(l-#o) .. o
+	return o
+end
+
+local function DecodeN(n,e)
+	local s,se,o = #n,#e,0
+	for i = 1,s do
+		o = o + (e:find(n:sub(i,i))-1)*se^(s-i)
+	end
+	return o
+end
+
+local function EncodeB(n,e)
+	n = tonumber((n):sub(#n-4&gt;0 and #n-4 or 1),2)+1
+	return e:sub(n,n)
+end
+
+local function DecodeB(n,e)
+	local o,n = &quot;&quot;,e:find(n)-1
+	for i=5,1,-1 do
+		o = o .. (n%2^i-n%2^(i-1)&gt;0 and &apos;1&apos; or &apos;0&apos;)
+	end
+	return o
+end
+
+local function Convert(map,x,y,sheet)
+	local byte = &quot;0000&quot;
+	if IsType(map,x,y,sheet.wall) then
+		byte = GetQuad(map,x,y,sheet.floor)
+	end
+	byte = byte .. (IsType(map,x,y,sheet.floor) and &quot;1&quot; or &quot;0&quot;)
+	return byte
+end
+
+local function BuildHeader(config)
+	local output = &quot;&quot;
+	local enc = config.ENCODER
+	local cell_size = config.CELL_SIZE
+	local offset = config.OFFSET
+	output = output .. EncodeN(config.DUNGEON_SIZE_X,enc,2)
+	output = output .. EncodeN(config.DUNGEON_SIZE_Y,enc,2)
+	output = output .. EncodeN(cell_size.x,enc,2)
+	output = output .. EncodeN(cell_size.y,enc,2)
+	output = output .. EncodeN(cell_size.z,enc,2)
+	output = output .. (offset.x &lt; 0 and &quot;1&quot; or &quot;0&quot;)
+	output = output .. EncodeN(math.abs(offset.x),enc,2)
+	output = output .. EncodeN(math.abs(offset.y),enc,2)
+	output = output .. (offset.z &lt; 0 and &quot;1&quot; or &quot;0&quot;)
+	output = output .. EncodeN(math.abs(offset.z),enc,2)
+	return output
+end
+
+local function BuildCellStream(map,config)
+	local output = &quot;&quot;
+	local rep,enc = config.SHEET,config.ENCODER
+	for nx,x in pairs(map) do
+		for ny,y in pairs(x) do
+			local byte = Convert(map,nx,ny,rep)
+			output = output .. EncodeB(byte,enc)
+		end
+	end
+	return output
+end
+
+pass.send{
+	new = function (seed)
+	--	math.randomseed(seed)
+		--generate dungeon area--
+		local size = {config.DUNGEON_SIZE_X,config.DUNGEON_SIZE_Y}
+		local rep = config.SHEET
+		local dungeon = getArea(random.new(size[1]),random.new(0), random.new(size[2]),random.new(0), rep.wall)
+		--generate starting room--
+		local s = objects.room[math.random(1,3)]
+		s[1](); s[2](); -- recalculate random
+		local start = getArea(s[1],random.new(1,size[1]-s[1]{}-1),s[2],random.new(1,size[2]-s[2]{}-1),&quot;&quot;)
+		--imprint onto dungeon--
+		for x,_ in pairs(start) do
+			for y in pairs(_) do
+				dungeon[x][y] = rep.floor
+			end
+		end
+		-- begin generating branching features
+		subgen(dungeon,start,&quot;room&quot;,config.TIMEOUT,config.CORRIDOR_ROOM_RATE,config.DOOR_RATE,rep)
+
+		-- pick locations for spawn
+		local catch = {}
+		local items = &quot;&quot;
+		for x,_ in pairs(dungeon) do
+			for y in pairs(_) do
+				local check,dcheck = GetOctal(dungeon,x,y,rep.wall),GetOctal(dungeon,x,y,rep.door)
+				if check == &quot;000000000&quot; and dcheck == &quot;000000000&quot; then
+					table.insert(catch,{x,y})
+				end
+			end
+		end
+		-- guarentee 1 spawn
+		local r = math.random(1,#catch)
+		local s = catch[r]
+		-- choose spawns randomly
+		for i=1,#catch do
+			if math.random(1,100) &gt;= config.SPAWN_RATE then
+				catch[i] = nil
+			end
+		end
+		catch[r] = s
+		for i,v in pairs(catch) do
+			items = items .. EncodeN(3,config.ENCODER,2) .. EncodeN(v[1],config.ENCODER,2) .. EncodeN(v[2],config.ENCODER,2)
+		end
+
+		-- interconnect branches
+		local catch = {}
+		for x,_ in pairs(dungeon) do
+			if x ~= 1 and x ~= config.DUNGEON_SIZE_X then
+				for y,c in pairs(_) do
+					if y ~= 1 and y ~= config.DUNGEON_SIZE_Y then
+						local check = GetOctal(dungeon,x,y,rep.floor)
+						local X = check:sub(2,2) == &quot;1&quot; and check:sub(8,8) == &quot;1&quot;
+						local Y = check:sub(4,4) == &quot;1&quot; and check:sub(6,6) == &quot;1&quot;
+						if c == rep.wall and (X or Y) then
+							table.insert(catch,{x,y})
+						end
+					end
+				end
+			end
+		end
+		for _,s in pairs(catch) do
+			if math.random(0,99) &lt; 20 then
+				dungeon[s[1]][s[2]] = rep.floor
+			end
+		end
+		local output = &quot;&quot;
+		output = output .. BuildHeader(config)
+		output = output .. BuildCellStream(dungeon,config)
+		output = output .. items
+		return output
+	end,
+}
+</ProtectedString>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Script" referent="RBX5">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">random</string>
+						<ProtectedString name="Source">repeat wait() until shared.pass;local pass=shared.pass
+
+--[[	&apos;/R/&apos;		random operator
+
+	returns a random value which can be radomized based on the specified constraints
+
+	syntax:
+
+		random.new(1,10)
+
+		After initialization:
+
+			v()
+				--&gt; 3				recalculates value and returns the new result
+
+			v{}
+				--&gt; 3				returns the result of the previous calculation
+
+			tostring(v)
+				--&gt; [1, 10] (3)		[min constraint, max constraint] (current result)
+
+
+]]
+
+pass.send{
+	new = function (min,max)
+		local set={x=max or min,n=min,c=math.random(math.min(max or min,min),math.max(max or min,min))}
+		local proxy={};setmetatable(proxy,{})
+		local mt=getmetatable(proxy)
+		mt.__index=function(t,k)
+			error(&quot;attempt to index a random value&quot;,2)
+		end
+		mt.__newindex=function(t,k,v)
+			error(&quot;attempt to index a random value&quot;,2)
+		end
+		mt.__call=function(t,m)
+			set.c = type(m)==&quot;table&quot; and set.c or math.random(math.min(set.n,set.x),math.max(set.n,set.x))
+			return set.c
+		end
+		mt.__tostring=function(t)
+			local str = &quot;random: [&quot; .. set.n .. &quot;, &quot; .. set.x .. &quot;] (&quot; .. set.c .. &quot;)&quot;
+			return str
+		end
+		mt.__metatable=true
+
+		p=nil
+		return proxy
+	end
+}</ProtectedString>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX6">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Pass Library</string>
+				<ProtectedString name="Source">--[[
+	::Pass Library::
+
+		This library provides functions that allows safe communication between a script and its child scripts.
+
+	::Location::
+		_G.shared.pass
+
+	::Functions::
+
+		send (set)
+			Description:
+				Sends a set of values to be passed to the parent script.
+			Parameters:
+				(name)		:	(type)	:	(description)
+				set			:	table	:	Values that will be passed
+			Returns:
+				(none)
+
+		receive ()
+			Description:
+				Waits until all child scripts have passed sets of values, then adds each set to the parent script&apos;s environment, with the name of the child script as the reference.
+			Parameters:
+				(none)
+			Returns:
+				(none)
+
+		nosend ()
+			Description:
+				Passes no values, but allows the receive function to continue.
+			Parameters:
+				(none)
+			Returns:
+				(none)
+
+	::Notes::
+
+		- This library uses the default &apos;script&apos; variable defined in the script&apos;s environment. This variable must be present in order for this library to operate correctly.
+		- Child scripts must be given unique names, otherwise one be overwritten by another (think of them as variables in the parent script).
+		- The environments of functions are automatically set to that of the parent script. If a userdata has a metatable, the functions in that metatable are included, assuming the metatable is reachable.
+		- Because of environment changes, functions can only access certain variables. The following table expresses the relation between a script and variable scope a function has access to:
+			script\scope	&#135;global	local
+			&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;&#135;
+			parent		&#135;true	false
+			child			&#135;false	true
+]]
+
+local pass = {}
+local reg = {}
+setmetatable(pass,{__mode=&quot;k&quot;})
+setmetatable(reg,{__mode=&quot;k&quot;})
+
+local function ConvertFunc(parent,env,set)
+	set = set or {}
+	set[parent] = true
+	for _,child in pairs(parent) do
+		if not set[child] then
+			local type = type(child)
+			if type == &quot;table&quot; then
+				ConvertFunc(child,env,set)
+				local meta = getmetatable(child)
+				if meta then ConvertFunc(meta,env,set) end
+			elseif type == &quot;function&quot; then
+				setfenv(child,env)
+			elseif type == &quot;userdata&quot; then
+				local meta = getmetatable(child)
+				if meta then ConvertFunc(meta,env,set) end
+			end
+		end
+	end
+end
+
+
+
+shared.pass = {
+	receive = function()
+		local env = getfenv(2)
+		local script = env.script
+		if script then
+			for i,sub in pairs(script:GetChildren()) do
+				if sub.className == script.className then
+					reg[sub] = true
+					repeat wait() until pass[sub] or not reg[sub]
+					if reg[sub] then
+						local set = pass[sub][2]
+						ConvertFunc(set,env)
+						env[pass[sub][1]] = set
+					end
+					reg[sub] = nil
+					pass[sub] = nil
+				end
+			end
+		else
+			error(&quot;&apos;script&apos; not found in environment&quot;,2)
+		end
+	end,
+	send = function(set)
+		local script = getfenv(2).script
+		if script then -- TODO: is &apos;script&apos; a script, and is it the one that called this function?
+			if script.Parent and script.Parent.className == script.className then
+				if not pass[script] then
+					pass[script] = {script.Name,set}
+					return true
+				else
+					return false
+				end
+			else
+				error(&quot;Parent is not a &quot; .. script.className,2)
+			end
+		else
+			error(&quot;&apos;script&apos; not found in environment&quot;,2)
+		end
+	end,
+	nosend = function()
+		local script = getfenv(2).script
+		if script then
+			reg[script] = nil
+		else
+			error(&quot;&apos;script&apos; not found in environment&quot;,2)
+		end
+	end,
+}</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX7">
+			<Properties>
+				<bool name="Disabled">true</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">bit</string>
+				<ProtectedString name="Source">--[==[
+for i=8,1,-1 do r=r..(b%2^i-b%2^(i-1)&gt;0 and &apos;1&apos; or &apos;0&apos;) end
+for i=1,8 do c=c+(x:sub(i,i)==&apos;1&apos; and 2^(8-i) or 0) end
+
+[-- size header------------------------------][cell stream][-- item stream  --------]
+[x:2][y:2][sx:2][sy:2][ox:2][oy:2][oz:2][cs:x*y       ][is:?*6:[id:2][x:2][y:2]]
+s=[=[
+		[header----------------------------------------------------------------------][item stream---------------][cell stream]
+		[array size][cell size-------------------------][cell offset----][item amount]        [item id][position]
+		[x:2][y:2  ][ux:1][sx:2][uy:1][sy:2][uz:1][sz:2][ox:2][oy:2][oz:2][i:2       ][is:i*6:[id:2   ][x:2][y:2]][cs:x*y     ]
+]=]
+
+enc=&quot;0BCD1FGH2JKLMN3PQRST4VWXYZ56789=&quot;
+
+ex=[[0Z0Z0K0K0K10F00010F0B01B0N0NLDDDDDDDDDDDDDDDDDDDDDDDTZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRZBBBBBBBBBBBBBBBBBBBBBBBRNFFFFFFFFFFFFFFFFFFFFFFFV]]
+--[[ 100 100 10 10 10 -5 0 -5 1 ]]
+
+Encoder:	0BCD1FGH2JKLMN3PQRST4VWXYZ56789=
+item:	decode:	range:
+x:		enc&gt;dec:	1024
+y:		enc&gt;dec:	1024
+sx:		enc&gt;dec:	1024
+sy:		enc&gt;dec:	1024
+ox:		enc&gt;dec:	1024
+oy:		enc&gt;dec:	1024
+oz:		enc&gt;dec:	1024
+cs:		enc&gt;bin:	32
+is:id:	enc&gt;dec:	1024
+is:x:		enc&gt;dec:	1024
+is:y:		enc&gt;dec:	1024
+Cell Schema:
+0x00000	None
+0x00001	Floor
+0x00010	N_Wall
+0x00100	S_Wall
+0x01000	E_Wall
+0x10000	W_Wall
+]==]
+c,x=0,&quot;01101&quot;
+
+t={
+&quot;10011&quot;,
+&quot;00011&quot;,
+&quot;01011&quot;,
+&quot;10001&quot;,
+&quot;00001&quot;,
+&quot;01001&quot;,
+&quot;10101&quot;,
+&quot;00101&quot;,
+&quot;01101&quot;,
+}
+
+ex=[[]]
+
+function EncodeN(n,e)
+	local s,o,d = #e,&quot;&quot;
+	repeat
+		n,d = math.floor(n/s),(n%s)+1
+		o = e:sub(d,d) .. o
+	until n &lt;= 0
+	return o
+end
+
+function DecodeN(n,e)
+	local s,se,o = #n,#e,0
+	for i = 1,s do
+		o = o + (e:find(n:sub(i,i))-1)*se^(s-i)
+	end
+	return o
+end
+
+function EncodeB(n,e)
+	n = tonumber((n):sub(#n-4&gt;0 and #n-4 or 1),2)+1
+	return e:sub(n,n)
+end
+
+function DecodeB(n,e)
+	local o,n = &quot;&quot;,e:find(n)-1
+	for i=5,1,-1 do
+		o = o .. (n%2^i-n%2^(i-1)&gt;0 and &apos;1&apos; or &apos;0&apos;)
+	end
+	return o
+end
+</ProtectedString>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX8">
+		<Properties>
+			<string name="Name">Run Service</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX9</External>
+	<External>RBX10</External>
+	<Item class="ContentProvider" referent="RBX11">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ContentFilter" referent="RBX12">
+		<Properties>
+			<string name="Name">ContentFilter</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="KeyframeSequenceProvider" referent="RBX13">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="GuiService" referent="RBX14">
+		<Properties>
+			<string name="Name">GuiService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX15">
+		<Properties>
+			<int name="MaxPlayers">12</int>
+			<string name="Name">Players</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX16">
+		<Properties>
+			<string name="Name">StarterPack</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX17">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX18">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<External>RBX19</External>
+		<External>RBX20</External>
+		<External>RBX21</External>
+		<External>RBX22</External>
+		<External>RBX23</External>
+		<External>RBX24</External>
+		<External>RBX25</External>
+		<External>RBX26</External>
+		<External>RBX27</External>
+		<External>RBX28</External>
+		<External>RBX29</External>
+		<External>RBX30</External>
+		<External>RBX31</External>
+		<External>RBX32</External>
+	</Item>
+	<Item class="PhysicsService" referent="RBX33">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX34">
+		<Properties>
+			<string name="Name">BadgeService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX35">
+		<Properties>
+			<string name="Name">Geometry</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX36</External>
+	<Item class="Debris" referent="RBX37">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Timer" referent="RBX38">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX39">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX40</External>
+	<Item class="Selection" referent="RBX41">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX42</External>
+	<Item class="Lighting" referent="RBX43">
+		<Properties>
+			<Color3 name="Ambient">4287137928</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4290493376</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Sky" referent="RBX44">
+			<Properties>
+				<bool name="CelestialBodiesShown">false</bool>
+				<string name="Name">Sky</string>
+				<Content name="SkyboxBk"><url>http://www.roblox.com/asset/?ID=2013298</url></Content>
+				<Content name="SkyboxDn"><url>http://www.roblox.com/asset/?ID=2013298</url></Content>
+				<Content name="SkyboxFt"><url>http://www.roblox.com/asset/?ID=2013298</url></Content>
+				<Content name="SkyboxLf"><url>http://www.roblox.com/asset/?ID=2013298</url></Content>
+				<Content name="SkyboxRt"><url>http://www.roblox.com/asset/?ID=2013298</url></Content>
+				<Content name="SkyboxUp"><url>http://www.roblox.com/asset/?ID=2013298</url></Content>
+				<int name="StarCount">0</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX45">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>
