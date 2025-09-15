@@ -1,5 +1,5 @@
-# Number of games in this archive: **`601`**
-Last update: `08/09/2025`.
+# Number of games in this archive: **`639`**
+Last update: `15/09/2025`.
 
 Notes : ⚠ After September 30th all games without an age rating will become permanently unplayable, i don't know how that will affect uncopylocked games but regardless i'll try to archive as many as i can in the meantime.
 # 📖Uncopylocked Roblox Games Library📖
