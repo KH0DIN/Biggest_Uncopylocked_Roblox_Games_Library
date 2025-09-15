@@ -1,0 +1,5029 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0">
+		<Properties>
+			<Ref name="CurrentCamera">RBX1</Ref>
+			<double name="DistributedGameTime">0</double>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Camera" referent="RBX1">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-5.71981335</X>
+					<Y>6.75247288</Y>
+					<Z>-1.95962512</Z>
+					<R00>-0.719392419</R00>
+					<R01>0.295752615</R01>
+					<R02>-0.628494203</R02>
+					<R10>-9.48162793e-009</R10>
+					<R11>0.904823899</R11>
+					<R12>0.425785989</R12>
+					<R20>0.69460392</R20>
+					<R21>0.306307226</R21>
+					<R22>-0.650923431</R22>
+				</CoordinateFrame>
+				<CoordinateFrame name="Focus">
+					<X>1</X>
+					<Y>2.20000076</Y>
+					<Z>5</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0.600000024</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">1</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Part</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>100</X>
+					<Y>1.20000005</Y>
+					<Z>100</Z>
+				</Vector3>
+			</Properties>
+			<Item class="Texture" referent="RBX3">
+				<Properties>
+					<token name="Face">1</token>
+					<string name="Name">Texture</string>
+					<float name="Shiny">20</float>
+					<float name="Specular">0</float>
+					<float name="StudsPerTileU">8</float>
+					<float name="StudsPerTileV">8</float>
+					<Content name="Texture"><url>http://www.roblox.com/asset/?id=18656121</url></Content>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="SpecialMesh" referent="RBX4">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><null></null></Content>
+					<token name="MeshType">6</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>100</X>
+						<Y>1</Y>
+						<Z>100</Z>
+					</Vector3>
+					<Content name="TextureId"><null></null></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Script" referent="RBX5">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">GameMain</string>
+				<string name="Source">--repeat wait() until _G.GO
+
+--[[#############################################
+----------------------------------------------------------------------------------------------
+Global data
+----------------------------------------------------------------------------------------------
+##############################################]]
+
+local cfg = {
+	ship_altitude = 5, --altitude of planets and ships from grid
+	resource_spawn_time = 30, --time for resources on a planet to spawn
+	collection_cycle = 120, --how long between collections by planets
+	planet_cost_cooef = 1, --how many resource per planet upkeep costs
+}
+
+local planets = {}
+local players = {}
+local teams = {}
+
+--[[#############################################
+----------------------------------------------------------------------------------------------
+Global getters and setters
+----------------------------------------------------------------------------------------------
+##############################################]]
+
+--get a team by a teamcolor
+function GetTeam(teamcolor)
+	return teams[teamcolor.Number]
+end
+
+--set the number of rsources in the coffer of this team
+function SetCoffer(teamcolor, amount)
+	GetTeam(teamcolor).Coffer = amount
+end
+--set the number of resources in the coffer for this team
+function GetCoffer(teamcolor)
+	return GetTeam(teamcolor).Coffer
+end
+
+--set the number of planets for this team
+function SetNPlanets(teamcolor, amount)
+	GetTeam(teamcolor).NPlanets = amount
+end
+--get the number of planets for this team
+function GetNPlanets(teamcolor)
+	return GetTeam(teamcolor).NPlanets
+end
+
+--[[#############################################
+----------------------------------------------------------------------------------------------
+global functions
+----------------------------------------------------------------------------------------------
+##############################################]]
+
+--create the planets
+function BuildGameMap()
+	local planetname_ref = {
+		&quot;Telamon&quot;,
+		&quot;Sol&quot;,
+		&quot;Aeacus&quot;,
+		&quot;Serenity&quot;,
+		&quot;Terror&quot;,
+		&quot;Redeye&quot;
+	}
+	local planetcolor_ref = {
+		{BrickColor.new(138), BrickColor.new(5)},
+		{BrickColor.new(217), BrickColor.new(153)},
+		{BrickColor.new(192), BrickColor.new(25)},
+		{BrickColor.new(210), BrickColor.new(211)},
+		{BrickColor.new(28), BrickColor.new(141)}
+	}
+	local function GenPlanetName() 
+		local name = &quot;&quot;
+		if math.random(1, 10) == 10 then
+			name = planetname_ref[math.random(1, #planetname_ref)]
+		else
+			for i = 1, 2 do
+				name = name..string.char(math.random(string.byte(&quot;A&quot;), string.byte(&quot;Z&quot;)))
+			end
+			name = name..tostring(math.random(1000, 10000))
+		end
+		return name
+	end
+	planetcolor_ref[0] = {BrickColor.new(199), BrickColor.new(2)}	
+	--systems
+	for i = 1, 20 do
+		local x = math.random(-1000, 1000)
+		local y = math.random(-1000, 1000)
+		for j = 1, math.random(10, 20) do
+			local ang = math.random(0, math.pi*200)/100
+			local rad = math.random(0, math.random(0, 500))
+			local production = 0
+			local resources = math.random(0, 4)
+			local defence = math.random(0, 3)
+			local special = false
+			if math.random(1, 10) == 10 then
+				special = true
+				production = math.random(1, 5)
+				defence = defence + math.random(1, 2)
+				resources = resources + 1
+			end
+			local planet = game.Lighting.Planet:clone()
+			local sz = math.ceil(resources + production/2 + defence/2 + 0.1)
+			planet.Size = Vector3.new(sz, sz, sz)
+			local cref = planetcolor_ref[resources]
+			planet.BrickColor = cref[math.random(1, #cref)]
+			planet.CFrame = CFrame.new(x + math.sin(ang)*rad, cfg[&quot;ship_altitude&quot;], y + math.cos(ang)*rad)
+			planet.Parent = game.Workspace
+			if special then -- add ring
+
+			end
+			---
+			planet.PlanetName.Value = GenPlanetName()
+			planet.PlanetResources.Value = resources
+			planet.PlanetProduction.Value = production
+			planet.PlanetDefence.Value = defence
+			--
+			table.insert(planets, planet)
+		end
+	end
+end
+
+--creat the teams for the game
+function BuildTeams()
+	teams[game.Teams.BlueConfederacy.TeamColor.Number] = {
+		TeamName = &quot;Blue Confederacy&quot;,
+		TeamIcon = &quot;http://www.roblox.com/asset/?id=18885103&quot;,
+		Coffer = 0,
+		NPlanets = 0
+	}
+	teams[game.Teams.RedUnion.TeamColor.Number] = {
+		TeamName = &quot;Red Union&quot;,
+		TeamIcon = &quot;http://www.roblox.com/asset/?id=18885114&quot;,
+		Coffer = 0,
+		NPlanets = 0
+	}
+end
+
+--update how many planets and coffer of this team&apos;s player&apos;s guis
+function UpdateTeamStats(teamcolor)
+	for _, p in pairs(game.Players:GetChildren()) do
+		if p.TeamColor == teamcolor then
+			p.PlayerGui.NavGui.StatDisplay.TeamCofferText.Text = GetCoffer(p.TeamColor)..&quot; ( -&quot;..GetNPlanets(p.TeamColor)*cfg[&quot;planet_cost_cooef&quot;]..&quot; )&quot;
+		end
+	end
+end
+
+--update the collection cycle gui
+function UpdateCollectionCycle(secsleft)
+	--massive hack for seconds =&gt; minutes:seconds
+	local min = math.floor(secsleft/60)
+	local sec = tostring((secsleft%60) or &quot;00&quot;)
+	sec = ((#sec == 1) and &quot;0&quot;..sec or sec)
+	local tm = min..&quot;:&quot;..sec	
+	--apply to each player
+	for _, p in pairs(game.Players:GetChildren()) do
+		if p:FindFirstChild(&quot;PlayerGui&quot;) then
+			p.PlayerGui.NavGui.StatDisplay.TeamCollectionText.Text = tm
+		end
+	end
+end
+
+-----------------------------------
+--- main player thread
+-----------------------------------
+function PlayerThread(player)
+	print(&quot;&lt;Player &quot;, player, &quot;entered game&gt;&quot;)
+	--global player data
+	local Data = {
+		Resources = 0,
+		Components = 0
+	}
+	players[player] = Data
+
+	--local player data
+	local gui
+	local ToolSelection = &quot;&quot;
+	local PlanetInfoShowing = false
+	local ResourceInfoShowing = false
+	local ProduceInfoShowing = false
+	local CaptureInfoShowing = false
+
+	print(&quot;__&lt;/Declared globals&gt;&quot;)
+
+	--forwards declarations
+	local SetShip, SetResources, SetComponents, SetBusy,
+	GetShip, GetResources, GetComponents, GetBusy,
+	SelectTool, 
+	OnToolSelect, OnToolDeselect, OnToolClick, OnToolTarget, OnToolMotion, OnInit, 
+	BuildGui;
+
+	print(&quot;__&lt;/Made forwards declarations&gt;&quot;)
+
+	--[[#############################################
+	----------------------------------------------------------------------------------------------
+	per player getter / setter functions
+	----------------------------------------------------------------------------------------------
+	##############################################]]
+
+	--set the ship current ship this player is using
+	SetShip = function(shipname)
+		local newship = game.Lighting.Ships[shipname]:clone()
+		newship.Parent = game.Workspace
+		newship:MakeJoints()
+		--[[--create dragger
+		local shipparts = {}
+		for _, o in pairs(newship:GetChildren()) do
+			table.insert(shipparts, o)
+		end
+		local d = Instance.new(&quot;Dragger&quot;)
+		dragger = d
+		d:MouseDown(newship.Body, Vector3.new(0, 0, 0), shipparts)]]
+		--set up ship
+		newship.Body.CFrame = CFrame.new(math.random(-20, 20), cfg[&quot;ship_altitude&quot;], math.random(-20, 20))
+		--newship.Body.BodyPosition.position = Vector3.new(newship.Body.Position.x, cfg[&quot;ship_altitude&quot;], newship.Body.Position.z)
+		player.Ship.Value = newship
+		Data[&quot;Ship&quot;] = newship
+	end
+	--get the workspace model for this player&apos;s ship
+	GetShip = function()
+		return player.Ship.Value
+	end
+
+	--set how many resources the player has
+	SetResources = function(amount)
+		Data.Resources = amount
+		gui.StatDisplay.ResourceText.Text = tostring(amount)
+	end
+	--get how many resources the player has
+	GetResources = function()
+		return Data.Resources
+	end
+
+	--set how many components a person has
+	SetComponents = function(amount)
+		Data.Components = amount
+		gui.StatDisplay.ComponentText.Text = tostring(amount)
+	end
+	--get how many components a person has
+	GetComponents = function()
+		return Data.Components
+	end
+
+	--set and get busy status
+	SetBusy = function(state)
+		player.Busy.Value = state
+	end
+	GetBusy = function()
+		return player.Busy.Value
+	end
+
+	--set the selected tool
+	SelectTool = function(toolname)
+		--same tool? deselect it
+		if toolname == ToolSelection then
+			OnToolDeselect(toolname)
+			gui.Dashboard[toolname].Selected.Visible = false
+			ToolSelection = &quot;&quot;
+		end
+		--other tool, deselect this and select it
+		if ToolSelection ~= &quot;&quot; then
+			gui.Dashboard[ToolSelection].Selected.Visible = false
+			OnToolDeselect(ToolSelection)
+		end
+		ToolSelection = toolname
+		gui.Dashboard[ToolSelection].Selected.Visible = true
+		OnToolSelect(toolname)
+	end
+
+	--set connections for this player&apos;s gui
+	BuildGui = function()
+		gui = player.PlayerGui.NavGui
+		--set up connections for tool selection
+		local toolnames = {&quot;CaptureTool&quot;, &quot;ExtractionTool&quot;, &quot;PlanetInfoTool&quot;, &quot;ProductionTool&quot;, &quot;UpgradeTool&quot;}
+		for _, tn in pairs(toolnames) do
+			gui.Dashboard[tn].MouseButton1Down:connect(function()
+				SelectTool(tn)
+			end)
+		end
+		print(&quot;______&lt;/Set up tool connections&gt;&quot;)
+		--set up planet team interface
+		--changed the color of billboardguis beside planets to show their teams
+		for _, planet in pairs(planets) do
+			local gu = gui.PlanetTeam:clone()
+			gu.StudsOffset = Vector3.new(planet.Size.x/2*0.875, planet.Size.x/2*0.875, 0)
+			gu.Parent = gui.PlanetTeams
+			gu.Adornee = planet
+			if planet.OwnerTeam.Value.Number == 1 then
+				gu.TeamThumb.Visible = false
+			else
+				--set appearance
+				gu.TeamThumb.Image = GetTeam(planet.OwnerTeam.Value).TeamIcon
+			end
+			planet.OwnerTeam.Changed:connect(function()
+				if planet.OwnerTeam.Value.Number == 1 then
+					gu.TeamThumb.Visible = false
+				else
+					gu.TeamThumb.Visible = true
+					gu.TeamThumb.Image = GetTeam(planet.OwnerTeam.Value).TeamIcon
+				end
+			end)
+		end
+		print(&quot;______&lt;/Set up planet team connections&gt;&quot;)
+		--set up guis for current and entering player&apos;s ships
+		local function CreatePlayerShipMarker(p)
+			--wait for initial ship
+			repeat
+				wait(0.1)
+				if p.Parent == nil then return end
+			until (p:FindFirstChild(&quot;Ship&quot;) and p.Ship.Value)
+			local atch_gui --TODO make this the gui to show the player&apos;s stuff
+			local function deploy_gui(ship)
+				--TODO make the gui and set it&apos;s stats
+			end
+			p.Changed:connect(function(pr) if pr == &quot;TeamColor&quot; then deploy_gui(p.Ship.Value) end end)
+			p.Ship.Changed:connect(function() deploy_gui(p.Ship.Value) end)
+			deploy_gui(p.Ship.Value)
+		end
+		for _, p in pairs(game.Players:GetChildren()) do if p ~= player then CreatePlayerShipMarker(p) end end
+		game.Players.ChildAdded:connect(CreatePlayerShipMarker)
+		print(&quot;______&lt;/set up player markers&gt;&quot;)
+		--set up test deposit in upgrade menu
+		gui.UpgradeDisplay.CofferDeposit.MouseButton1Down:connect(function()
+			SetCoffer(player.TeamColor, GetCoffer(player.TeamColor) + GetResources())
+			SetResources(0)
+			UpdateTeamStats(player.TeamColor)
+		end)
+		--remove health gui
+		if player.PlayerGui:FindFirstChild(&quot;HealthGUI&quot;) then
+			player.PlayerGui.HealthGUI:remove()
+		end
+	end
+
+	--[[#############################################
+	----------------------------------------------------------------------------------------------
+	local callbacks
+	----------------------------------------------------------------------------------------------
+	##############################################]]
+
+	--called when the player selects a tool
+	OnToolSelect = function(toolname)
+		if ToolSelection == &quot;ExtractionTool&quot; then
+			gui.ExtractDisplay.Visible = true
+			gui.ExtractDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1, 0)
+			gui.ExtractDisplay.ProgressText.Text = &quot;0%&quot;
+		elseif ToolSelection == &quot;CaptureTool&quot; then
+			gui.CaptureDisplay.Visible = true
+			gui.CaptureDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1, 0)
+			gui.CaptureDisplay.ProgressText.Text = &quot;0%&quot;
+		elseif ToolSelection == &quot;ProductionTool&quot; then
+			gui.ProduceDisplay.Visible = true
+			gui.ProduceDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1, 0)
+			gui.ProduceDisplay.ProgressText.Text = &quot;0%&quot;
+		elseif ToolSelection == &quot;UpgradeTool&quot; then
+			gui.UpgradeDisplay.Visible = true
+		end		
+	end
+
+	--called whena  tool is deselected
+	OnToolDeselect = function(toolname)
+		if ToolSelection == &quot;ExtractionTool&quot; then
+			gui.ExtractDisplay.Visible = false
+		elseif ToolSelection == &quot;CaptureTool&quot; then
+			gui.CaptureDisplay.Visible = false
+		elseif ToolSelection == &quot;ProductionTool&quot; then
+			gui.ProduceDisplay.Visible = false
+		elseif ToolSelection == &quot;UpgradeTool&quot; then
+			gui.UpgradeDisplay.Visible = false
+		end			
+	end
+
+	--called when a tool clicks
+	OnToolClick = function(toolname, target)
+		if GetBusy() then return end
+		if toolname == &quot;ExtractionTool&quot; then
+			if target and target.Name == &quot;Planet&quot; and target.OwnerTeam.Value == player.TeamColor then
+				if (target.Position - GetShip().Body.Position).magnitude &lt; 10 then
+					local time_since_extraction = tick() - target.LastExtractionTime.Value
+					if time_since_extraction &gt; cfg[&quot;resource_spawn_time&quot;] and target.LastExtractionTime ~= -1 then
+						gui.BusyFrame.Visible = true
+						SetBusy(true)
+						target.LastExtractionTime.Value = -1
+						--collect resources, dummy for now
+						for i = 0, 100, 1 do
+							gui.ExtractDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1-i/100, 0)
+							gui.ExtractDisplay.ProgressText.Text = i..&quot;%&quot;
+							wait()
+						end
+						target.LastExtractionTime.Value = tick()
+						--add rsources
+						SetResources(GetResources() + target.PlanetResources.Value)
+						gui.ExtractDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1, 0)
+						gui.ExtractDisplay.ProgressText.Text = &quot;0%&quot;
+						SetBusy(false)
+						gui.BusyFrame.Visible = false
+					end
+				end
+			end
+		elseif toolname == &quot;ProductionTool&quot; then
+			if target and target.Name == &quot;Planet&quot; and target.OwnerTeam.Value == player.TeamColor then
+				if (target.Position - GetShip().Body.Position).magnitude &lt; 10 then
+					if GetBusy() then return end
+					if GetResources() == 0 or target.PlanetProduction.Value == 0 then return end
+					gui.BusyFrame.Visible = true
+					SetBusy(true)
+					--do production
+					local num_to_produce = target.PlanetProduction.Value
+					if num_to_produce &gt; GetResources() then
+						num_to_produce = GetResources()
+					end
+					for i = 0, 100, 1 do
+						gui.ProduceDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1-i/100, 0)
+						gui.ProduceDisplay.ProgressText.Text = i..&quot;%&quot;
+						wait()
+					end
+					gui.ProduceDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1, 0)
+					gui.ProduceDisplay.ProgressText.Text = &quot;0%&quot;
+					--
+					SetComponents(GetComponents() + num_to_produce)
+					SetResources(GetResources() - num_to_produce)
+					--
+					SetBusy(false)
+					gui.BusyFrame.Visible = false
+				end
+			end
+		elseif toolname == &quot;CaptureTool&quot; then
+			if target and target.Name == &quot;Planet&quot; then
+				if (target.Position - GetShip().Body.Position).magnitude &lt; 10 then
+					if GetBusy() then return end
+					if target.OwnerTeam.Value == player.TeamColor and target.OwnerPerc.Value == 100 then return end
+					gui.BusyFrame.Visible = true
+					SetBusy(true)
+					--try to capture
+					while target.OwnerPerc.Value &gt; 0 do
+						if target.OwnerTeam.Value == player.TeamColor then
+							target.OwnerPerc.Value = target.OwnerPerc.Value - 5
+						else
+							target.OwnerPerc.Value = target.OwnerPerc.Value - 6 + target.PlanetDefence.Value
+						end
+						gui.CaptureDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, target.OwnerPerc.Value/100, 0)
+						gui.CaptureDisplay.ProgressText.Text = (100-target.OwnerPerc.Value)..&quot;%&quot;
+						wait(0.1)
+					end
+					--subtract from other teams planets if not neutral
+					if target.OwnerTeam.Value.Number ~= 1 then
+						SetNPlanets(target.OwnerTeam.Value, GetNPlanets(target.OwnerTeam.Value)-1)
+					end
+					--change ownership
+					target.OwnerTeam.Value = player.TeamColor
+					--add to new teams planets
+					SetNPlanets(target.OwnerTeam.Value, GetNPlanets(target.OwnerTeam.Value)+1)
+					target.OwnerPerc.Value = 100
+					gui.CaptureDisplay.ProgressFrame.Filler.Size = UDim2.new(1, 0, 1, 0)
+					gui.CaptureDisplay.ProgressText.Text = &quot;0%&quot;
+					SetBusy(false)
+					gui.BusyFrame.Visible = false
+				end
+			end
+		end
+	end
+
+	--called on the tools&apos; target changing
+	OnToolTarget = function(toolname, target)
+		if toolname == &quot;PlanetInfoTool&quot; then
+			if target and target.Name == &quot;Planet&quot; then
+				if GetBusy() then return end
+				local pf = gui.PropertyFloater
+				pf.Position = UDim2.new(0, player.MousePos.Value.x, 0, player.MousePos.Value.y-20)
+				--
+				pf.PlanetName.Text = target.PlanetName.Value
+				pf.PlanetName.Bold.Text = pf.PlanetName.Text
+				local ownership = GetTeam(target.OwnerTeam.Value)
+				if ownership then
+					pf.MOwnership.Text = ownership.TeamName
+				else
+					pf.MOwnership.Text = &quot;[ unowned ]&quot;
+				end
+				for i = 1, 5 do
+					if target.PlanetResources.Value &gt;= i then
+						pf.MResources[&quot;_&quot;..i].Star.Visible = true
+					else
+						pf.MResources[&quot;_&quot;..i].Star.Visible = false
+					end
+				end
+				for i = 1, 5 do
+					if target.PlanetDefence.Value &gt;= i then
+						pf.MDefense[&quot;_&quot;..i].Star.Visible = true
+					else
+						pf.MDefense[&quot;_&quot;..i].Star.Visible = false
+					end
+				end
+				for i = 1, 5 do
+					if target.PlanetProduction.Value &gt;= i then
+						pf.MProduction[&quot;_&quot;..i].Star.Visible = true
+					else
+						pf.MProduction[&quot;_&quot;..i].Star.Visible = false
+					end
+				end
+				--
+				pf.Visible = true	
+				PlanetInfoShowing = true
+			else 
+				local pf = gui.PropertyFloater
+				pf.Visible = false
+				PlanetInfoShowing = false
+			end
+		elseif toolname == &quot;ProductionTool&quot; then
+			if target and target.Name == &quot;Planet&quot; and target.OwnerTeam.Value == player.TeamColor then
+				if GetBusy() then return end
+				local pf = gui.ProduceFloater	
+				pf.Position = UDim2.new(0, player.MousePos.Value.x, 0, player.MousePos.Value.y-20)
+				pf.PlanetName.Text = target.PlanetName.Value
+				pf.PlanetName.Bold.Text = pf.PlanetName.Text
+				pf.Visible = true
+				ProduceInfoShowing = true
+				for i = 1, 5 do
+					if target.PlanetProduction.Value &gt;= i then
+						pf.MProduction[&quot;_&quot;..i].Star.Visible = true
+					else
+						pf.MProduction[&quot;_&quot;..i].Star.Visible = false
+					end
+				end
+			else
+				gui.ProduceFloater.Visible = false
+				ProduceInfoShowing = false
+			end
+		elseif toolname == &quot;CaptureTool&quot; then
+			if target and target.Name == &quot;Planet&quot; then
+				if GetBusy() then return end
+				local cf = gui.CaptureFloater
+				cf.Position = UDim2.new(0, player.MousePos.Value.x, 0, player.MousePos.Value.y-20)
+				cf.PlanetName.Text = target.PlanetName.Value
+				cf.PlanetName.Bold.Text = cf.PlanetName.Text
+				cf.Visible = true
+				CaptureInfoShowing = true
+				for i = 1, 5 do
+					if target.PlanetDefence.Value &gt;= i then
+						cf.MDefense[&quot;_&quot;..i].Star.Visible = true
+					else
+						cf.MDefense[&quot;_&quot;..i].Star.Visible = false
+					end
+				end
+				while CaptureInfoShowing do
+					if target.OwnerTeam.Value.Number == 1 then
+						cf.MOwnership.Text = &quot;[ Unowned ] - &quot;..target.OwnerPerc.Value..&quot;%&quot;
+					else
+						cf.MOwnership.Text = GetTeam(target.OwnerTeam.Value).TeamName..&quot; - &quot;..target.OwnerPerc.Value..&quot;%&quot;
+					end
+					wait()
+				end
+			else
+				gui.CaptureFloater.Visible = false
+				CaptureInfoShowing = false
+			end
+		elseif toolname == &quot;ExtractionTool&quot; then
+			if target and target.Name == &quot;Planet&quot; and target.OwnerTeam.Value == player.TeamColor then
+				if GetBusy() then return end
+				local rf = gui.ResourceFloater
+				rf.Position = UDim2.new(0, player.MousePos.Value.x, 0, player.MousePos.Value.y-20)
+				rf.PlanetName.Text = target.PlanetName.Value
+				rf.PlanetName.Bold.Text = rf.PlanetName.Text
+				rf.Visible = true
+				ResourceInfoShowing = true
+				while ResourceInfoShowing do
+					local time_since_extraction = tick() - target.LastExtractionTime.Value
+					if target.LastExtractionTime.Value == -1 then
+						rf.MRecharge.Text = &quot;0&quot;
+						rf.MAvailable.Text = &quot;resources being extracted&quot;
+					elseif time_since_extraction &gt; cfg[&quot;resource_spawn_time&quot;] then --resources availble
+						rf.MRecharge.Text = &quot;0&quot;
+						rf.MAvailable.Text = target.PlanetResources.Value..&quot; available&quot;
+					else
+						rf.MRecharge.Text = math.floor(cfg[&quot;resource_spawn_time&quot;] - time_since_extraction)
+						rf.MAvailable.Text = target.PlanetResources.Value..&quot; recharging&quot;
+					end	
+					wait()		
+				end
+			else
+				local rf = gui.ResourceFloater
+				rf.Visible = false
+				ResourceInfoShowing = false
+			end
+		end
+	end
+
+	--called on a tool&apos;s mouse moving
+	OnToolMotion = function(toolname, x, y)
+		if PlanetInfoShowing then
+			gui.PropertyFloater.Position = UDim2.new(0, x, 0, y-20)
+		elseif ResourceInfoShowing then
+			gui.ResourceFloater.Position = UDim2.new(0, x, 0, y-20)
+		elseif ProduceInfoShowing then
+			gui.ProduceFloater.Position = UDim2.new(0, x, 0, y-20)
+		elseif CaptureInfoShowing then
+			gui.CaptureFloater.Position = UDim2.new(0, x, 0, y-20)
+		end
+	end
+
+	--called when the player enters the map
+	OnInit = function()
+		print(&quot;__&lt;Initialization&gt;&quot;)
+		--create the gui
+		print(&quot;____&lt;GUI&gt;&quot;)
+		BuildGui()
+		print(&quot;____&lt;/GUI&gt;&quot;)
+		--
+		function NValue(parent, type, name)
+			local a = Instance.new(type)
+			a.Name = name
+			a.Parent = parent
+			return a
+		end
+		--ship interface
+		NValue(player, &quot;ObjectValue&quot;, &quot;Ship&quot;)
+		NValue(player, &quot;BoolValue&quot;, &quot;Busy&quot;)
+		--mouse interface
+		local mposv = NValue(player, &quot;Vector3Value&quot;, &quot;MousePos&quot;)
+		NValue(player, &quot;ObjectValue&quot;, &quot;MouseTarget&quot;).Changed:connect(function()
+			OnToolTarget(ToolSelection, player.MouseTarget.Value)
+		end)
+		NValue(player, &quot;BoolValue&quot;, &quot;MouseClicked&quot;).Changed:connect(function()
+			OnToolClick(ToolSelection, player.MouseTarget.Value)
+		end)
+		NValue(player, &quot;BoolValue&quot;, &quot;MouseMoved&quot;).Changed:connect(function()
+			OnToolMotion(ToolSelection, mposv.Value.x, mposv.Value.y)
+		end)
+		print(&quot;____&lt;/Created Values&gt;&quot;)
+		--set ship to default ship
+		SetShip(&quot;DefaultShip&quot;)
+		print(&quot;____&lt;/Set ship&gt;&quot;)
+		--notify tool that setup is done
+		NValue(player, &quot;IntValue&quot;, &quot;INIT&quot;)
+		print(&quot;__&lt;/Initialization&gt;&quot;)
+	end
+
+	--[[#############################################
+	----------------------------------------------------------------------------------------------
+	actual setup of the player
+	----------------------------------------------------------------------------------------------
+	##############################################]]
+
+	print(&quot;__&lt;/Defined functions&gt;&quot;)
+
+	--remove character
+	repeat
+		wait()
+		if not player.Parent then return end
+	until player.Character and player:FindFirstChild(&quot;PlayerGui&quot;)
+	player.Character.Parent = nil
+
+	print(&quot;__&lt;/Removed character&gt;&quot;)
+	--call initialization
+	OnInit()
+	print(&quot;&lt;/Player&gt;&quot;)
+	--get rid of annoying tools in test solo
+	wait(2)
+	player.StarterGear.ChildAdded:connect(function(o) wait() o:remove() end)
+	player.Backpack.ChildAdded:connect(function(o) if o:IsA(&quot;Tool&quot;) then wait() o:remove() end end)
+	for _, o in pairs(player.StarterGear:GetChildren()) do o:remove() end
+	for _, o in pairs(player.Backpack:GetChildren()) do if o:IsA(&quot;Tool&quot;) then o:remove() end end
+	--wait for the player to leave
+	local remp = game.Players.ChildRemoved:wait()
+	while remp ~= player do
+		remp = game.Players.ChildRemoved:wait()
+	end
+	GetShip().Parent = nil
+end
+
+-----------------------------------
+--- main game thread
+-----------------------------------
+function GameThread()
+	--set up teams
+	BuildTeams()
+	BuildGameMap()
+	----team resource payment loop
+	while true do
+		--countdown
+		for i = cfg[&quot;collection_cycle&quot;], 0, -1 do
+			UpdateCollectionCycle(i)
+			wait(1)
+		end
+		--deduct from coffer for each planet, or lose it if no money in coffer
+		for _, planet in pairs(planets) do
+			if planet.OwnerTeam.Value.Number ~= 1 then
+				local team = planet.OwnerTeam.Value
+				if GetCoffer(team) &gt;= cfg[&quot;planet_cost_cooef&quot;] then
+					SetCoffer(team, GetCoffer(team) - cfg[&quot;planet_cost_cooef&quot;])
+				else
+					planet.OwnerTeam.Value = BrickColor.new(1)
+					planet.OwnerPerc.Value = 100
+					SetNPlanets(team, GetNPlanets(team) - 1)
+				end
+			end
+		end
+		--update guis
+		for tn, _ in pairs(teams) do
+			UpdateTeamStats(BrickColor.new(tn))
+		end
+	end
+end
+
+--[[#############################################
+----------------------------------------------------------------------------------------------
+start up game
+----------------------------------------------------------------------------------------------
+##############################################]]
+
+--start the game thread
+Spawn(GameThread)
+
+--start a thread for each player
+game.Players.ChildAdded:connect(function(p)
+PlayerThread(p)
+end)
+for _, p in pairs(game.Players:GetChildren()) do Spawn(function() PlayerThread(p) end) end
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX6">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><url>http://www.roblox.com/asset/?id=16200204</url></Content>
+				<string name="Name">Temp</string>
+				<string name="Source">print(&quot;Hello world!&quot;)
+</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="RunService" referent="RBX7">
+		<Properties>
+			<string name="Name">Run Service</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX8</External>
+	<External>RBX9</External>
+	<Item class="ContentProvider" referent="RBX10">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX11">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="ContentFilter" referent="RBX12">
+		<Properties>
+			<string name="Name">ContentFilter</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="InsertService" referent="RBX13">
+		<Properties>
+			<string name="Name">Instance</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBX14">
+		<Properties>
+			<int name="MaxPlayers">12</int>
+			<string name="Name">Players</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX15">
+		<Properties>
+			<string name="Name">StarterPack</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="HopperBin" referent="RBX16">
+			<Properties>
+				<bool name="Active">false</bool>
+				<token name="BinType">0</token>
+				<string name="Name">MainTool</string>
+				<Content name="TextureId"><null></null></Content>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="Script" referent="RBX17">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">MainToolScript</string>
+					<string name="Source">local mouse = script.Parent.Selected:wait()
+mouse.Idle:wait()
+
+local player = script.Parent.Parent.Parent
+repeat wait() until player:FindFirstChild(&quot;INIT&quot;)
+
+function focus_ship()
+	if player.Ship.Value then
+		local cam = game.Workspace.CurrentCamera
+		cam.CameraSubject = player.Ship.Value
+		cam.CameraType = 3
+	end
+end
+player.Ship.Changed:connect(focus_ship)
+focus_ship()
+
+local ngui = player.PlayerGui.NavGui
+local throttledrag = false
+local Rotation = 0
+local Thrust = 0
+local dat = {
+	SpeedFactor = 30,
+	RotationFactor = 1.5
+}
+
+function round(n)
+	return math.floor(n+0.5)
+end
+
+--update the nav gui
+function UpdateNavGui(player)
+	local throttle = ngui.ThrusterPanel.Slot.Slider
+	local thp = throttle.Position
+	throttle.Position = UDim2.new(thp.X.Scale, thp.X.Offset, 0.5-Thrust/2, thp.Y.Offset)
+	print(&quot;Navigation Gui Updated&quot;)
+end
+
+local last_nav_time = tick()
+--update ship&apos;s ingame course
+function UpdateNav()
+	local dt = tick() - last_nav_time
+	last_nav_time = tick()
+	if player.Busy.Value then 
+		--player.Ship.Value.Body.BodyVelocity.velocity = Vector3.new(0, 0, 0)
+		--player.Ship.Value.Body.BodyRotation.angularvelocity = Vector3.new(0, 0, 0)		
+	else
+		--player.Ship.Value.Body.BodyVelocity.velocity = player.Ship.Value.Body.CFrame.lookVector*Thrust*dat[&quot;SpeedFactor&quot;]
+		--player.Ship.Value.Body.BodyRotation.angularvelocity = Vector3.new(0, Rotation*dat[&quot;RotationFactor&quot;], 0)
+		local body = player.Ship.Value.Body
+		body.Anchored = false
+		body.CFrame = body.CFrame * CFrame.new(0, 0, -Thrust*dat[&quot;SpeedFactor&quot;]*dt) * CFrame.fromEulerAnglesXYZ(0, Rotation*dat[&quot;RotationFactor&quot;]*dt, 0)
+		body.Anchored = true
+	end
+end
+
+ngui.ThrusterPanel.Slot.MouseButton1Down:connect(function()
+	throttledrag = true
+end)
+ngui.ThrusterPanel.Slot.MouseButton1Up:connect(function()
+	throttledrag = false
+end)
+ngui.ThrusterPanel.Slot.MouseMoved:connect(function(x, y)
+	if not throttledrag then return end
+	--print(&quot;Y offset&quot;, y, &quot;Abs Position&quot;, ngui.ThrusterPanel.Slot.AbsolutePosition.y, &quot;Abs Size&quot;, ngui.ThrusterPanel.Slot.AbsoluteSize.y)
+	y = y - ngui.ThrusterPanel.Slot.AbsPosY.Value
+	local fac = 1 - (round(y/ngui.ThrusterPanel.Slot.AbsoluteSize.y*20)/20)*2
+	--print(&quot;Set thrust to&quot;, fac)
+	Thrust = fac
+	UpdateNavGui(player)
+	UpdateNav(player)
+end)
+ngui.ThrusterPanel.TurnLeft.MouseButton1Down:connect(function()
+	Rotation = 1
+end)
+ngui.ThrusterPanel.TurnLeft.MouseButton1Up:connect(function()
+	Rotation = 0
+end)
+ngui.ThrusterPanel.TurnLeft.MouseLeave:connect(function()
+	Rotation = 0
+end)	
+ngui.ThrusterPanel.TurnRight.MouseButton1Down:connect(function()
+	Rotation = -1
+end)
+ngui.ThrusterPanel.TurnRight.MouseButton1Up:connect(function()
+	Rotation = 0
+end)	
+ngui.ThrusterPanel.TurnRight.MouseLeave:connect(function()
+	Rotation = 0
+end)
+
+function onSelect(m)
+	m.Icon = &quot;http://www.roblox.com/asset/?id=18733212&quot;
+	m.Button1Down:connect(function()
+		player.MouseTarget.Value = m.Target
+		player.MouseClicked.Value = not player.MouseClicked.Value
+	end)
+	m.Move:connect(function()
+		player.MouseTarget.Value = m.Target
+		player.MousePos.Value = Vector3.new(m.X, m.Y, 0)
+		player.MouseMoved.Value = not player.MouseMoved.Value
+	end)
+	m.Idle:connect(function()
+		player.MouseTarget.Value = m.Target
+	end)
+	m.KeyDown:connect(function(key)
+		if key == &quot;d&quot; then --right
+			Rotation = -1
+		elseif key == &quot;a&quot; then --left
+			Rotation = 1
+		elseif key == &quot;w&quot; then --up
+			Thrust = 1
+		elseif key == &quot;s&quot; then --down
+			Thrust = -1
+		end
+		UpdateNavGui(player)
+		UpdateNav(player)
+	end)
+	m.KeyUp:connect(function(key)
+		if key == &quot;d&quot; or key == &quot;a&quot; then --turning
+			Rotation = 0
+		elseif key == &quot;w&quot; or key == &quot;s&quot; then --throttling
+			Thrust = 0
+		end
+		UpdateNavGui(player)
+		UpdateNav(player)
+	end)
+end
+
+script.Parent.Selected:connect(function(mouse)
+	onSelect(mouse)
+end)
+onSelect(mouse)
+
+while true do	
+	wait()
+	UpdateNav()
+end
+
+
+</string>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="HopperBin" referent="RBX18">
+			<Properties>
+				<bool name="Active">false</bool>
+				<token name="BinType">0</token>
+				<string name="Name">Move tool2</string>
+				<Content name="TextureId"><url>rbxasset://Textures\ArrowCursor.png</url></Content>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="LocalScript" referent="RBX19">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Script</string>
+					<string name="Source">local mode=&quot;none&quot;
+local mode2=&quot;Move&quot;
+local Colors={&quot;Institutional white&quot;,&quot;White&quot;,&quot;Mid grey&quot;,&quot;Medium stone grey&quot;,&quot;Dark stone grey&quot;,&quot;Black&quot;,&quot;Really black&quot;,&quot;Lime green&quot;,&quot;Bright green&quot;,&quot;Camo&quot;,&quot;Earth green&quot;,&quot;Brown&quot;,&quot;Reddish brown&quot;,&quot;Bright blue&quot;,&quot;Cyan&quot;,&quot;Navy blue&quot;,&quot;Deep blue&quot;,&quot;Sand blue&quot;,&quot;Dusty rose&quot;,&quot;Bright red&quot;,&quot;Really red&quot;,&quot;Hot pink&quot;,&quot;Bright yellow&quot;,&quot;Olive&quot;,&quot;Deep orange&quot;,&quot;Br. yellowish orange&quot;,&quot;Grime&quot;,&quot;Pastel light blue&quot;,&quot;Magenta&quot;}
+local Color=1
+local RTmode=1
+---------------------------------------FUNCTIONS
+function MoveTool()
+mode2=&quot;Move&quot;
+text.Text=&quot;CLICK AND DRAG A BRICK TO MOVE IT&quot;
+end
+
+function ColorTool()
+mode2=&quot;Color&quot;
+text.Text=&quot;Q,E=toggle colors, click to apply, CURRENT COLOR=Institutional white&quot;
+end
+
+function RTTool()
+mode2=&quot;RT&quot;
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Add Reflectance&quot;
+end
+
+
+------------------------------------------------CLICK CLICK CLICK CLICK
+function Button1Down(mouse)
+wait(.1)
+if mouse.Target~=nil and mouse.Target.Locked==false and mode2==&quot;Move&quot; then
+mode=&quot;moving&quot;
+Brick=mouse.Target
+Brick.Locked=true
+Brick.CanCollide=false
+offset=Brick.Position-mouse.hit.p
+local s=Instance.new(&quot;SelectionBox&quot;)
+s.Parent=game.Players.localPlayer.PlayerGui
+s.Color=BrickColor.new(&quot;Lime green&quot;)
+s.Adornee=Brick
+local Dragger=Instance.new(&quot;Dragger&quot;)
+Dragger:MouseDown(Brick,offset,{Brick})
+while mode==&quot;moving&quot; do
+wait()
+if Brick~=nil then
+Dragger:MouseMove(mouse.UnitRay)
+end
+end
+Brick.Locked=false
+Brick.CanCollide=true
+s:remove()
+Dragger=nil
+elseif mouse.Target~=nil and mouse.Target.Locked==false and mode2==&quot;Color&quot; then
+mouse.Target.BrickColor=BrickColor.new(Colors[Color])
+elseif mouse.Target~=nil and mouse.Target.Locked==false and mode2==&quot;RT&quot; then
+if RTmode==1 and mouse.Target.Reflectance&lt;1 then
+mouse.Target.Reflectance=mouse.Target.Reflectance+0.1
+elseif RTmode==2 and mouse.Target.Reflectance&gt;0 then
+mouse.Target.Reflectance=mouse.Target.Reflectance-0.1
+elseif RTmode==3 and mouse.Target.Transparency&lt;0.6 then
+mouse.Target.Transparency=mouse.Target.Transparency+0.05
+elseif RTmode==4 and mouse.Target.Transparency&gt;0 then
+mouse.Target.Transparency=mouse.Target.Transparency-0.05
+end
+end
+end
+--------------------------------------------------
+--------------------------------------------------
+function Button1Up(mouse)
+mode=&quot;none&quot;
+end
+--------------------------------------------------
+--------------------------------------------------KEYDOWN KEYDOWN KEYDOWN
+function KeyDown(key)
+key=key:lower()
+if key==&quot;r&quot; and mode2==&quot;Move&quot; and mode==&quot;moving&quot; and Brick~=nil then
+Brick.CFrame=Brick.CFrame*CFrame.fromEulerAnglesXYZ(0,0.5*math.pi,0)
+end
+
+if key==&quot;t&quot; and mode2==&quot;Move&quot; and mode==&quot;moving&quot; and Brick~=nil then
+Brick.CFrame=Brick.CFrame*CFrame.fromEulerAnglesXYZ(0,0,0.5*math.pi)
+end
+
+if key==&quot;q&quot; and mode2==&quot;Color&quot; and Color&gt;1 then
+Color=Color-1
+text.Text=&quot;Q,E=toggle colors, click to apply, CURRENT COLOR= &quot;..Colors[Color]
+elseif key==&quot;q&quot; and mode2==&quot;RT&quot; and RTmode&gt;1 then
+RTmode=RTmode-1
+if RTmode==1 then
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Add Reflectance&quot;
+elseif RTmode==2 then
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Decrease Reflectance&quot;
+elseif RTmode==3 then
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Add Transparency&quot;
+end
+
+end
+
+if key==&quot;e&quot; and mode2==&quot;Color&quot; and Color&lt;#Colors then
+Color=Color+1
+text.Text=&quot;Q,E=toggle colors, click to apply, CURRENT COLOR= &quot;..Colors[Color]
+elseif key==&quot;e&quot; and mode2==&quot;RT&quot; and RTmode&lt;4 then
+RTmode=RTmode+1
+if RTmode==2 then
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Decrease Reflectance&quot;
+elseif RTmode==3 then
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Add Transparency&quot;
+elseif RTmode==4 then
+text.Text=&quot;Use q and e to toggle modes. CURRENT MODE=Decrease Transparency&quot;
+end
+end
+
+end
+--------------------------------------------------
+--------------------------------------------------
+function onSelected(mouse)
+mouse.Button1Down:connect(function() Button1Down(mouse) end)
+mouse.Button1Up:connect(function() Button1Up(mouse) end)
+mouse.KeyDown:connect(KeyDown)
+
+gui=Instance.new(&quot;ScreenGui&quot;)
+gui.Name=&quot;BuildingToolGui&quot;
+gui.Parent=game.Players.localPlayer.PlayerGui
+mb=Instance.new(&quot;TextButton&quot;)
+mb.Size=UDim2.new(0.1,0,0.04,0)
+mb.Position=UDim2.new(0,0,0.7,0)
+mb.BackgroundColor=BrickColor.new(&quot;Cyan&quot;)
+mb.BackgroundTransparency=0.6
+mb.BorderColor=BrickColor.new(&quot;Cyan&quot;)
+mb.TextColor=BrickColor.new(&quot;Institutional white&quot;)
+mb.Name=&quot;MoveButton&quot;
+mb.Text=&quot;MOVE TOOL&quot;
+mb.Parent=gui
+mb.MouseButton1Click:connect(MoveTool)
+cb=Instance.new(&quot;TextButton&quot;)
+cb.Size=UDim2.new(0.1,0,0.04,0)
+cb.Position=UDim2.new(0,0,0.74,0)
+cb.BackgroundColor=BrickColor.new(&quot;Cyan&quot;)
+cb.BackgroundTransparency=0.6
+cb.BorderColor=BrickColor.new(&quot;Cyan&quot;)
+cb.TextColor=BrickColor.new(&quot;Institutional white&quot;)
+cb.Name=&quot;ColorButton&quot;
+cb.Text=&quot;COLOR TOOL&quot;
+cb.Parent=gui
+cb.MouseButton1Click:connect(ColorTool)
+rb=Instance.new(&quot;TextButton&quot;)
+rb.Size=UDim2.new(0.1,0,0.04,0)
+rb.Position=UDim2.new(0,0,0.78,0)
+rb.BackgroundColor=BrickColor.new(&quot;Cyan&quot;)
+rb.BackgroundTransparency=0.6
+rb.BorderColor=BrickColor.new(&quot;Cyan&quot;)
+rb.TextColor=BrickColor.new(&quot;Institutional white&quot;)
+rb.Name=&quot;RTButton&quot;
+rb.Text=&quot;Trans/Refl TOOL&quot;
+rb.Parent=gui
+rb.MouseButton1Click:connect(RTTool)
+text=Instance.new(&quot;TextLabel&quot;)
+text.Size=UDim2.new(0.5,0,0.03,0)
+text.Position=UDim2.new(0.25,0,0.1,0)
+text.BackgroundColor=BrickColor.new(&quot;Really black&quot;)
+text.BorderColor=BrickColor.new(&quot;Bright yellow&quot;)
+text.TextColor=BrickColor.new(&quot;Bright yellow&quot;)
+text.Name=&quot;TextBox&quot;
+text.Text=&quot;CLICK AND DRAG TO MOVE A BRICK&quot;
+text.Parent=gui
+end
+script.Parent.Selected:connect(onSelected)
+--------------------------------------------------
+--------------------------------------------------
+function onDeselected(mouse)
+mode=&quot;none&quot;
+
+end
+script.Parent.Deselected:connect(onDeselected)</string>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="StarterGui" referent="RBX20">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="ScreenGui" referent="RBX21">
+			<Properties>
+				<string name="Name">NavGui</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="ImageLabel" referent="RBX22">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4278190080</Color3>
+					<float name="BackgroundTransparency">0</float>
+					<Color3 name="BorderColor3">4278255360</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><null></null></Content>
+					<string name="Name">Dashboard</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>0</XO>
+						<YS>1</YS>
+						<YO>-72</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>1</XS>
+						<XO>0</XO>
+						<YS>0</YS>
+						<YO>200</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="ImageButton" referent="RBX23">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4291414219</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18758786</url></Content>
+						<string name="Name">PlanetInfoTool</string>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>112</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>63</XO>
+							<YS>0</YS>
+							<YO>63</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX24">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4291414219</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18758792</url></Content>
+							<string name="Name">Selected</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ImageButton" referent="RBX25">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4291480012</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18761129</url></Content>
+						<string name="Name">ExtractionTool</string>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>194</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>63</XO>
+							<YS>0</YS>
+							<YO>63</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX26">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4291480012</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18761134</url></Content>
+							<string name="Name">Selected</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ImageButton" referent="RBX27">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4291545805</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18761143</url></Content>
+						<string name="Name">ProductionTool</string>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>276</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>63</XO>
+							<YS>0</YS>
+							<YO>63</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX28">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4291545805</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18761149</url></Content>
+							<string name="Name">Selected</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ImageButton" referent="RBX29">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4291611598</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18761155</url></Content>
+						<string name="Name">UpgradeTool</string>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>358</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>63</XO>
+							<YS>0</YS>
+							<YO>63</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX30">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4291611598</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18761163</url></Content>
+							<string name="Name">Selected</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ImageButton" referent="RBX31">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4291545805</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18890075</url></Content>
+						<string name="Name">CaptureTool</string>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>-176</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>63</XO>
+							<YS>0</YS>
+							<YO>63</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX32">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4291545805</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18890105</url></Content>
+							<string name="Name">Selected</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">false</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX33">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4281558752</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4281558752</Color3>
+					<int name="BorderSizePixel">0</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18757788</url></Content>
+					<string name="Name">ThrusterPanel</string>
+					<UDim2 name="Position">
+						<XS>0.5</XS>
+						<XO>-64</XO>
+						<YS>1</YS>
+						<YO>-166</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>127</XO>
+						<YS>0</YS>
+						<YO>256</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">2</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="ImageButton" referent="RBX34">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<Content name="Image"><null></null></Content>
+						<string name="Name">Slot</string>
+						<UDim2 name="Position">
+							<XS>0.5</XS>
+							<XO>-16</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>32</XO>
+							<YS>1</YS>
+							<YO>-32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">2</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX35">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4281545523</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18658906</url></Content>
+							<string name="Name">Slider</string>
+							<UDim2 name="Position">
+								<XS>0.5</XS>
+								<XO>-32</XO>
+								<YS>0</YS>
+								<YO>-8</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>64</XO>
+								<YS>0</YS>
+								<YO>16</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">2</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+					<Item class="IntValue" referent="RBX36">
+						<Properties>
+							<string name="Name">AbsPosY</string>
+							<int name="Value">0</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+					<Item class="IntValue" referent="RBX37">
+						<Properties>
+							<string name="Name">AbsSizeY</string>
+							<int name="Value">0</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+					<Item class="LocalScript" referent="RBX38">
+						<Properties>
+							<bool name="Disabled">false</bool>
+							<Content name="LinkedSource"><null></null></Content>
+							<string name="Name">Script</string>
+							<string name="Source">script.Parent.Changed:connect(function(pr)
+	if pr == &quot;AbsoluteSize&quot; then
+		script.Parent.AbsSizeY.Value = script.Parent.AbsoluteSize.y
+	elseif pr == &quot;AbsolutePosition&quot; then
+		script.Parent.AbsPosY.Value = script.Parent.AbsolutePosition.y
+	end
+end)
+script.Parent.AbsSizeY.Value = script.Parent.AbsoluteSize.y
+script.Parent.AbsPosY.Value = script.Parent.AbsolutePosition.y</string>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="ImageButton" referent="RBX39">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4294901760</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18757776</url></Content>
+						<string name="Name">TurnLeft</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>-32</XO>
+							<YS>0.5</YS>
+							<YO>-64</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>32</XO>
+							<YS>0</YS>
+							<YO>128</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">2</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="ImageButton" referent="RBX40">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4294901760</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<Content name="Image"><url>http://www.roblox.com/asset/?id=18757782</url></Content>
+						<string name="Name">TurnRight</string>
+						<UDim2 name="Position">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>0.5</YS>
+							<YO>-64</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>32</XO>
+							<YS>0</YS>
+							<YO>128</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">2</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX41">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4292466907</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">0</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18725102</url></Content>
+					<string name="Name">PropertyFloater</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>50</XO>
+						<YS>0</YS>
+						<YO>50</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>255</XO>
+						<YS>0</YS>
+						<YO>127</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="TextLabel" referent="RBX42">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292466907</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">PlanetName</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>256</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[UNNAMED PLANET]</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX43">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292532700</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<string name="Name">Bold</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>256</XO>
+								<YS>0</YS>
+								<YO>32</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">[UNNAMED PLANET]</string>
+							<Color3 name="TextColor3">4278255360</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Frame" referent="RBX44">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MResources</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>48</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX45">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292466907</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_1</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX46">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292466907</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX47">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292532700</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_2</string>
+							<UDim2 name="Position">
+								<XS>0.200000003</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX48">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292532700</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX49">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_3</string>
+							<UDim2 name="Position">
+								<XS>0.400000006</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX50">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292532700</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX51">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_4</string>
+							<UDim2 name="Position">
+								<XS>0.600000024</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX52">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292532700</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX53">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_5</string>
+							<UDim2 name="Position">
+								<XS>0.800000012</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX54">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292532700</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX55">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292598493</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MOwnership</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[ unowned ]</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="Frame" referent="RBX56">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MProduction</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>64</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX57">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292532700</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_1</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX58">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292532700</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX59">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_2</string>
+							<UDim2 name="Position">
+								<XS>0.200000003</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX60">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX61">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_5</string>
+							<UDim2 name="Position">
+								<XS>0.800000012</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX62">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX63">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_3</string>
+							<UDim2 name="Position">
+								<XS>0.400000006</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX64">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX65">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_4</string>
+							<UDim2 name="Position">
+								<XS>0.600000024</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX66">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+				<Item class="Frame" referent="RBX67">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4279308561</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MDefense</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>80</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX68">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292072403</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_1</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX69">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292072403</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX70">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292072403</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_2</string>
+							<UDim2 name="Position">
+								<XS>0.200000003</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX71">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292072403</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX72">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292072403</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_5</string>
+							<UDim2 name="Position">
+								<XS>0.800000012</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX73">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292072403</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX74">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292072403</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_3</string>
+							<UDim2 name="Position">
+								<XS>0.400000006</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX75">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292072403</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX76">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292072403</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_4</string>
+							<UDim2 name="Position">
+								<XS>0.600000024</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX77">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292072403</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX78">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4291348426</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18765932</url></Content>
+					<string name="Name">ProduceDisplay</string>
+					<UDim2 name="Position">
+						<XS>1</XS>
+						<XO>-63</XO>
+						<YS>0.5</YS>
+						<YO>-128</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>63</XO>
+						<YS>0</YS>
+						<YO>255</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Frame" referent="RBX79">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278190335</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">ProgressFrame</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>17</XO>
+							<YS>0</YS>
+							<YO>33</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>14</XO>
+							<YS>0</YS>
+							<YO>189</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="Frame" referent="RBX80">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4278190080</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<string name="Name">Filler</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX81">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4291019461</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">ProgressText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>20</XO>
+							<YS>0</YS>
+							<YO>12</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>38</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">50%</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX82">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4278190080</Color3>
+					<float name="BackgroundTransparency">0.300000012</float>
+					<Color3 name="BorderColor3">4278255360</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><null></null></Content>
+					<string name="Name">BusyFrame</string>
+					<UDim2 name="Position">
+						<XS>0.5</XS>
+						<XO>-128</XO>
+						<YS>0.5</YS>
+						<YO>-64</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>256</XO>
+						<YS>0</YS>
+						<YO>128</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="TextLabel" referent="RBX83">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4291019461</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">TXT</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>1</XS>
+							<XO>0</XO>
+							<YS>1</YS>
+							<YO>0</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">Action in progress, please wait...</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="Frame" referent="RBX84">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4290887875</Color3>
+					<float name="BackgroundTransparency">0</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<string name="Name">PlanetTeams</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>0</XO>
+						<YS>0</YS>
+						<YO>0</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>0</XO>
+						<YS>0</YS>
+						<YO>0</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="BillboardGui" referent="RBX85">
+				<Properties>
+					<Ref name="Adornee">null</Ref>
+					<Vector3 name="ExtentsOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<string name="Name">PlanetTeam</string>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>1</XO>
+						<YS>0</YS>
+						<YO>1</YO>
+					</UDim2>
+					<Vector2 name="SizeOffset">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<Vector3 name="StudsOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="ImageLabel" referent="RBX86">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4294967295</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<Content name="Image"><null></null></Content>
+						<string name="Name">TeamThumb</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>-16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>16</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX87">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4291414219</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18765926</url></Content>
+					<string name="Name">ExtractDisplay</string>
+					<UDim2 name="Position">
+						<XS>1</XS>
+						<XO>-63</XO>
+						<YS>0.5</YS>
+						<YO>-128</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>63</XO>
+						<YS>0</YS>
+						<YO>255</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Frame" referent="RBX88">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278190335</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">ProgressFrame</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>17</XO>
+							<YS>0</YS>
+							<YO>33</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>14</XO>
+							<YS>0</YS>
+							<YO>189</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="Frame" referent="RBX89">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4278190080</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<string name="Name">Filler</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX90">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4291085254</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">ProgressText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>20</XO>
+							<YS>0</YS>
+							<YO>12</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>38</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">50%</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX91">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4291414219</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18890352</url></Content>
+					<string name="Name">CaptureDisplay</string>
+					<UDim2 name="Position">
+						<XS>1</XS>
+						<XO>-63</XO>
+						<YS>0.5</YS>
+						<YO>-128</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>63</XO>
+						<YS>0</YS>
+						<YO>255</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Frame" referent="RBX92">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278190335</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">ProgressFrame</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>17</XO>
+							<YS>0</YS>
+							<YO>33</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>14</XO>
+							<YS>0</YS>
+							<YO>189</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="Frame" referent="RBX93">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4278190080</Color3>
+							<float name="BackgroundTransparency">0</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<string name="Name">Filler</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>0.5</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX94">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4291085254</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">0</int>
+						<string name="Name">ProgressText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>20</XO>
+							<YS>0</YS>
+							<YO>12</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>38</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">50%</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX95">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4292532700</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">0</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18891751</url></Content>
+					<string name="Name">ResourceFloater</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>50</XO>
+						<YS>0</YS>
+						<YO>50</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>255</XO>
+						<YS>0</YS>
+						<YO>127</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="TextLabel" referent="RBX96">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292532700</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">PlanetName</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>256</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[UNNAMED PLANET]</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX97">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<string name="Name">Bold</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>256</XO>
+								<YS>0</YS>
+								<YO>32</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">[UNNAMED PLANET]</string>
+							<Color3 name="TextColor3">4278255360</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX98">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292664286</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MAvailable</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[Unowned]</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="TextLabel" referent="RBX99">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292730079</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MRecharge</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>48</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">0:00</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX100">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4290624703</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=18935777</url></Content>
+					<string name="Name">StatDisplay</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>0</XO>
+						<YS>0.5</YS>
+						<YO>-128</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>91</XO>
+						<YS>0</YS>
+						<YO>255</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="TextLabel" referent="RBX101">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4290624703</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">ResourceText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>48</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>92</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">0</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="TextLabel" referent="RBX102">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4290690496</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">ComponentText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>92</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>92</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">0</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="TextLabel" referent="RBX103">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4290690496</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">TeamCofferText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>144</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>92</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">0 ( -0 )</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="TextLabel" referent="RBX104">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4290690496</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">TeamCollectionText</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>208</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>92</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">0:00</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX105">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4278190080</Color3>
+					<float name="BackgroundTransparency">0.200000003</float>
+					<Color3 name="BorderColor3">4278255360</Color3>
+					<int name="BorderSizePixel">1</int>
+					<Content name="Image"><null></null></Content>
+					<string name="Name">UpgradeDisplay</string>
+					<UDim2 name="Position">
+						<XS>0.5</XS>
+						<XO>-256</XO>
+						<YS>0.5</YS>
+						<YO>-128</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>512</XO>
+						<YS>0</YS>
+						<YO>256</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">2</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="ImageButton" referent="RBX106">
+					<Properties>
+						<bool name="Active">true</bool>
+						<bool name="AutoButtonColor">true</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">0</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<Content name="Image"><null></null></Content>
+						<string name="Name">CofferDeposit</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>16</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>92</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">2</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX107">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4290493117</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<string name="Name">TXT</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>1</XS>
+								<XO>0</XO>
+								<YS>1</YS>
+								<YO>0</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">Deposit Resources</string>
+							<Color3 name="TextColor3">4278255360</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">2</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX108">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4292598493</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">0</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=19260590</url></Content>
+					<string name="Name">ProduceFloater</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>50</XO>
+						<YS>0</YS>
+						<YO>50</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>255</XO>
+						<YS>0</YS>
+						<YO>127</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="TextLabel" referent="RBX109">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292598493</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">PlanetName</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>256</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[UNNAMED PLANET]</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX110">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<string name="Name">Bold</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>256</XO>
+								<YS>0</YS>
+								<YO>32</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">[UNNAMED PLANET]</string>
+							<Color3 name="TextColor3">4278255360</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Frame" referent="RBX111">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MProduction</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>34</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX112">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292532700</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_1</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX113">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292532700</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX114">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_2</string>
+							<UDim2 name="Position">
+								<XS>0.200000003</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX115">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX116">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_3</string>
+							<UDim2 name="Position">
+								<XS>0.400000006</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX117">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX118">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_4</string>
+							<UDim2 name="Position">
+								<XS>0.600000024</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX119">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX120">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_5</string>
+							<UDim2 name="Position">
+								<XS>0.800000012</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX121">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="ImageLabel" referent="RBX122">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Color3 name="BackgroundColor3">4292598493</Color3>
+					<float name="BackgroundTransparency">1</float>
+					<Color3 name="BorderColor3">4279970357</Color3>
+					<int name="BorderSizePixel">0</int>
+					<Content name="Image"><url>http://www.roblox.com/asset/?id=19260585</url></Content>
+					<string name="Name">CaptureFloater</string>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>50</XO>
+						<YS>0</YS>
+						<YO>50</YO>
+					</UDim2>
+					<UDim2 name="Size">
+						<XS>0</XS>
+						<XO>255</XO>
+						<YS>0</YS>
+						<YO>127</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<bool name="Visible">false</bool>
+					<int name="ZIndex">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="TextLabel" referent="RBX123">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292598493</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">PlanetName</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>0</XO>
+							<YS>0</YS>
+							<YO>0</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>256</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[UNNAMED PLANET]</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="TextLabel" referent="RBX124">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">1</int>
+							<string name="Name">Bold</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>0</XO>
+								<YS>0</YS>
+								<YO>0</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>256</XO>
+								<YS>0</YS>
+								<YO>32</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<string name="Text">[UNNAMED PLANET]</string>
+							<Color3 name="TextColor3">4278255360</Color3>
+							<float name="TextTransparency">0</float>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="TextLabel" referent="RBX125">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4292795872</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4279970357</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MOwnership</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>32</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>16</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<string name="Text">[ Unowned ] 100%</string>
+						<Color3 name="TextColor3">4278255360</Color3>
+						<float name="TextTransparency">0</float>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+				</Item>
+				<Item class="Frame" referent="RBX126">
+					<Properties>
+						<bool name="Active">false</bool>
+						<Color3 name="BackgroundColor3">4278190080</Color3>
+						<float name="BackgroundTransparency">1</float>
+						<Color3 name="BorderColor3">4278255360</Color3>
+						<int name="BorderSizePixel">1</int>
+						<string name="Name">MDefense</string>
+						<UDim2 name="Position">
+							<XS>0</XS>
+							<XO>88</XO>
+							<YS>0</YS>
+							<YO>48</YO>
+						</UDim2>
+						<UDim2 name="Size">
+							<XS>0</XS>
+							<XO>128</XO>
+							<YS>0</YS>
+							<YO>15</YO>
+						</UDim2>
+						<token name="SizeConstraint">0</token>
+						<bool name="Visible">true</bool>
+						<int name="ZIndex">1</int>
+						<bool name="archivable">true</bool>
+					</Properties>
+					<Item class="ImageLabel" referent="RBX127">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292598493</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_1</string>
+							<UDim2 name="Position">
+								<XS>0</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX128">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292598493</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX129">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292664286</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_2</string>
+							<UDim2 name="Position">
+								<XS>0.200000003</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX130">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292664286</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX131">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292730079</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_3</string>
+							<UDim2 name="Position">
+								<XS>0.400000006</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX132">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292664286</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX133">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292730079</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_4</string>
+							<UDim2 name="Position">
+								<XS>0.600000024</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX134">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292664286</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+					<Item class="ImageLabel" referent="RBX135">
+						<Properties>
+							<bool name="Active">false</bool>
+							<Color3 name="BackgroundColor3">4292730079</Color3>
+							<float name="BackgroundTransparency">1</float>
+							<Color3 name="BorderColor3">4279970357</Color3>
+							<int name="BorderSizePixel">0</int>
+							<Content name="Image"><url>http://www.roblox.com/asset/?id=18726364</url></Content>
+							<string name="Name">_5</string>
+							<UDim2 name="Position">
+								<XS>0.800000012</XS>
+								<XO>5</XO>
+								<YS>0</YS>
+								<YO>1</YO>
+							</UDim2>
+							<UDim2 name="Size">
+								<XS>0</XS>
+								<XO>13</XO>
+								<YS>0</YS>
+								<YO>13</YO>
+							</UDim2>
+							<token name="SizeConstraint">0</token>
+							<bool name="Visible">true</bool>
+							<int name="ZIndex">1</int>
+							<bool name="archivable">true</bool>
+						</Properties>
+						<Item class="ImageLabel" referent="RBX136">
+							<Properties>
+								<bool name="Active">false</bool>
+								<Color3 name="BackgroundColor3">4292664286</Color3>
+								<float name="BackgroundTransparency">1</float>
+								<Color3 name="BorderColor3">4279970357</Color3>
+								<int name="BorderSizePixel">1</int>
+								<Content name="Image"><url>http://www.roblox.com/asset/?id=18726369</url></Content>
+								<string name="Name">Star</string>
+								<UDim2 name="Position">
+									<XS>0</XS>
+									<XO>0</XO>
+									<YS>0</YS>
+									<YO>0</YO>
+								</UDim2>
+								<UDim2 name="Size">
+									<XS>1</XS>
+									<XO>0</XO>
+									<YS>1</YS>
+									<YO>0</YO>
+								</UDim2>
+								<token name="SizeConstraint">0</token>
+								<bool name="Visible">false</bool>
+								<int name="ZIndex">1</int>
+								<bool name="archivable">true</bool>
+							</Properties>
+						</Item>
+					</Item>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="SoundService" referent="RBX137">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<External>RBX138</External>
+		<External>RBX139</External>
+		<External>RBX140</External>
+		<External>RBX141</External>
+		<External>RBX142</External>
+		<External>RBX143</External>
+		<External>RBX144</External>
+		<External>RBX145</External>
+		<External>RBX146</External>
+		<External>RBX147</External>
+		<External>RBX148</External>
+		<External>RBX149</External>
+		<External>RBX150</External>
+		<External>RBX151</External>
+	</Item>
+	<Item class="PhysicsService" referent="RBX152">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX153">
+		<Properties>
+			<string name="Name">BadgeService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX154">
+		<Properties>
+			<string name="Name">Geometry</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX155</External>
+	<Item class="Selection" referent="RBX156">
+		<Properties>
+			<string name="Name">Selection</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<External>RBX157</External>
+	<Item class="Lighting" referent="RBX158">
+		<Properties>
+			<Color3 name="Ambient">4291348680</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<float name="GeographicLatitude">41.7332993</float>
+			<string name="Name">Lighting</string>
+			<Color3 name="ShadowColor">4294704127</Color3>
+			<string name="TimeOfDay">00:00:00</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Model" referent="RBX159">
+			<Properties>
+				<CoordinateFrame name="ModelInPrimary">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Ships</string>
+				<Ref name="PrimaryPart">null</Ref>
+				<bool name="archivable">true</bool>
+			</Properties>
+			<Item class="Model" referent="RBX160">
+				<Properties>
+					<CoordinateFrame name="ModelInPrimary">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<string name="Name">DefaultShip</string>
+					<Ref name="PrimaryPart">null</Ref>
+					<bool name="archivable">true</bool>
+				</Properties>
+				<Item class="Part" referent="RBX161">
+					<Properties>
+						<bool name="Anchored">true</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">26</int>
+						<CoordinateFrame name="CFrame">
+							<X>1.5</X>
+							<Y>5.30000257</Y>
+							<Z>4.5</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>1</R11>
+							<R12>0</R12>
+							<R20>0</R20>
+							<R21>0</R21>
+							<R22>1</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<bool name="DraggingV1">false</bool>
+						<float name="Elasticity">0.5</float>
+						<token name="FormFactor">0</token>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">7</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">2</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Body</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">2</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">2</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<bool name="archivable">true</bool>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>2</Z>
+						</Vector3>
+					</Properties>
+					<Item class="SpecialMesh" referent="RBX162">
+						<Properties>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<Content name="MeshId"><null></null></Content>
+							<token name="MeshType">3</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1.79999995</X>
+								<Y>1.5</Y>
+								<Z>1.5</Z>
+							</Vector3>
+							<Content name="TextureId"><null></null></Content>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX163">
+					<Properties>
+						<bool name="Anchored">false</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">26</int>
+						<CoordinateFrame name="CFrame">
+							<X>0.5</X>
+							<Y>5.30000257</Y>
+							<Z>5</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0</R11>
+							<R12>1</R12>
+							<R20>0</R20>
+							<R21>-1</R21>
+							<R22>0</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<bool name="DraggingV1">false</bool>
+						<float name="Elasticity">0.5</float>
+						<token name="FormFactor">0</token>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Part</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<bool name="archivable">true</bool>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX164">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>-0.0500000007</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1.5</X>
+								<Y>1.5</Y>
+								<Z>1.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="Part" referent="RBX165">
+					<Properties>
+						<bool name="Anchored">false</bool>
+						<float name="BackParamA">-0.5</float>
+						<float name="BackParamB">0.5</float>
+						<token name="BackSurface">0</token>
+						<token name="BackSurfaceInput">0</token>
+						<float name="BottomParamA">-0.5</float>
+						<float name="BottomParamB">0.5</float>
+						<token name="BottomSurface">0</token>
+						<token name="BottomSurfaceInput">0</token>
+						<int name="BrickColor">26</int>
+						<CoordinateFrame name="CFrame">
+							<X>2.5</X>
+							<Y>5.30000257</Y>
+							<Z>5</Z>
+							<R00>1</R00>
+							<R01>0</R01>
+							<R02>0</R02>
+							<R10>0</R10>
+							<R11>0</R11>
+							<R12>1</R12>
+							<R20>0</R20>
+							<R21>-1</R21>
+							<R22>0</R22>
+						</CoordinateFrame>
+						<bool name="CanCollide">false</bool>
+						<bool name="DraggingV1">false</bool>
+						<float name="Elasticity">0.5</float>
+						<token name="FormFactor">0</token>
+						<float name="Friction">0.300000012</float>
+						<float name="FrontParamA">-0.5</float>
+						<float name="FrontParamB">0.5</float>
+						<token name="FrontSurface">0</token>
+						<token name="FrontSurfaceInput">0</token>
+						<float name="LeftParamA">-0.5</float>
+						<float name="LeftParamB">0.5</float>
+						<token name="LeftSurface">0</token>
+						<token name="LeftSurfaceInput">0</token>
+						<bool name="Locked">false</bool>
+						<token name="Material">256</token>
+						<string name="Name">Part</string>
+						<float name="Reflectance">0</float>
+						<float name="RightParamA">-0.5</float>
+						<float name="RightParamB">0.5</float>
+						<token name="RightSurface">0</token>
+						<token name="RightSurfaceInput">0</token>
+						<Vector3 name="RotVelocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<float name="TopParamA">-0.5</float>
+						<float name="TopParamB">0.5</float>
+						<token name="TopSurface">0</token>
+						<token name="TopSurfaceInput">0</token>
+						<float name="Transparency">0</float>
+						<Vector3 name="Velocity">
+							<X>0</X>
+							<Y>0</Y>
+							<Z>0</Z>
+						</Vector3>
+						<bool name="archivable">true</bool>
+						<token name="shape">1</token>
+						<Vector3 name="size">
+							<X>1</X>
+							<Y>1</Y>
+							<Z>1</Z>
+						</Vector3>
+					</Properties>
+					<Item class="CylinderMesh" referent="RBX166">
+						<Properties>
+							<float name="Bevel">0</float>
+							<float name="Bevel Roundness">0</float>
+							<float name="Bulge">0</float>
+							<token name="LODX">2</token>
+							<token name="LODY">2</token>
+							<string name="Name">Mesh</string>
+							<Vector3 name="Offset">
+								<X>0.0500000007</X>
+								<Y>0</Y>
+								<Z>0</Z>
+							</Vector3>
+							<Vector3 name="Scale">
+								<X>1.5</X>
+								<Y>1.5</Y>
+								<Z>1.5</Z>
+							</Vector3>
+							<Vector3 name="VertexColor">
+								<X>1</X>
+								<Y>1</Y>
+								<Z>1</Z>
+							</Vector3>
+							<bool name="archivable">true</bool>
+						</Properties>
+					</Item>
+				</Item>
+			</Item>
+			<Item class="BodyPosition" referent="RBX167">
+				<Properties>
+					<float name="D">1250</float>
+					<string name="Name">BodyPosition</string>
+					<float name="P">10000</float>
+					<bool name="archivable">true</bool>
+					<Vector3 name="maxForce">
+						<X>0</X>
+						<Y>400000</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="position">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="LocalScript" referent="RBX168">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">ShipCamera</string>
+				<string name="Source">repeat 
+	wait()
+until script.Parent:FindFirstChild(&quot;PlayerShip&quot;)
+
+script.Parent.PlayerShip.Changed:connect(function()
+	if script.Parent.PlayerShip.Value then
+		local cam = game.Workspace.CurrentCamera
+		cam.CameraSubject = script.Parent.PlayerShip.Value
+		cam.CameraType = 3
+	end
+end)
+
+script.Name = &quot;ShipCameraRunning&quot;
+</string>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX169">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">24</int>
+				<CoordinateFrame name="CFrame">
+					<X>-1</X>
+					<Y>3.20000005</Y>
+					<Z>-1</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">false</bool>
+				<bool name="DraggingV1">false</bool>
+				<float name="Elasticity">0.5</float>
+				<token name="FormFactor">0</token>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">Planet</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<bool name="archivable">true</bool>
+				<token name="shape">0</token>
+				<Vector3 name="size">
+					<X>1</X>
+					<Y>1</Y>
+					<Z>1</Z>
+				</Vector3>
+			</Properties>
+			<Item class="SpecialMesh" referent="RBX170">
+				<Properties>
+					<token name="LODX">2</token>
+					<token name="LODY">2</token>
+					<Content name="MeshId"><null></null></Content>
+					<token name="MeshType">3</token>
+					<string name="Name">Mesh</string>
+					<Vector3 name="Offset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="Scale">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<Content name="TextureId"><null></null></Content>
+					<Vector3 name="VertexColor">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX171">
+				<Properties>
+					<string name="Name">OwnerPerc</string>
+					<int name="Value">100</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="BrickColorValue" referent="RBX172">
+				<Properties>
+					<string name="Name">OwnerTeam</string>
+					<int name="Value">1</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="StringValue" referent="RBX173">
+				<Properties>
+					<string name="Name">PlanetName</string>
+					<string name="Value">[UNNAMED PLANET]</string>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX174">
+				<Properties>
+					<string name="Name">PlanetResources</string>
+					<int name="Value">0</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX175">
+				<Properties>
+					<string name="Name">PlanetDefence</string>
+					<int name="Value">0</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="IntValue" referent="RBX176">
+				<Properties>
+					<string name="Name">PlanetProduction</string>
+					<int name="Value">0</int>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+			<Item class="NumberValue" referent="RBX177">
+				<Properties>
+					<string name="Name">LastExtractionTime</string>
+					<double name="Value">0</double>
+					<bool name="archivable">true</bool>
+				</Properties>
+			</Item>
+		</Item>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX178">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Teams" referent="RBX179">
+		<Properties>
+			<string name="Name">Teams</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="Team" referent="RBX180">
+			<Properties>
+				<bool name="AutoAssignable">true</bool>
+				<bool name="AutoColorCharacters">true</bool>
+				<string name="Name">RedUnion</string>
+				<int name="Score">0</int>
+				<int name="TeamColor">1004</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Team" referent="RBX181">
+			<Properties>
+				<bool name="AutoAssignable">true</bool>
+				<bool name="AutoColorCharacters">true</bool>
+				<string name="Name">BlueConfederacy</string>
+				<int name="Score">0</int>
+				<int name="TeamColor">1010</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<External>RBX182</External>
+</roblox>
