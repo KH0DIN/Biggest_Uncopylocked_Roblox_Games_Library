@@ -1,7 +1,7 @@
-# Number of games in this archive: **`639`**
-Last update: `15/09/2025`.
+# Number of games in this archive: **`666`**
+Last update: `09/04/2026`.
 
-Notes : ⚠ After September 30th all games without an age rating will become permanently unplayable, i don't know how that will affect uncopylocked games but regardless i'll try to archive as many as i can in the meantime.
+Notes : ⚠ Now that Roblox has completely hidden many old games it's become much more time consuming for me to gather as many uncopylocked games as i can, because of that some of the games i add from 2026 onwards have been obtained through API calls and converted to rbxl files, which may in rare cases cause some issues.
 # 📖Uncopylocked Roblox Games Library📖
 A massive and costantly updating archive of games spanning the entire history of roblox, from **`2006`** to **`2025`**.
 
